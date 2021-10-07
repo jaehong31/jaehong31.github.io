@@ -1,16 +1,16 @@
 {
-  "name": "resume",
+  "name": "Jaehong Homepage",
   "version": "1.0.0",
   "description": "Please Get Me",
   "main": "index.html",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uyu423/resume.git"
+    "url": "https://jaehong31.github.io"
   },
   "scripts": {
     "deploy": "gh-pages -d ./"
   },
-  "author": "Yu Yongwoo <uyu423@gmail.com>",
+  "author": "Jaehong Yoon <jaehong.yoon@kaist.ac.kr>",
   "license": "UNLICENSED",
   "dependencies": {
     "gh-pages": "^1.1.0"
