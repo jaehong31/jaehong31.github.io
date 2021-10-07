@@ -35,6 +35,7 @@ export declare namespace IEducation {
      * @example '2010-03'
      * @description 해당 값이 undefined 일 경우 아직 졸업하지 않은 것으로 판단.
      */
+     '2020202020'
     endedAt?: string;
   }
 }
