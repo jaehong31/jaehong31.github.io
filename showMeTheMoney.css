@@ -17,10 +17,9 @@
 .profile-img {
   max-height: 320px;
 }
-h6 {
+.head_inline {
   display: inline;
 }
-
 .footer-cover {
   background-color: #f5f5f5;
   padding-left: 0;
