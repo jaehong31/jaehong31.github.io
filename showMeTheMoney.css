@@ -37,7 +37,7 @@
 .popup {
   font-size: .8em;
   display: inline-block;
-  border: 2px dotted #000;
+  border: 12px dotted #000;
   border-color: rgba(0, 0, 0, 0.3);
   border-radius: 25px;
   background-color:transparent;
