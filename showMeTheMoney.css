@@ -14,7 +14,6 @@
 .gray {
   color: gray;
 }
-
 .profile-img {
   max-height: 320px;
 }
@@ -37,9 +36,9 @@
 .popup {
   font-size: .8em;
   display: inline-block;
-  border: 12px dotted #000;
+  border: 2px dotted #000;
   border-color: rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
+  border-radius: 15px;
   background-color:transparent;
   display:none;
   width: 100%;
@@ -47,4 +46,22 @@
   padding: 1em;
   margin: .5em;
   font-family: 'Courier New', Courier, monospace;
+}
+
+.badge-secondary {
+  color: #fff;
+  background-color: #788fac;
+}
+
+.badge-bibtex_old {
+  color: #fff;
+  background-color: #DBC7BE;
+}
+.badge-bibtex {
+  color: #fff;
+  background-color: #EF959C;
+}
+.badge-pdf {
+  color: #fff;
+  background-color: #95aaef;
 }
