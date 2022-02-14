@@ -55,12 +55,12 @@
 
 .badge-code {
   color: #fff;
-  background-color: #DBC7BE;
+  background-color: rgb(250, 128, 114);
   border-color:rgb(0, 0, 0); 
 }
 .badge-bibtex {
   color: #fff;
-  background-color: #EF959C;
+  background-color: #DBC7BE;
   border-color:rgb(0, 0, 0); 
 }
 .badge-pdf {
