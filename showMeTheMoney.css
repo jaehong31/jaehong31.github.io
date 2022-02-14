@@ -56,12 +56,15 @@
 .badge-code {
   color: #fff;
   background-color: #DBC7BE;
+  border-color:rgb(0, 0, 0); 
 }
 .badge-bibtex {
   color: #fff;
   background-color: #EF959C;
+  border-color:rgb(0, 0, 0); 
 }
 .badge-pdf {
   color: #fff;
   background-color: #95aaef;
+  border-color:rgb(0, 0, 0); 
 }
