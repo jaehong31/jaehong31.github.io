@@ -10,9 +10,11 @@
 .blue {
   color: #3c78d8;
 }
-
 .gray {
   color: gray;
+}
+.darkgray {
+  color: rgb(58, 58, 58);
 }
 .profile-img {
   max-height: 320px;
