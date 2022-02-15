@@ -52,7 +52,28 @@
   margin: .5em;
   font-family: 'Courier New', Courier, monospace;
 }
-
+.conf{
+  /*background-color: #8b96a1;
+  color: #fff;*/
+  background-color: transparent;
+  color: #000;
+  width: 5.3em;
+  font-weight: 800;
+  border-radius: 5px;
+  padding: 0.0em;
+  line-height:1.4;
+  text-align: center;
+}
+.oral{
+  background-color: #e7e7e7;
+  color: #1d1515;
+  width: 5.5em;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 0.0em;
+  line-height:1.5;
+  text-align: center;
+}
 .popup-news {
   font-size: .8em;
   display: inline-block;
@@ -141,7 +162,19 @@
   text-decoration: none;
   background-color: #fa8072;
 }
-
+.badge-conf {
+  color: #fff;
+  background-color: #545b62;
+  border-color: transparent;
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 2;
+}
+.badge-conf-oral {
+  color: #fff;
+  background-color: #EDD28F;
+  border-color: transparent;
+}
 .badge-color1 {
   color: #fff;
   background-color: #DBC7BE;
