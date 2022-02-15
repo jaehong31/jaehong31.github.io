@@ -46,6 +46,7 @@
   border-radius: 15px;
   border-color:rgba(0, 0, 0, 0.3);
   background-color:transparent;
+  display:none;
   width: 100%;
   line-height:1.5;
   padding: 1em;
@@ -116,7 +117,7 @@
 .badge-bibtex[href]:hover, .badge-bibtex[href]:focus {
   color: #fff;
   text-decoration: none;
-  background-color: #CBB3BF;
+  background-color: #68717a;
 }
 
 .badge-pdf {
