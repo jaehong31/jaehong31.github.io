@@ -17,6 +17,9 @@
 .profile-img {
   max-height: 320px;
 }
+.wo-linebreak {
+  white-space: nowrap;
+}
 .head-inline {
   display: inline;
   font-weight: bold;
@@ -32,7 +35,10 @@
 .footer {
   padding-top: 10px;
 }
-
+.padding-0{
+  padding-right:0;
+  padding-left:0;
+}
 .popup {
   font-size: .8em;
   display: inline-block;
