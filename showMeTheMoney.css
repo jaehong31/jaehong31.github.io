@@ -46,8 +46,42 @@
   font-weight: 500;
   line-height:1.2em;
   margin-top: -5px;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   font-family: Calibri;
+}
+.pprint{
+  background-color: transparent;
+  color: rgb(75, 75, 75);  
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 0.0em;
+  line-height:1.4;
+  text-align: left;
+}
+
+.conf{
+  /*background-color: #8b96a1;
+  color: #fff;*/
+  background-color: transparent;
+  color: rgb(75, 75, 75);
+  width: 5.3em;
+  font-weight: 800;
+  border-radius: 5px;
+  padding: 0.0em;
+  line-height:1.4;
+  text-align: center;
+}
+.oral{
+  background-color: #e7e7e7;
+  color: rgb(75, 75, 75);
+  width: 5.5em;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 0.0em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  line-height:1.5;
+  text-align: center;
 }
 .footer {
   padding-top: 10px;
@@ -84,30 +118,6 @@
   padding: 1em;
   margin: .5em;
   font-family: 'Courier New', Courier, monospace;
-}
-.conf{
-  /*background-color: #8b96a1;
-  color: #fff;*/
-  background-color: transparent;
-  color: rgb(75, 75, 75);
-  width: 5.3em;
-  font-weight: 800;
-  border-radius: 5px;
-  padding: 0.0em;
-  line-height:1.4;
-  text-align: center;
-}
-.oral{
-  background-color: #e7e7e7;
-  color: rgb(75, 75, 75);
-  width: 5.5em;
-  font-weight: 500;
-  border-radius: 5px;
-  padding: 0.0em;
-  padding-left: 0.2em;
-  padding-right: 0.2em;
-  line-height:1.5;
-  text-align: center;
 }
 .popup-news {
   font-size: 0.9em;
