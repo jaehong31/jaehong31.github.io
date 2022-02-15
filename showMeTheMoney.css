@@ -97,13 +97,15 @@
   border-radius: 10px;
   background-color: #ffede7;  
   width: 80%;
-  display:none;
   font-weight: 400;
   line-height:1.5;
+  display:none;
   padding: 1em;
   margin: .5em;
-  padding-bottom: .4em;
-  margin-left: 10em;
+  margin-top: .2em;
+  padding-top: .3em;
+  padding-bottom: .3em;
+  margin-left: 6em;
 }
 
 .badge {
