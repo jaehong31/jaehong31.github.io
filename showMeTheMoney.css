@@ -30,13 +30,27 @@
   margin-top: 50px;
   height: 80px;
 }
+.note {
+  font-weight: 500;
+  font-family: Arial;
+  line-height:1.5;
+}
 
 .footer {
   padding-top: 10px;
 }
-.padding-0{
-  padding-right:0;
-  padding-left:0;
+.no-tb-padding{
+  padding-top: -10px;
+  padding-bottom: -10px;
+}
+.no-lr-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+.thumbnail {
+  width: 100%;
+  height: 100px;
+  margin: 0;
 }
 .bbold{
   font-weight: 500;
