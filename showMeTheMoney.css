@@ -43,7 +43,6 @@
   font-size: .8em;
   display: inline-block;
   border: 2px dotted #000;
-  border-color: rgba(0, 0, 0, 0.3);
   border-radius: 15px;
   background-color:transparent;
   display:none;
@@ -54,6 +53,44 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
+.popup-news {
+  font-size: .8em;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #ffede7;
+  display:none;
+  width: 100%;
+  line-height:1.5;
+  padding: 1em;
+  margin: .5em;
+  padding-bottom: .4em;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 15px;
+  padding: 1em;
+  padding-bottom: .4em;  
+}
+
+
+.badge:empty {
+  display: none;
+}
+
+.badge-pill {
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  border-radius: 1em;
+}
+
+
 .badge-secondary {
   color: #fff;
   background-color: #788fac;
@@ -61,33 +98,95 @@
 
 .badge-code {
   color: #fff;
-  background-color: #fa8072;
-  border-color:#000000; 
+  background-color: #95ADB6;
+  border-color: transparent;
+  height:1.6em;
 }
+.badge-code:hover, .badge-code:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #fa8072;
+}
+
 .badge-bibtex {
   color: #fff;
-  background-color: #d4b3a4;
-  border-color:#000000; 
+  background-color: #DBC7BE;
+  border-color: transparent;
 }
+.badge-bibtex[href]:hover, .badge-bibtex[href]:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #CBB3BF;
+}
+
 .badge-pdf {
   color: #fff;
-  background-color: #95aaef;
-  border-color:#000000; 
+  background-color: rgb(93, 175, 230);
+  border-color: transparent;
+  height:1.6em;
 }
+.badge-pdf:hover, .badge-pdf:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #2980f1;
+}
+
 .badge-more {
   color: #fff;
-  background-color: #fa8072;
-  border-color:#000000; 
+  background-color: #EF959C;
+  border-color: transparent;
 }
-.popup-news {
-  font-size: .8em;
-  display: inline-block;
-  border-radius: 10px;
-  background-color: #ffede7;
-  display:none;
-  width: 95%;  
-  line-height:1.5;
-  padding: 1em;
-  margin: .5em;
-  padding-bottom: .4em;
+.badge-more[href]:hover, .badge-more[href]:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #fa8072;
+}
+
+.badge-color1 {
+  color: #fff;
+  background-color: #DBC7BE;
+}
+.badge-color2 {
+  color: #fff;
+  background-color: #EF959C;
+}
+.badge-color3 {
+  color: #fff;
+  background-color: #CBB3BF;
+}
+.badge-color4 {
+  color: #fff;
+  background-color: #95ADB6;
+}
+.badge-color5 {
+  color: #fff;
+  background-color: #EDD28F;
+  font-size: 13px;
+}
+.badge-color5-2 {
+  color: #fff;
+  text-decoration: none;
+  background-color: #545b62;
+}
+
+.badge-color6 {
+  color: #fff;
+  background-color: #28a745;
+}
+
+.badge-color6-2 {
+  color: #fff;
+  text-decoration: none;
+  background-color: #1e7e34;
+}
+
+.badge-color7 {
+  color: #fff;
+  background-color: #17a2b8;
+}
+
+.badge-color7-2 {
+  color: #fff;
+  text-decoration: none;
+  background-color: #117a8b;
 }
