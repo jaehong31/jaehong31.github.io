@@ -6,12 +6,15 @@
   word-break: keep-all;
   line-height: 1.8
 }
-
+/*3c78d8*/
 .blue {
   color: #3c78d8;
 }
 .gray {
   color: gray;
+}
+.midgray {
+  color: rgb(75, 75, 75);
 }
 .darkgray {
   color: rgb(58, 58, 58);
@@ -37,7 +40,15 @@
   font-family: Arial;
   line-height:1.5;
 }
-
+.authors {
+  color:rgb(90, 90, 90);
+  font-size: 1.1em;
+  font-weight: 500;
+  line-height:1.2em;
+  margin-top: -5px;
+  margin-bottom: 5px;
+  font-family: Calibri;
+}
 .footer {
   padding-top: 10px;
 }
@@ -78,7 +89,7 @@
   /*background-color: #8b96a1;
   color: #fff;*/
   background-color: transparent;
-  color: #000;
+  color: rgb(75, 75, 75);
   width: 5.3em;
   font-weight: 800;
   border-radius: 5px;
@@ -88,7 +99,7 @@
 }
 .oral{
   background-color: #e7e7e7;
-  color: #1d1515;
+  color: rgb(75, 75, 75);
   width: 5.5em;
   font-weight: 500;
   border-radius: 5px;
