@@ -96,13 +96,14 @@
   display: inline-block;
   border-radius: 10px;
   background-color: #ffede7;  
-  width: 95%;
+  width: 80%;
   display:none;
   font-weight: 400;
   line-height:1.5;
   padding: 1em;
   margin: .5em;
   padding-bottom: .4em;
+  margin-left: 10em;
 }
 
 .badge {
