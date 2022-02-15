@@ -55,6 +55,9 @@
 .bbold{
   font-weight: 500;
 }
+.bbbold{
+  font-weight: 700;
+}
 .popup {
   font-size: .8em;
   display: inline-block;
@@ -88,6 +91,8 @@
   font-weight: 500;
   border-radius: 5px;
   padding: 0.0em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
   line-height:1.5;
   text-align: center;
 }
