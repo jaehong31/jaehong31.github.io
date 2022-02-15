@@ -36,6 +36,7 @@
   height: 80px;
 }
 .note {
+  color: rgb(58, 58, 58);
   font-weight: 500;
   font-family: Arial;
   line-height:1.5;
