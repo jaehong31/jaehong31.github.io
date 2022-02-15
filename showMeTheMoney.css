@@ -44,8 +44,8 @@
   display: inline-block;
   border: 2px dotted #000;
   border-radius: 15px;
+  border-color:rgba(0, 0, 0, 0.3);
   background-color:transparent;
-  display:none;
   width: 100%;
   line-height:1.5;
   padding: 1em;
