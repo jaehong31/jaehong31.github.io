@@ -130,6 +130,10 @@
 }
 
 
+.badge-primary-new {
+  color: #fff;
+  background-color: #fa8072;
+}
 .badge-secondary {
   color: #fff;
   background-color: #788fac;
