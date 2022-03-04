@@ -183,6 +183,13 @@
   background-color: #fa8072;
 }
 
+.badge-code-tbd {
+  color: #fff;
+  background-color: #95ADB6;
+  border-color: transparent;
+  height:1.6em;
+}
+
 .badge-bibtex {
   color: #fff;
   background-color: #DBC7BE;
