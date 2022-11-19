@@ -2,6 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <!--<style media="all">     
+      h6, h6+p {font-weight: bold;}
+    </style>-->
     <meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width">
     <meta name="description" content=""/>
     <meta property="og:url" content="https://jaehong31.github.io" />
@@ -16,7 +19,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3TYEH2DVK2"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
+      window.dataLayer=window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
@@ -31,6 +34,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
+    <script language="javascript">
+      function show( elem ) {
+          var x=document.getElementById(elem);
+          if (x.style.display === "block") {x.style.display="none";}
+          else {x.style.display="block";}
+      }
+    </script>
     <script>
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()
@@ -39,9 +49,9 @@
   </head>
   <a name="top"></a>
   <body>
-    <div class="container resume">
+    <div class="container resume"  style="margin-top: 3em">
       <!-- Profile Start -->
-      <div class="row mt-5">
+      <div class="row mt-2">
         <div class="col-md-3 col-sm-12 pb-3 text-md-right text-center">
           <img class="img-fluid rounded profile-img" src="./materials/jhyoon-image.jpg" alt="Profile">
         </div>
@@ -49,7 +59,7 @@
           <div class="row">
             <div class="col text-center text-md-left">
               <!--<h1 class="blue">Jaehong Yoon <small>(jhyoon)</small></h1>-->
-              <h3 class="blue">Jaehong Yoon </h3>
+              <h3 class="darkgray">Jaehong Yoon</h3>
             </div>
           </div>
           <div class="row">
@@ -76,10 +86,10 @@
                   <i class="fa fa-github" aria-hidden="true"></i>
                 </div>-->
                 <div class="col-auto">
-                  <a href="https://github.com/jaehong31" target="_blank">Github</a>,&nbsp&nbsp&nbsp
-                  <a href="https://scholar.google.co.kr/citations?user=-5comoUAAAAJ&hl" target="_blank">Google Scholar</a>,&nbsp&nbsp&nbsp
-                  <a href="https://twitter.com/jaeh0ng_yoon" target="_blank">Twitter</a>,&nbsp&nbsp&nbsp
-                  <a href="materials/jhyoon-cv.pdf" target="_blank">CV</a>
+                  <a href="materials/jhyoon-cv.pdf" target="_blank" class="bbold">CV</a>&nbsp&nbsp&nbsp
+                  <a href="https://github.com/jaehong31" target="_blank" class="bbold">Github</a>&nbsp&nbsp&nbsp
+                  <a href="https://twitter.com/jaeh0ng_yoon" target="_blank" class="bbold">Twitter</a>&nbsp&nbsp&nbsp
+                  <a href="https://scholar.google.com/citations?user=-5comoUAAAAJ&hl=en" target="_blank" class="bbold">Google Scholar</a>&nbsp&nbsp&nbsp                  
                 </div>
               </div>
               <!--<div class="row">
@@ -90,104 +100,474 @@
                   </div>
                 </div>
               </div>-->
-              <p class="text-md-right"><small>Latest Updated</small> <sapn class="badge badge-secondary">01. 21. 2022.</span></p>
+              <p class="text-md-right"><small>Latest Updated</small> <sapn class="badge badge-secondary">11. 14. 2022.</span></p>
               <!--<p class="text-md-right">J. Yoon</p>-->
             </div>
           </div>
         </div>
       </div >
       <!-- Profile End -->
+      <hr />
+      <!-- News Start -->
+      <div class="row pt-2">                
+        <!--<div class="row">-->
+          <div class="col-12 col-md-2">
+            <h3 class="darkgray text-md-right">News</h3>
+          </div>
+          <div class="col-12 col-md-10 no-gutters">
+            <!-- <div class="row no-gutters">
+              <div class="col-12 col-md-12 text-md-left no-padding">
+                <b class="bbold" style="color:#fa8072;">Apr 2022</b>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">I'm looking for a </a>
+                <span class="oral">research internship/visiting scholar position</span> <a class="note">for </a>
+                <span class="oral">Summer/Fall 2022</span>.</a>
+                <button type="button" class="badge badge-more" href="javascript:void(0)" onclick="show('more-02092022')">More</button>
+                <div id="more-02092022"  class="popup-news note">
+                  I'm eager to build lifelong and expandable learning algorithms under various research areas, 
+                        such as open-world problems, online/streaming Learning, reinforcement learning, multimodal, language models, ...).
+                  <br>I can relocate for an on-site internship/visit up to <b>six months</b>. If you are interested, feel free to contact me.</div>
+              </div>
+            </div> -->
+            <!-- <div class="row no-gutters">
+              <div class="col-12 col-md-12 text-md-left">
+                <b class="bbold" style="color:#fa8072;">(new!) Oct 2022</b>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="oral">I'm attending ECCV2022 in Tel Aviv!</span> <a class="note">Please feel free to DM or e-mail if you want to chat with me :)</a>
+              </div>
+            </div> -->
+            <div class="row no-gutters">
+              <div class="col-12 col-md-12 text-md-left">
+                <b class="bbold" style="color:#fa8072;">Oct 2022</b>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">(new!) I started as a </a><span class="oral">visiting student</span><a class="note"> at Weizmann Institute of Science, advised by <a href="https://www.weizmann.ac.il/math/yonina/" target="_blank" class="bluenote">Prof. Yonina Eldar</a>.</a> 
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 col-md-12 text-md-left">
+                <b class="bbold" style="color:#fa8072;">Aug 2022</b>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">One paper got accepted to</a>
+                <span class="oral">ECCV 2022 Workshop</span><a class="note"> on Computational Aspects of Deep Learning (CADL).</a>             
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 col-md-12 text-md-left">
+                <b class="bbold" style="color:#fa8072;">May 2022</b>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">Two papers got accepted to </a>
+                <span class="oral">ICML 2022</span>.                
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 col-md-12 text-md-left">
+                <b class="bbold" style="color:#fa8072;">Jan 2022</b>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">Two papers got accepted to </a>
+                <span class="oral">ICLR 2022</span> 
+                <a class="note">including one </a>
+                <span class="oral">oral presentation (acceptance rate=54/3391=1.6%)</span>.
+              </div>
+            </div>
+          </div>
 
+          <!--
+          <div class="col-12 col-md-10 note">
+            <div class="row">
+              <div class="col-md-2 col-12 text-md-right">
+                <h6 style="color:#fa8072;">02.09.2022</h6>
+              </div>
+              <div class="col-md-10 col-12">
+                I'm looking for a
+                <b class="oral">research internship/visiting scholar position</b> for 
+                <b class="oral">Summer/Fall 2022</b> (up to 6 months).
+                <button type="button" class="badge badge-more" href="javascript:void(0)" onclick="show('more-02092022')">More</button>
+                <p><div id="more-02092022"  class="popup-news note">
+                  I'm eager to build lifelong and expandable learning algorithms under various research areas, 
+                        such as open-world problems, online/streaming Learning, reinforcement learning, multimodal, language models, ...).
+                  <p>I can relocate for an on-site internship/visit. If you are interested, feel free to contact me.</div>
+              </div>              
+            </div>
+            <div class="row">
+              <div class="col-md-2 col-12 text-md-right">
+                <h6 style="color:#fa8072">01.29.2022<br /></h6>
+              </div>
+              <div class="col-md-10 col-12">
+                  Two papers got accepted to <b class="oral">ICLR2022</b> including one <b class="oral">oral presentation (acceptance rate=54/3391=1.6%)</b>.
+              </div>
+            </div>            
+          </div>
+          -->
+        <!--</div>-->
+      </div>
+      <!--</div>-->
+      <hr />
       <!-- Introduce Start -->
-      <div class="row pt-5">
+      <div class="row pt-2">
         <div class="col-12 col-md-3">
-          <h3 class="blue">Introduction</h3>
+          <h3 class="darkgray text-md-right">Introduction</h3>
         </div>
         <div class="col-12 col-md-9">
-          <p> I’m a Ph.D. student in the
-            <a href="https://www.mlai-kaist.com/" target="_blank">Machine Learning and Artificial Intelligence (MLAI)</a>
-            Lab at KAIST, under the supervision of <a href="http://www.sungjuhwang.com/" target="_blank">Prof. Sung Ju Hwang</a>.
-            I finished the B.S. degree at UNIST in 2016 and the M.S. degree at UNIST in 2018,
-            under the supervision of Prof. Sung Ju Hwang.
-          <p>	My research interest mainly focuses on developing novel models and algorithms for tackling practical challenges
-            in deploying <b>on-device artificial gerenal intelligence systems to various real-world application domains</b>.</p>
-          I currently focus on the following topics:
-          <ul class="pt-3">
-            <li><b>Continual learning and Transfer learning</b></li>
-            <li><b>Network pruning and Quantization</b></li>
-            <li><b>Federated learning</b></li>
-            <li><b>Unsupervised/self-supervised representation learning</b></li>
-            <li><b>Learning with biased and noisy inputs</b></li>
-          </ul>
+          <p class="note"> I’m a Ph.D. candidate in the
+            <a href="https://www.mlai-kaist.com/" target="_blank" class="bbold">Machine Learning and Artificial Intelligence (MLAI)</a>
+            Lab at <b class="bbold">KAIST</b>, under the supervision of <a href="http://www.sungjuhwang.com/" target="_blank" class="bbold">Prof. Sung Ju Hwang</a>.
+            I finished the B.S. and M.S. degree at <b class="bbold">UNIST</b> in 2016 and 2018, respectively.
+            <!-- <br>My expected graduation date is <b>February 2023</b>. -->
+          <!--<br>My research interest mainly focuses on developing novel models and algorithms for tackling practical challenges
+            in <b class="bbold">deploying on-device artificial gerenal intelligence systems to various real-world application domains</b>.-->
+            <br>            
+            </p>
+            <a class="note">My research interest includes following topics:</a>
+            <li><b class="bbold darkgray">Online Continual Learning:</b> <span class="authors">Lifelong Learning and Video Streaming Learning</span></li>
+            <li><b class="bbold darkgray">On-device Learning:</b> <span class="authors">Federated Learning and Neural Network Compression</span></li>
+            <li><b class="bbold darkgray">Egocentric Vision:</b> <span class="authors">Video Representation Learning and Audio-video-text Multimodal Learning</span></li>
+            <li><b class="bbold darkgray">Learning with Real-world Data:</b> <span class="authors">Un-(Self-)/Semi-supervised Learning and Input Selective Training</span></li>
+            
+          <br>
+          <p class="note">
+            <!-- I'm eager to build <b>lifelong and meta-cognitive learning algorithms</b> -->
+            <!-- for non-stationary problems or environments, towards <b>real-world artificial general intelligence</b>. -->
+            <!-- Recently, I've been focusing on bridging my research experience to relevant research areas, -->
+            <!-- such as open-world problems, online/streaming learning, reinforcement learning, multimodal, and language models. -->
+            My research interest mainly focuses on developing <b>lifelong-evolving and meta-cognitive algorithms </b>
+            for deploying <b>sustainable on-device artificial general intelligence systems</b>. 
+            In particular, I've been focusing on tackling practical and real-world challenges 
+            in application domains, such as online/streaming learning, egocentric videos, and audio-video-text multimodal problems.
 
+          </p>
         </div>
       </div>
       <!-- Introduce End -->
       <hr />
-      <!-- Publication Start -->
-      <div class="row pt-5">
+      <!-- Education Start -->
+      <!--
+      <div class="row pt-2">                
+      
+          <div class="col-12 col-md-3">
+            <h3 class="blue">Education</h3>
+          </div>
+          <div class="col-12 col-md-9 text-md-left">
+            <b class="gray">Aug 2018 - Present</b>&nbsp;&nbsp;&nbsp;&nbsp;
+            <b class=>Ph.D. Korea Advanced Institute of Science and Technology (KAIST)</b>              
+            <br><b class="gray">Aug 2016 - Feb 2018</b>&nbsp;&nbsp;&nbsp;&nbsp;
+            <b class=>M.S. Ulsan National Institute of Science and Technology (UNIST)</b>
+            <br><b class="gray">Mar 2012 - Aug 2016</b>&nbsp;&nbsp;&nbsp;&nbsp;
+            <b class=>B.S. Ulsan National Institute of Science and Technology (UNIST)</b>              
+          </div>
+      
+      </div>-->
+      <!-- Education End -->
+      <!-- Publication Start ff4747-->
+      <div class="row pt-2">
         <div class="col-md-3 col-12">
-          <h3 class="blue">
+          <h3 class="darkgray text-md-right">
             <p>Publications</p>
-            <p>and Preprints</p>
           </h3>
         </div>
         <div class="col-md-9 col-12">
-          <h6 class="black">Rethinking the Representational Continuity: Towards Unsupervised Continual Learning</h6>
-          Divyam Madaan, <u><b>Jaehong Yoon</b></u>, Yuanchun Li, Yunxin Liu, and Sung Ju Hwang
-          <!--<h6 class="black">In submission, 2021</h6>-->
-          <!--<h6 class="black">In submission, 2022 <a href="https://openreview.net/forum?id=9Hrka5PA7LW" target="_blank">[Paper]</a></h6>-->
-          <h6 class="blue">ICLR 2022 (To appear)</h6><h6 class="black"><a href="https://openreview.net/forum?id=9Hrka5PA7LW" target="_blank">[Paper]</a></h6>
+          <p class="authors">(*: equal contribution)</p><br>
+          <a name="W1"></a>
+          <h6 class="darkgray"><b>[W1] BiTAT: Neural Network Binarization with Task-dependent Aggregated Transformation</b></h6>
+          <p class="authors">Geon Park*, <u><b>Jaehong Yoon</b></u>*, Haiyang Zhang, Xing Zhang, Sung Ju Hwang, and Yonina Eldar</p>
+          <!-- <h6 class="conf">Workshop 2018</h6> -->
+          <h6 class="pprint"><b class="conf-color">ECCV 2022</b> Workshop on Computational Aspects of Deep Learning (CADL)</h6>
+          <h6 class="black"><a href="https://arxiv.org/pdf/2207.01394.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
+          <button type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibw1')">BibTeX</button>
+          </h6>
+          <div id="bibw1"  class="popup">
+            @article{park2022bitat,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;title={BiTAT: Neural Network Binarization with Task-dependent Aggregated Transformation},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;author={Park, Geon and Yoon, Jaehong and Zhang, Haiyang and Zhang, Xing and Hwang, Sung Ju and Eldar, Yonina C},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:2207.01394},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;year={2022},<br>                
+            }
+          </div>
+          <hr/><a name="C9"></a>
+          <h6 class="darkgray"><b>[C9] Bitwidth Heterogeneous Federated Learning with Progressive Weight Dequantization</b></h6>
+          <p class="authors"><u><b>Jaehong Yoon</b></u>*, Geon Park*, Wonyong Jeong, and Sung Ju Hwang</p>
+          <span class="conf">ICML 2022</span>    
+          <h6 class="black">
+            <a href="http://arxiv.org/abs/2202.11453.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
+            <span class="badge badge-tbd">Code</span></a>
+            <button type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc9')">BibTeX</button>
+          </h6>
+          <div id="bibc9"  class="popup">
+            @article{yoon2022bitwidth,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;title={Bitwidth Heterogeneous Federated Learning with Progressive Weight Dequantization},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;author={Yoon, Jaehong and Park, Geon and Jeong, Wonyong and Hwang, Sung Ju},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Conference on Machine Learning},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;pages={25552--25565},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;year={2022},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;organization={PMLR}<br>
+            }
+          </div>
+          <hr/><a name="C8"></a>
+          <h6 class="darkgray"><b>[C8] Forget-free Continual Learning with Winning Subnetworks</b></h6>
+          <p class="authors">Haeyong Kang*, Rusty J. L. Mina*, Sultan R. H. Madjid, <u><b>Jaehong Yoon</b></u>, Mark Hasegawa-Johnson, Sung Ju Hwang, and Chang D. Yoo</p>
+          <span class="conf">ICML 2022</span>
+          <h6 class="black">
+            <a href="https://proceedings.mlr.press/v162/kang22b/kang22b.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
+            <a href="https://github.com/ihaeyong/WSN" target="_blank"><span class="badge badge-code">Code</span></a>
+            <button type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc8')">BibTeX</button>
+          </h6>
+          <div id="bibc8"  class="popup">
+            @article{kang2022forget,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;title={Forget-free Continual Learning with Winning Subnetworks},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;author={Kang, Haeyong and Mina, Rusty John Lloyd and Madjid, Sultan Rizky Hikmawan and Yoon, Jaehong and Hasegawa-Johnson, Mark and Hwang, Sung Ju and Yoo, Chang D},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Conference on Machine Learning},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;pages={10734--10750},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;year={2022},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;organization={PMLR}<br>           
+            }
+          </div>
+          <hr/>
+          <a name="C7"></a>
+          <h6 class="darkgray"><b>[C7] Representational Continuity for Unsupervised Continual Learning</b></h6>
+          <p class="authors">Divyam Madaan, <u><b>Jaehong Yoon</b></u>, Yuanchun Li, Yunxin Liu, and Sung Ju Hwang</p>
+          <!--<h6 class="blue"><span class="badge badge-conf">ICLR 2022</span> <span class="badge badge-conf-oral">(Oral Presentation) (Acceptance Rate=1.6%)</span></h6><h6 class="black">-->
+          <span class="conf">&nbsp;ICLR 2022 </span>&nbsp;<span class="oral" style="color:#ff4747;">&nbsp;Oral Presentation (Acceptance Rate=1.6%)</span>
+            <br><a href="https://openreview.net/pdf?id=9Hrka5PA7LW" target="_blank"><span class="badge badge-pdf">Paper</span></a>
+            <a href="https://github.com/divyam3897/UCL" target="_blank"><span class="badge badge-code">Code</span></a>
+            <button type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc7')">BibTeX</button>
+          </h6>
+          <div id="bibc7"  class="popup">
+            @inproceedings{madaan2022rethinking,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;title={Rethinking the Representational Continuity: Towards Unsupervised Continual Learning},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;author={Madaan, Divyam and Yoon, Jaehong and Li, Yuanchun and Liu, Yunxin and Hwang, Sung Ju},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Conference on Learning Representations},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;year={2022},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;url={https://openreview.net/forum?id=9Hrka5PA7LW}<br>
+            }
+          </div>
+          <hr/>
+          <a name="C6"></a>
+          <h6 class="darkgray"><b>[C6] Online Coreset Selection for Rehearsal-based Continual Learning</b></h6>
+          <p class="authors"><u><b>Jaehong Yoon</b></u>, Divyam Madaan, Eunho Yang, and Sung Ju Hwang</p>
+          <h6 class="conf">ICLR 2022</h6>
+          <h6 class="black"><a href="https://openreview.net/pdf?id=f9D-5WNG4Nv" target="_blank"><span class="badge badge-pdf">Paper</span></a>
+          <a href="https://github.com/jaehong31/OCS" target="_blank"><span class="badge badge-code">Code</span></a>
+          <button type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc6')">BibTeX</button>
+          </h6>
+          <div id="bibc6"  class="popup">
+            @inproceedings{yoon2022online,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;title={Online Coreset Selection for Rehearsal-based Continual Learning},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;author={Yoon, Jaehong and Madaan, Divyam and Yang, Eunho and Hwang, Sung Ju},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Conference on Learning Representations},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;year={2022},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;url={https://openreview.net/forum?id=f9D-5WNG4Nv}<br>
+            }
+          </div>
           <hr />
-          <h6 class="black">Online Coreset Selection for Rehearsal-based Continual Learning</h6>
-          <u><b>Jaehong Yoon</b></u>, Divyam Madaan, Eunho Yang, and Sung Ju Hwang
-          <!--<h6 class="black">arXiv:2106.01085, 2021 <a href="https://arxiv.org/pdf/2106.01085.pdf" target="_blank">[Paper]</a></h6>-->
-          <!--<h6 class="black">In submission, 2022 <a href="https://openreview.net/forum?id=f9D-5WNG4Nv" target="_blank">[Paper]</a></h6>-->
-          <h6 class="blue">ICLR 2022 (To appear)</h6>
-          <h6 class="black"><a href="https://openreview.net/forum?id=f9D-5WNG4Nv" target="_blank">[Paper]</a></h6>
+          <a name="C5"></a>
+          <h6 class="darkgray"><b>[C5] Federated Continual Learning with Weighted Inter-client Transfer</b></h6>
+          <p class="authors"><u><b>Jaehong Yoon</b></u>*, Wonyong Jeong*, Giwoong Lee, Eunho Yang, and Sung Ju Hwang</p>
+          ICML 2020 Workshop on Lifelong Machine Learning
+          <h6 class="conf">ICML 2021</h6>
+          <h6 class="black">
+            <a href="http://proceedings.mlr.press/v139/yoon21b/yoon21b.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
+            <a href="https://github.com/wyjeong/FedWeIT" target="_blank"><span class="badge badge-code">Code</span></a>
+            <button type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc5')">BibTeX</button>
+          </h6>
+          <div id="bibc5"  class="popup">
+            @inproceedings{yoon2021federated,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;title={Federated continual learning with weighted inter-client transfer},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;author={Yoon, Jaehong and Jeong, Wonyong and Lee, Giwoong and Yang, Eunho and Hwang, Sung Ju},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Conference on Machine Learning},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;pages={12073--12086},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;year={2021},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;organization={PMLR}<br>
+            }
+          </div>
           <hr />
-          <h6 class="black">Federated Continual Learning with Weighted Inter-client Transfer</h6>
-          <u><b>Jaehong Yoon</b></u>*, Wonyong Jeong*, Giwoong Lee, Eunho Yang, and Sung Ju Hwang (*: equal contribution)<br>
-          ICML 2020 Workshop in Lifelong Machine Learning
-          <h6 class="blue">ICML 2021</h6>
-          <h6 class="black"><a href="https://arxiv.org/pdf/2003.03196.pdf" target="_blank">[Paper]</a></h6>
+          <a name="C4"></a>
+          <h6 class="darkgray"><b>[C4] Federated Semi-supervised Learning with Inter-Client Consistency & Disjoint Learning</b></h6>
+          <p class="authors">Wonyong Jeong, <u><b>Jaehong Yoon</b></u>, Eunho Yang, and Sung Ju Hwang</p>
+          ICML 2020 Workshop on Federated Learning (Long Presentation) (Best Student Paper Award)
+          <h6 class="conf">ICLR 2021</h6>
+          <h6 class="black"><a href="https://openreview.net/pdf?id=ce6CFXBh30h" target="_blank"><span class="badge badge-pdf">Paper</span></a>
+                            <a href="https://github.com/wyjeong/FedMatch" target="_blank"><span class="badge badge-code">Code</span></a>
+                            <button type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc4')">BibTeX</button>
+          </h6>
+          <div id="bibc4"  class="popup">
+            @inproceedings{jeong2021federated,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;title={Federated Semi-Supervised Learning with Inter-Client Consistency \& Disjoint Learning},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;author={Jeong, Wonyong and Yoon, Jaehong and Yang, Eunho and Hwang, Sung Ju},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Conference on Learning Representations},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;year={2021},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;url={https://openreview.net/forum?id=ce6CFXBh30h}<br>
+            }
+          </div>
           <hr />
-          <h6 class="black">Federated Semi-supervised Learning with Inter-Client Consistency & Disjoint Learning</h6>
-          Wonyong Jeong, <u><b>Jaehong Yoon</b></u>, Eunho Yang, and Sung Ju Hwang<br>
-          ICML 2020 Workshop in Federated Learning (Long Presentation), (Best Student Paper Award)
-          <h6 class="blue">ICLR 2021</h6>
-          <h6 class="black"><a href="https://openreview.net/pdf?id=ce6CFXBh30h" target="_blank">[Paper]</a></h6>
+          <a name="C3"></a>
+          <h6 class="darkgray"><b>[C3] Scalable and Order-robust Continual Learning with Additive Parameter Decomposition</b></h6>
+          <p class="authors"><u><b>Jaehong Yoon</b></u>, Saehoon Kim, Eunho Yang, and Sung Ju Hwang</p>
+          <h6 class="conf">ICLR 2020</h6>
+          <h6 class="black"><a href="https://openreview.net/pdf?id=r1gdj2EKPB" target="_blank"><span class="badge badge-pdf">Paper</span></a>
+                            <a href="https://github.com/jaehong31/APD" target="_blank"><span class="badge badge-code">Code</span></a>
+                            <button type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc3')">BibTeX</button>
+          </h6>
+          <div id="bibc3"  class="popup">
+            @inproceedings{Yoon2020Scalable,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;title={Scalable and Order-robust Continual Learning with Additive Parameter Decomposition},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;author={Yoon, Jaehong and Kim, Saehoon and Yang, Eunho and Hwang, Sung Ju},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Conference on Learning Representations},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;year={2020},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;url={https://openreview.net/forum?id=r1gdj2EKPB}<br>
+            }
+          </div>
           <hr />
-          <h6 class="black">Rapid Structural Pruning of Neural Networks with Set-based Task-Adaptive Meta-Pruning</h6>
-          Minyoung Song, <u><b>Jaehong Yoon</b></u>, Eunho Yang, and Sung Ju Hwang
-          <h6 class="black">arXiv:2006.12130, 2020</h6>
-          <h6 class="black"><a href="https://arxiv.org/pdf/2006.12139.pdf" target="_blank">[Paper]</a></h6>
+          <a name="C2"></a>
+          <h6 class="darkgray"><b>[C2] Lifelong Learning with Dynamically Expandable Networks</b></h6>
+          <p class="authors"><u><b>Jaehong Yoon</b></u>, Eunho Yang, Jeongtae Lee, and Sung Ju Hwang</p>
+          <h6 class="conf">ICLR 2018</h6>
+          <h6 class="black"><a href="https://openreview.net/pdf?id=Sk7KsfW0-" target="_blank"><span class="badge badge-pdf">Paper</span></a>
+                            <a href="https://github.com/jaehong31/DEN" target="_blank"><span class="badge badge-code">Code</span></a>
+                            <button type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc2')">BibTeX</button>
+          </h6>
+          <div id="bibc2"  class="popup">
+            @inproceedings{yoon2018lifelong,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;title={Lifelong Learning with Dynamically Expandable Networks},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;author={Yoon, Jaehong and Yang, Eunho and Lee, Jeongtae and Hwang, Sung Ju},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Conference on Learning Representations},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;year={2018},<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;url={https://openreview.net/forum?id=Sk7KsfW0-},<br>
+            }            
+          </div>
           <hr />
-          <h6 class="black">Scalable and Order-robust Continual Learning with Additive Parameter Decomposition</h6>
-          <u><b>Jaehong Yoon</b></u>, Saehoon Kim, Eunho Yang, and Sung Ju Hwang
-          <h6 class="blue">ICLR 2020</h6>
-          <h6 class="black"><a href="https://arxiv.org/pdf/1902.09432.pdf" target="_blank">[Paper]</a></h6>
-          <hr />
-          <h6 class="black">Adaptive Network Sparsification with Dependent Variational Beta-Bernoulli Dropout</h6>
-          Juho Lee, Saehoon Kim, <u><b>Jaehong Yoon</b></u>, Hae Beom Lee, Eunho Yang, and Sung Ju Hwang
-          <h6 class="black">arXiv:1805.10896, 2018</h6>
-          <h6 class="black"><a href="https://arxiv.org/pdf/1805.10896.pdf" target="_blank">[Paper]</a></h6>
-          <hr />
-          <h6 class="black">Lifelong Learning with Dynamically Expandable Networks</h6>
-          <u><b>Jaehong Yoon</b></u>, Eunho Yang, Jeongtae Lee, and Sung Ju Hwang
-          <h6 class="blue">ICLR 2018</h6>
-          <h6 class="black"><a href="https://arxiv.org/pdf/1708.01547.pdf" target="_blank">[Paper]</a></h6>
-          <hr />
-          <h6 class="black">Combined Group and Exclusive Sparsity for Deep Neural Networks</h6>
-          Jaehong Yoon and Sung Ju Hwang
-          <h6 class="blue">ICML 2017</h6>
-          <h6 class="black"><a href="http://proceedings.mlr.press/v70/yoon17a/yoon17a.pdf" target="_blank">[Paper]</a></h6>
+          <a name="C1"></a>
+          <h6 class="darkgray"><b>[C1] Combined Group and Exclusive Sparsity for Deep Neural Networks</b></h6>
+          <p class="authors"><u><b>Jaehong Yoon</b></u> and Sung Ju Hwang</p>
+          <h6 class="conf">ICML 2017</h6>
+          <h6 class="black"><a href="http://proceedings.mlr.press/v70/yoon17a/yoon17a.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
+                            <a href="https://github.com/jaehong31/CGES" target="_blank"><span class="badge badge-code">Code</span></a>
+                            <button type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc1')">BibTeX</button>
+          </h6>
+          <div id="bibc1"  class="popup">
+            @inproceedings{yoon2017combined,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;title={Combined group and exclusive sparsity for deep neural networks},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;author={Yoon, Jaehong and Hwang, Sung Ju},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Conference on Machine Learning},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;pages={3958--3966},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;year={2017},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;organization={PMLR}<br>
+            }
+          </div>          
         </div>
       </div>
       <!-- Publication End -->
       <hr />
+      <!-- Preprints Start -->
+      <div class="row pt-2">
+        <div class="col-md-3 col-12">
+          <h3 class="darkgray text-md-right">
+            <p>Preprints</p>
+          </h3>
+        </div>
+        <div class="col-md-9 col-12">
+          <!-- <a name="P#"></a>
+          <h6 class="darkgray"><b>[P#] TUTKE</b></h6>
+          <p class="authors"><u><b>Jaehong Yoon</b></u></p>
+          <h6 class="pprint">Preprint, 2022</h6>
+          <span class="badge badge-tbd">Paper</span>
+          <span class="badge badge-tbd">BibTeX</span>
+          <hr /> -->
+
+          <a name="P6"></a>
+          <h6 class="darkgray"><b>[P6] Efficient Video Representation Learning via Masked Video Modeling with Motion-centric Token Selection </b></h6>
+          <p class="authors">Sunil Hwang*, <u><b>Jaehong Yoon</b></u>*, Youngwan Lee, and Sung Ju Hwang</p>
+          <h6 class="pprint">Preprint, 2022</h6>
+          <span class="badge badge-tbd">Paper</span>
+          <span class="badge badge-tbd">BibTeX</span>
+          <hr />
+          <a name="P5"></a>
+          <h6 class="darkgray"><b>[P5] Continual Learners are Incremental Model Generalizers</b></h6>
+          <p class="authors"><u><b>Jaehong Yoon</b></u>, Sung Ju Hwang, and Yue Cao</p>
+          <h6 class="pprint">Preprint, 2022</h6>
+          <span class="badge badge-tbd">Paper</span>
+          <span class="badge badge-tbd">BibTeX</span>
+          <hr />
+          <!-- <a name="P5"></a>
+          <h6 class="darkgray"><b>[P5] VideoMSA: Efficient Video Representation Learning with Motion-centric Spatiotemporal Attention</b></h6>
+          <p class="authors">Sunil Hwang*, <u><b>Jaehong Yoon*</b></u>, Youngwan Lee, and Sung Ju Hwang</p>
+          <h6 class="pprint">Preprint, 2022</h6>
+          <span class="badge badge-tbd">Paper</span>
+          <span class="badge badge-tbd">BibTeX</span>
+          <hr /> -->
+          <a name="P4"></a>
+          <h6 class="darkgray"><b>[P4] On the Soft-Subnetwork for Few-shot Class Incremental Learning</b></h6>
+          <p class="authors">Haeyong Kang, <u><b>Jaehong Yoon</b></u>, Sultan R. H. Madjid, Sung Ju Hwang, and Chang D. Yoo</p>
+          <h6 class="pprint">arXiv:2209.07529, 2022</h6>
+          <h6 class="black"><a href="https://arxiv.org/pdf/2209.07529.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
+          <button type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibp4')">BibTeX</button>
+          </h6>
+          <div id="bibp4"  class="popup">
+            @article{kang2022on,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;title={On the Soft-Subnetwork for Few-shot Class Incremental Learning},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;author={Haeyong Kang and Jaehong Yoon and Sultan Rizky Hikmawan Madjid and Sung Ju Hwang and Chang D. Yoo},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;journal={CoRR},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;volume={abs/2209.07529},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;eprint={2209.07529},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;archivePrefix={arXiv},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;year={2022},<br>                
+            }
+          </div>
+          <hr />
+          <a name="P3"></a>
+          <h6 class="darkgray"><b>[P3] Personalized Subgraph Federated Learning</b></h6>
+          <p class="authors">Jinheon Baek*, Wonyong Jeong*, Jiongdao Jin, <u><b>Jaehong Yoon</b></u>, and Sung Ju Hwang</p>
+          <h6 class="pprint">arXiv:2206.10206, 2022</h6>
+          <h6 class="black"><a href="https://arxiv.org/pdf/2206.10206.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
+          <button type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibp3')">BibTeX</button>
+          </h6>
+          <div id="bibp3"  class="popup">
+            @article{baek2022personalized,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;title={Personalized Subgraph Federated Learning},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;author={Baek, Jinheon and Jeong, Wonyong and Jin, Jiongdao and Yoon, Jaehong and Hwang, Sung Ju},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;journal={CoRR},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;volume={abs/2206.10206},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;eprint={2206.10206},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;archivePrefix={arXiv},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;year={2022},<br>                
+            }
+          </div>
+          <hr />
+          <a name="P2"></a>
+          <h6 class="darkgray"><b>[P2] Rapid Structural Pruning of Neural Networks with Set-based Task-Adaptive Meta-Pruning</b></h6>
+          <p class="authors">Minyoung Song, <u><b>Jaehong Yoon</b></u>, Eunho Yang, and Sung Ju Hwang</p>
+          <h6 class="pprint">arXiv:2006.12130, 2020</h6>
+          <h6 class="black"><a href="https://arxiv.org/pdf/2006.12139.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
+          <button type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibp2')">BibTeX</button>
+          </h6>
+          <div id="bibp2"  class="popup">
+            @article{song2020rapid,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;title={Rapid Structural Pruning of Neural Networks with Set-based Task-Adaptive Meta-Pruning},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;author={Song, Minyoung and Yoon, Jaehong and Yang, Eunho and Hwang, Sung Ju},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;journal={CoRR},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;volume={abs/2006.12139},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;eprint={2006.12139},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;archivePrefix={arXiv},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;year={2020},<br>                
+            }
+          </div>
+          <hr />
+          <a name="P1"></a>
+          <h6 class="darkgray"><b>[P1] Adaptive Network Sparsification with Dependent Variational Beta-Bernoulli Dropout</b></h6>
+          <p class="authors">Juho Lee, Saehoon Kim, <u><b>Jaehong Yoon</b></u>, Hae Beom Lee, Eunho Yang, and Sung Ju Hwang</p>
+          <h6 class="pprint">arXiv:1805.10896, 2018</h6>
+          <h6 class="black"><a href="https://arxiv.org/pdf/1805.10896.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
+          <button type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibp1')">BibTeX</button>
+          </h6>
+          <div id="bibp1"  class="popup">
+            @article{lee2019adaptive,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;title={Adaptive Network Sparsification with Dependent Variational Beta-Bernoulli Dropout},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;author={Lee, Juho and Kim, Saehoon and Yoon, Jaehong and Lee, Hae Beom and Yang, Eunho and Hwang, Sung Ju},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;journal={CoRR},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;volume={abs/1805.10896},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;eprint={1805.10896},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;archivePrefix={arXiv},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;year={2018},<br>                
+            }
+          </div>
+        </div>
+      </div>
+      <!-- Preprints End -->
+      <hr />
       <!-- Patent Start -->
-      <div class="row pt-5">
+      <!--<div class="row pt-2">
         <div class="col-md-3 col-12">
           <h3 class="blue">
             <p>Patents (US Only)</p>
@@ -202,46 +582,39 @@
           <u><b>Jaehong Yoon</b></u>, Eunho Yang, Jeongtae Lee, and Sung Ju Hwang
           <h6 class="black"> US 20180357539 A1, Dec 2018</h6>
         </div>
-      </div>
-      <!-- Patent End -->
-      <hr />
-      <!-- Experience Start -->
-      <div class="row pt-5">
-        <div class="col">
-          <div class="row pb-3">
-            <div class="col">
-              <h3 class="blue">Experience</h3>
+      </div>-->
+      <!-- Patent End -->    
+      <!-- Experience Start no-gutters <span class="badge badge-primary">Current</span>-->
+      <div class="row pt-2">
+                  
+        <div class="col-12 col-md-2">
+          <h3 class="darkgray text-md-right">Experience</h3>
+        </div>
+        <div class="col-12 col-md-10 no-gutters">
+          <div class="row no-gutters">
+            <div class="col-12 col-md-1 text-md-left no-padding">
+              <!-- <span class="badge badge-primary">Current</span> -->
+            </div>
+            <div class="col-12 col-md-11 text-md-left no-padding">
+              <b class="bbold">Oct 2022 - Nov 2022</b>&nbsp;&nbsp;&nbsp;&nbsp;
+              <b class="bbold">Weizmann Institute of Science</b>, Visiting Researcher, Israel (Host: <a href="https://www.weizmann.ac.il/math/yonina/" target="_blank" class="bbold">Prof. Yonina Eldar</a>)
             </div>
           </div>
-
-          <div class="row">
-            <div class="col">
-
-              <div class="row">
-                <div class="col-md-3 col-12 text-md-right">
-                  <div class="row">
-                    <div class="col-md-12 col">
-                      <h5 class="gray">Nov 2021 ~<br /></h5>
-                    </div>
-                    <div class="col-md-12 col-3 text-center text-md-right">
-                        <span class="badge badge-primary">Current</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-9 col-12">
-                  <h5>Microsoft Research</h5>
-                  <i class="gray">Research Internship</i>
-                  <ul class="pt-3">
-                    <!--
-                    <li>On-device Real-time Continual Learning</li>
-                    -->
-                    <li>Visual Computing Group</li>
-                    <li>Research topic: Vision transformers for continual learning</li>
-                    <li>Mentor: <a href="http://yue-cao.me/" target="_blank">Yue Cao</a></li>
-                  </ul>
-                </div>
-              </div>
-
+          <div class="row no-gutters">
+            <div class="col-12 col-md-1 text-md-left no-padding">
+              <!-- <span class="badge badge-primary">Current</span> -->
+            </div>
+            <div class="col-12 col-md-11 text-md-left no-padding">
+              <b class="gray bbold">Nov 2021 - Apr 2022</b>&nbsp;&nbsp;&nbsp;&nbsp;
+              <b class="bbold">Microsoft Research</b>, Research Intern, China (Mentor: <a href="http://yue-cao.me/" target="_blank" class="bbold">Dr. Yue Cao</a>)
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-12 col-md-1 text-md-left no-padding">
+            </div>
+            <div class="col-12 col-md-11 text-md-left">
+              <b class="gray bbold">Mar 2018 - May 2018</b>&nbsp;&nbsp;&nbsp;&nbsp;
+              <b class="bbold">AITRICS</b>, Research Intern, South Korea       
             </div>
           </div>
         </div>
