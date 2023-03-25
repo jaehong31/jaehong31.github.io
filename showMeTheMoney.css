@@ -230,13 +230,13 @@
 
 .badge-more {
   color: #fff;
-  background-color: #EF959C;
+  background-color: #95baef;
   border-color: transparent;
 }
 .badge-more[href]:hover, .badge-more[href]:focus {
   color: #fff;
   text-decoration: none;
-  background-color: #fa8072;
+  background-color: #0f448a;
 }
 .badge-conf {
   color: #fff;
