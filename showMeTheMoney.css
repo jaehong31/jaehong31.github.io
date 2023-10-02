@@ -6,6 +6,20 @@
   word-break: keep-all;
   line-height: 1.8
 }
+.paper-img{
+  display: block;
+  margin: 0 0 -5px 20px;
+  background: url('http://www.google.com/intl/en_com/images/srpr/logo3w.png');
+  max-height: 180px;
+  max-width: 320px;
+}
+.paper-img-small{
+  display: block;
+  margin: 0 0 -5px 20px;
+  background: url('http://www.google.com/intl/en_com/images/srpr/logo3w.png');
+  max-height: 100px;
+  max-width: 320px;
+}
 /*3c78d8*/
 .conf-color {
   color: #2980f1;
@@ -20,7 +34,11 @@
   color: rgb(75, 75, 75);
 }
 .darkgray {
-  color: rgb(58, 58, 58);
+  color: rgb(58, 58, 58);  
+}
+.secfont {
+  font-size: x-large; 
+  font-weight: 700;
 }
 .profile-img {
   max-height: 320px;
@@ -121,6 +139,9 @@
 .bbbold{
   font-weight: 700;
 }
+.ssmall{
+  font-size: 1.0em;
+}
 .popup {
   font-size: .8em;
   display: inline-block;
@@ -182,8 +203,9 @@
   background-color: #fa8072;
 }
 .badge-secondary {
-  color: #fff;
-  background-color: #788fac;
+  color: #ffffff;
+  background-color: #cccccc;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
 }
 
 .badge-code {
