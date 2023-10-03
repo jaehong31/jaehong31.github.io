@@ -238,6 +238,18 @@
   background-color: #68717a;
 }
 
+.badge-project {
+  color: #fff;
+  background-color: rgb(139, 229, 154);
+  border-color: transparent;
+  height:1.6em;
+}
+.badge-project:hover, .badge-project:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #29f1ae;
+}
+
 .badge-pdf {
   color: #fff;
   background-color: rgb(139, 193, 229);
