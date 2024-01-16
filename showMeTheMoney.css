@@ -61,16 +61,17 @@
   height: 80px;
 }
 .note {
+  font-size: 0.9em;
   color: rgb(58, 58, 58);
   font-weight: 500;
   font-family: Arial;
-  line-height:2;
+  line-height:1.5;
 }
 .bluenote {
   color: #2980f1;
   font-weight: 500;
   font-family: Arial;
-  line-height:2;
+  line-height:1.5;
 }
 .authors {
   color:rgb(90, 90, 90);
