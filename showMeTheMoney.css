@@ -67,6 +67,15 @@
   font-family: Arial;
   line-height:1.5;
 }
+.notesize{
+  background-color: transparent;
+  font-size: 1.6em;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 0.0em;
+  line-height:1.5;
+  text-align: left;
+}
 .bluenote {
   color: #2980f1;
   font-weight: 500;
