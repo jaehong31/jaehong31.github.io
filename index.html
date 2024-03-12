@@ -70,6 +70,7 @@
   
   <a name="top"></a>
   <body>
+    <script src="get_func.js"></script>
     <div class="container resume"  style="margin-top: 3em">
       <!-- Profile Start -->
       <div class="row mt-2">
@@ -119,9 +120,18 @@
           <div class="col-12 col-md-10 no-gutters">
             <div class="row no-gutters">
               <div class="col-12 text-md-left">
+                <b class="bbold" style="color:#fa8072;">03. 2024</b>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">New preprint released; Check out </a>
+                <!-- <a href="https://envgen-llm.github.io/" target="_blank" class="note"  style="color:#2980f1;"><b><i>EnvGen</i></b></a><a class="note">,</a> -->
+                <a href="https://selma-t2i.github.io/" target="_blank" class="note"  style="color:#2980f1;"><b><i>SELMA</i></b></a><a class="note">.</a>
+                <!-- <a href="https://ad-vegas.github.io/" target="_blank" class="note"  style="color:#2980f1;"><b><i>AD-VEGAS*</i></b></a><a class="note">.</a> -->
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left">
                 <b class="bbold" style="color:#fa8072;">02. 2024</b>&nbsp;&nbsp;&nbsp;&nbsp;
                 <a class="note">One paper got accepted to </a>
-                <b class="note" style="color:#f53333;">CVPR 2024</b>.
+                <b class="note" style="color:#f53333;">CVPR 2024</b><a class="note">.</a>
                 <!-- :<i class="note">"Multimodal Representation Learning by Alternating Unimodal Adaptation"</i> <a href="https://arxiv.org/pdf/2311.10707.pdf" target="_blank" class="note"  style="color:#2980f1;">[pdf]</a>                 -->
               </div>
             </div>
@@ -130,8 +140,8 @@
                 <b class="bbold" style="color:#fa8072;">02. 2024</b>&nbsp;&nbsp;&nbsp;&nbsp;
                 <a class="note">New preprints released; Check out </a>
                 <a href="https://mementos-bench.github.io/" target="_blank" class="note"  style="color:#2980f1;"><b><i>Mementos</i></b></a><a class="note">,</a>
-                <a href="https://becotta-ctta.github.io/" target="_blank" class="note"  style="color:#2980f1;"><b><i>BECoTTA</i></b></a><a class="note">, and</a>
-                <a href="https://crema-videollm.github.io/" target="_blank" class="note"  style="color:#2980f1;"><b><i>CREMA</i></b></a><a class="note">.</a>
+                <a href="https://becotta-ctta.github.io/" target="_blank" class="note"  style="color:#2980f1;"><b><i>BECoTTA*</i></b></a><a class="note">, and</a>
+                <a href="https://crema-videollm.github.io/" target="_blank" class="note"  style="color:#2980f1;"><b><i>CREMA*</i></b></a><a class="note">.</a>
               </div>
             </div>
             <div class="row no-gutters">
@@ -271,19 +281,18 @@
             <br>            
           </p>
           <a class="note" style="font-size:1em">
+            For the long-term research goal, I've been focusing on tackling practical and real-world challenges
+            to understand humans and impact our real lives through ever-evolving embodied AI systems with multiple agents & modalities.
+            <br>
+            <br>
             My research interest includes following topics:            
+          
+            <li><b>Multimodal/Video Large Language Models:</b> <span class="note" style="font-size:1em"> Comprehension, Generation, and Faithfulness</span></li>
+            <li><b>Compositional Generalization:</b> <span class="note" style="font-size:1em">Continual Learning and Compositional Reasoning</span></li>          
+            <li><b>Efficient Training/Inference:</b> <span class="note" style="font-size:1em">Parameter-efficient Learning, Model Compression, and Federated Learning</span></li>            
           </a>
-            <li><b class="bbold darkgray">Efficient Deep Learning:</b> <span class="authors">Continual Learning, Federated Learning, and Model Compression</span></li>
-            <li><b class="bbold darkgray">Multimodal Learning:</b> <span class="authors">Egocentric Vision, Multimodal Video Understanding, and Generation</span></li>
-            <li><b class="bbold darkgray">Learning with Real-world Data:</b> <span class="authors">Self-supervised Learning and Input Selective Learning</span></li>          
-          <br>
-          <p class="note" style="font-size:1em">
-            For my long-term research goal, I aim to encompass broad research fields 
-            to understand humans and impact our real lives through 
-            <b>ever-evolving embodied AI systems with multiple agents & modalities</b>.
-            In particular, I've been focusing on tackling practical and real-world challenges 
-            in various research domains, including continual learning, multimodal learning (w/ audio, video, language, etc), online/streaming learning, and egocentric visions.
-          </p>
+          <br>          
+          
         </div>        
       </div>
       <!-- Introduce End -->
@@ -295,6 +304,62 @@
           <h3 class="secfont text-md-left"> Recent Preprints</h3>
           <p class="ssmall authors">(*: equal contribution)            
           </p><br>
+
+          <!-- <div id="input-container">
+            <input type="text" id="imgInput" placeholder="Image Path">
+            <input type="text" id="titleInput" placeholder="Title">
+            <input type="text" id="authorInput" placeholder="Author">
+            <input type="text" id="yearInput" placeholder="Year">
+            <button onclick="addContentFromInputs()">Add Content</button>
+          </div> -->
+          
+          <div id="content-container">
+              
+          </div>
+          <script>
+            let callCounter = 6;
+            let jy_ = 'https://jaehong31.github.io/';
+            function addArxivContent(year_, name_, arxiv_, img_, title_, author_, project_= jy_, code_ = jy_) {
+              const container = document.getElementById('content-container'); // Assuming you have a div with this ID to hold the content
+              
+              const htmlContent = `
+                <div class="row mt-2">
+                  <div class="col-md-1 pb-3 text-md-right text-left"></div>
+                  <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
+                    <img class="img-fluid rounded paper-img" src="./materials/concept_figures/${img_}" alt="concept" >
+                  </div>
+                  <div class="col-md-7 col-sm-12 text-md-left text-center">              
+                    <div class="col text-left text-md-left">
+                      <h6 class="darkgray"><b>[P${callCounter}] ${title_}</b></h6>
+                      <p class="ssmall authors">${author_.replace('Jaehong Yoon', '<u><b>Jaehong Yoon</b></u>')}</p>
+                      <h6 class="pprint">arXiv ${year_}</h6>
+                      <h6 class="black">
+                        <a href="${project_}" target="_blank"><span class="badge badge-project">Project Page</span></a>
+                        <a href="https://arxiv.org/pdf/${arxiv_}.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>                  
+                        <a href="${code_}" target="_blank"><span class="badge badge-code">Code</span></a>
+                        <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bib${title_.replace(/\s+/g, '')}')">BibTeX</a>          
+                      </h6>
+                      <div id="bib${title_.replace(/\s+/g, '')}" class="popup">
+                        @article{${name_},<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;title={${title_},<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;author={${author_.replace(/\*/g, '').replace(', and', ' and')}},<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:${arxiv_}},<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;year={${year_}},<br>                
+                        }
+                      </div>        
+                    </div>                            
+                  </div>
+                </div>
+                <hr />`;
+              callCounter--;
+              container.innerHTML += htmlContent;
+            }
+            addArxivContent(2024, 'li2024selma', '2403.06952', 'selma.png', 
+                    'SELMA: Learning and Merging Skill-Specific Text-to-Image Experts with Auto-Generated Data', 
+                    'Jialu Li, Jaemin Cho, Yi-lin Sung, Jaehong Yoon, and Mohit Bansal',
+                    'https://selma-t2i.github.io/',
+                    'https://github.com/jialuli-luka/selma');              
+          </script>
 
           <div class="row mt-2">
             <div class="col-md-1 pb-3 text-md-right text-left"></div>
@@ -310,9 +375,9 @@
                   <a href="https://crema-videollm.github.io/" target="_blank"><span class="badge badge-project">Project Page</span></a>
                   <a href="https://arxiv.org/pdf/2402.05889.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>                  
                   <a href="https://github.com/Yui010206/CREMA" target="_blank"><span class="badge badge-code">Code</span></a>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibp6')">BibTeX</a>          
+                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibp5')">BibTeX</a>          
                 </h6>
-                <div id="bibp6"  class="popup">
+                <div id="bibp5"  class="popup">
                   @article{yu2024crema,<br>
                       &nbsp;&nbsp;&nbsp;&nbsp;title={CREMA: Multimodal Compositional Video Reasoning via Efficient Modular Adaptation and Fusion},<br>
                       &nbsp;&nbsp;&nbsp;&nbsp;author={Shoubin Yu, Jaehong Yoon and Mohit Bansal},<br>
@@ -338,9 +403,9 @@
                   <a href="https://becotta-ctta.github.io/" target="_blank"><span class="badge badge-project">Project Page</span></a>
                   <a href="https://arxiv.org/pdf/2402.08712.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>                  
                   <a href="https://github.com/daeunni/becotta" target="_blank"><span class="badge badge-code">Code</span></a>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibp5')">BibTeX</a>          
+                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibp4')">BibTeX</a>          
                 </h6>
-                <div id="bibp5"  class="popup">
+                <div id="bibp4"  class="popup">
                   @article{lee2024becotta,<br>
                       &nbsp;&nbsp;&nbsp;&nbsp;title={BECoTTA: nput-dependent Online Blending of Experts for Continual Test-time Adaptation},<br>
                       &nbsp;&nbsp;&nbsp;&nbsp;author={Lee, Daeun and Yoon, Jaehong and Hwang, Sung Ju},<br>
@@ -366,9 +431,9 @@
                   <a href="https://mementos-bench.github.io/" target="_blank"><span class="badge badge-project">Project Page</span></a>
                   <a href="https://arxiv.org/pdf/2401.10529.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>                  
                   <a href="https://github.com/umd-huang-lab/Mementos" target="_blank"><span class="badge badge-code">Code</span></a>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibp4')">BibTeX</a>          
+                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibp3')">BibTeX</a>          
                 </h6>
-                <div id="bibp4"  class="popup">
+                <div id="bibp3"  class="popup">
                   @article{wang2024mementos,<br>
                       &nbsp;&nbsp;&nbsp;&nbsp;title={Mementos: A Comprehensive Benchmark for Multimodal Large Language Model Reasoning over Image Sequences},<br>
                       &nbsp;&nbsp;&nbsp;&nbsp;author={Wang, Xiyao and Zhou, Yuhang and Liu, Xiaoyu and Lu, Hongjin and Xu, Yuancheng and He, Feihong and Yoon, Jaehong and Lu, Taixi and Bertasius, Gedas and Bansal, Mohit and others},<br>
@@ -395,12 +460,7 @@
                   <a href="https://cl-stella.github.io/" target="_blank"><span class="badge badge-project">Project Page</span></a>
                   <a href="https://arxiv.org/pdf/2310.08204.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>      
                   <a href="https://github.com/G-JWLEE/STELLA_code" target="_blank"><span class="badge badge-code">Code</span></a>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibp2')">BibTeX</a>           
-                  <!-- <p class="note">
-                    <a href="https://arxiv.org/pdf/2310.08204.pdf" target="_blank">Project Page</a> /               
-                    <a href="https://arxiv.org/pdf/2310.08204.pdf" target="_blank">Paper</a> /              
-                    <a href="https://arxiv.org/pdf/2310.08204.pdf" target="_blank">Code</a>              
-                  </p> -->
+                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibp2')">BibTeX</a>                             
                 </h6>
                 <div id="bibp2"  class="popup">
                   @article{lee2023lifelong,<br>
@@ -463,9 +523,9 @@
                 <h6 class="conf">CVPR 2024</h6>
                 <h6 class="black">
                   <a href="https://arxiv.org/pdf/2311.10707.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>                  
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibp3')">BibTeX</a>          
+                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc17')">BibTeX</a>          
                 </h6>
-                <div id="bibp3"  class="popup">
+                <div id="bibc17"  class="popup">
                   @inproceedings{zhang2024multimodal,<br>
                       &nbsp;&nbsp;&nbsp;&nbsp;title={Multimodal Representation Learning by Alternating Unimodal Adaptation},<br>
                       &nbsp;&nbsp;&nbsp;&nbsp;author={Zhang, Xiaohui and Yoon, Jaehong and Bansal, Mohit and Yao, Huaxiu},<br>
