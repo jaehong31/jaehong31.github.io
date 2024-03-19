@@ -128,9 +128,9 @@
             <div class="row no-gutters">
               <div class="col-12 text-md-left">
                 <b class="bbold" style="color:#fa8072;">03. 2024</b>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">New preprint released; Check out </a>
-                <!-- <a href="https://envgen-llm.github.io/" target="_blank" class="note"  style="color:#2980f1;"><b><i>EnvGen</i></b></a><a class="note">,</a> -->
-                <a href="https://selma-t2i.github.io/" target="_blank" class="note"  style="color:#2980f1;"><b><i>SELMA</i></b></a><a class="note">.</a>
+                <a class="note">New preprint released; Check out </a>                
+                <a href="https://selma-t2i.github.io/" target="_blank" class="note"  style="color:#2980f1;"><b><i>SELMA</i></b></a><a class="note"> and </a>
+                <a href="https://envgen-llm.github.io/" target="_blank" class="note"  style="color:#2980f1;"><b><i>EnvGen</i></b></a><a class="note">.</a>
                 <!-- <a href="https://ad-vegas.github.io/" target="_blank" class="note"  style="color:#2980f1;"><b><i>AD-VEGAS*</i></b></a><a class="note">.</a> -->
               </div>
             </div>
@@ -324,7 +324,7 @@
               
           </div>
           <script>
-            let callCounter = 6;
+            let callCounter = 7;
             let jy_ = 'https://jaehong31.github.io/';
             function addArxivContent(year_, name_, arxiv_, img_, title_, author_, project_= jy_, code_ = jy_) {
               const container = document.getElementById('content-container'); // Assuming you have a div with this ID to hold the content
@@ -361,6 +361,11 @@
               callCounter--;
               container.innerHTML += htmlContent;
             }
+            addArxivContent(2024, 'zala2024envgen', '2403.12014', 'envgen.png', 
+                    'EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents', 
+                    'Abhay Zala*, Jaemin Cho*, Han Lin, Jaehong Yoon, and Mohit Bansal',
+                    'https://envgen-llm.github.io/',
+                    'https://github.com/aszala/envgen');          
             addArxivContent(2024, 'li2024selma', '2403.06952', 'selma.png', 
                     'SELMA: Learning and Merging Skill-Specific Text-to-Image Experts with Auto-Generated Data', 
                     'Jialu Li*, Jaemin Cho*, Yi-lin Sung, Jaehong Yoon, and Mohit Bansal',
@@ -1068,7 +1073,7 @@
       <div class="row">
         <div class="col footer-cover">
           <div class="footer text-center small">
-            <div>Last modified:&nbsp<c class="badge badge-secondary">03. 13. 2024.</c></div>              
+            <div>Last modified:&nbsp<c class="badge badge-secondary">03. 18. 2024.</c></div>              
             <a href="#top">Back to top of page</a>
             <br>
             <br>
