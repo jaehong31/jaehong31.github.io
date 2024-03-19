@@ -8,10 +8,12 @@
 }
 .paper-img{
   display: block;
-  margin: 0 0 -5px 20px;
+  /* margin: 0 0 -5px 20px; */
   background: url('http://www.google.com/intl/en_com/images/srpr/logo3w.png');
   max-height: 180px;
   max-width: 320px;
+  margin-left: auto;
+  float: right;
 }
 .paper-img-small{
   display: block;
