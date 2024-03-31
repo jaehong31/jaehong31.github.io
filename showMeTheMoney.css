@@ -21,6 +21,9 @@
   max-height: 90px;
   max-width: 140px;
 }
+html {
+  scroll-behavior: smooth;
+}
 /*3c78d8*/
 .conf-color {
   color: #2980f1;
