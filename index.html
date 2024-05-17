@@ -333,9 +333,8 @@
           <script>
             let callCounter = 3;
             let jy_ = 'https://jaehong31.github.io/';
-            function addArxivContent(year_, name_, arxiv_, img_, title_, author_, project_= jy_, code_ = jy_) {
+            function addArxivContent(year_, name_, arxiv_, img_, title_, author_, bib_author_, project_= jy_, code_ = jy_) {
               const container = document.getElementById('content-container'); // Assuming you have a div with this ID to hold the content
-              
               const htmlContent = `
                 <div class="row mt-2">
                   <div class="col-md-1 pb-3 text-md-right text-left"></div>
@@ -356,7 +355,7 @@
                       <div id="bib${title_.replace(/\s+/g, '')}" class="popup">
                         @article{${name_},<br>
                             &nbsp;&nbsp;&nbsp;&nbsp;title={${title_}},<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;author={${author_.replace(/\*/g, '').replace(', and', ' and')}},<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;author={${bib_author_}},<br>
                             &nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:${arxiv_}},<br>
                             &nbsp;&nbsp;&nbsp;&nbsp;year={${year_}},<br>                
                         }
@@ -371,16 +370,19 @@
             addArxivContent(2024, 'zala2024envgen', '2403.12014', 'envgen.png', 
                     'EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents', 
                     'Abhay Zala*, Jaemin Cho*, Han Lin, Jaehong Yoon, and Mohit Bansal',
+                    'Zala, Abhay and Cho, Jaemin and Lin, Han and Yoon, Jaehong and Bansal, Mohit',
                     'https://envgen-llm.github.io/',
                     'https://github.com/aszala/envgen');          
             addArxivContent(2024, 'li2024selma', '2403.06952', 'selma.png', 
                     'SELMA: Learning and Merging Skill-Specific Text-to-Image Experts with Auto-Generated Data', 
                     'Jialu Li*, Jaemin Cho*, Yi-lin Sung, Jaehong Yoon, and Mohit Bansal',
+                    'Li, Jialu and Cho, Jaemin and Sung, Yi-lin and Yoon, Jaehong and Bansal, Mohit',
                     'https://selma-t2i.github.io/',
                     'https://github.com/jialuli-luka/selma');    
             addArxivContent(2024, 'yu2024crema', '2402.05889', 'crema_method.png', 
                     'CREMA: Multimodal Compositional Video Reasoning via Efficient Modular Adaptation and Fusion', 
                     'Shoubin Yu*, Jaehong Yoon*, Mohit Bansal',
+                    'Yu, Shoubin and Yoon, Jaehong and Bansal, Mohit',
                     'https://crema-videollm.github.io/',
                     'https://github.com/Yui010206/CREMA');               
           </script>          
