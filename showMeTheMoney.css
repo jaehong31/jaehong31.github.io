@@ -24,6 +24,53 @@
   margin: auto;
   /* max-width: 140px; */
 }
+
+/* Default light theme */
+body {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+/* Light mode styles */
+body.light-mode {
+  background-color: #FFF; /* Light background */
+  color: #000000; /* Dark text */
+}
+
+/* Additional style changes for specific elements in night mode */
+body blu {
+  color: #002dc1; /* Gold color for headings */
+}
+body am {
+  color: #596384; /* Gold color for headings */
+}
+body rd {
+  color: #fa8072; /* Gold color for headings */  
+}
+body hr {
+  background-color: #222222; 
+}
+/* Dark theme styles */
+body.night-mode {
+  background-color: #333333;
+  color: #eeeeee;
+}
+/* Additional style changes for specific elements in night mode */
+body.night-mode gre {
+  color: #eeeeee86; /* Gold color for headings */
+}
+body.night-mode rd {
+  color: #ffa59b; /* Gold color for headings */
+}
+body.night-mode blu {
+  color: #cac8ff; /* Gold color for headings */
+}
+body.night-mode am {
+  color: #cac8ff; /* Gold color for headings */
+}
+body.night-mode hr {
+  background-color: #777777; 
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -42,7 +89,7 @@ html {
 }
 .darkgray {
   /* color: rgb(58, 58, 58);   */
-  color: rgb(0, 0, 0);  
+  /* color: rgb(0, 0, 0);   */
   font-family: Arial;
 }
 .secfont {
@@ -63,7 +110,7 @@ html {
   background-color:#ffffff;
 }
 .footer-cover {
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
   padding-left: 0;
   padding-right: 0;
   margin-top: 50px;
@@ -71,7 +118,7 @@ html {
 }
 .note {
   font-size: 0.9em;
-  color: rgb(58, 58, 58);
+  /* color: rgb(58, 58, 58); */
   font-weight: 500;
   font-family: Arial;
   line-height:1.5;
@@ -93,7 +140,7 @@ html {
 }
 .authors {
   /* color:rgb(90, 90, 90); */
-  color:rgb(0, 0, 0);
+  /* color:rgb(0, 0, 0); */
   font-size: 1.1em;
   font-weight: 500;
   line-height:1.2em;
@@ -105,7 +152,7 @@ html {
 .pprint{
   background-color: transparent;
   /* color: rgb(75, 75, 75);   */
-  color: rgb(0, 0, 0);  
+  /* color: rgb(0, 0, 0);   */
   font-weight: 600;
   border-radius: 5px;
   font-size: 1em;
@@ -115,7 +162,7 @@ html {
   font-family: Arial;
 }
 .workshop {
-  color:rgb(0, 0, 0);
+  /* color:rgb(0, 0, 0); */
   font-weight: 500;
   line-height:1.2em;
   margin-top: -5px;
@@ -182,6 +229,10 @@ html {
   padding: 1em;
   margin: .5em;
   font-family: 'Courier New', Courier, monospace;
+}
+.popup-old-news {
+  display: inline-block;
+  display:none;
 }
 .popup-news {
   font-size: 0.9em;
@@ -386,4 +437,90 @@ html {
   color: #fff;
   text-decoration: none;
   background-color: #117a8b;
+}
+
+
+/* Styling for the toggle switch */
+/* .theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+} */
+/* Container for text and switch */
+.switch-container {
+  display: flex;
+  align-items: center; /* Aligns items vertically centered */
+  gap: 10px; /* Adds space between the text and the switch */
+}
+
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "🌙";
+  /* content: "Dark Mode"; */
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  top: 4px;
+  bottom: 4px;
+  text-align: center;
+  font-size: 20px; 
+  background-color: rgb(0, 0, 0);
+  transition: .4s;
+  border-radius: 20%;
+}
+
+input:checked + .slider {
+  background-color: #cac8ff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* body.dark-mode {
+  background-color: #333;
+  color: #f4f4f4;
+} */
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: transparent; /* Makes the button background transparent */
+  border: none; /* Removes the border */
+  color: inherit; /* Ensures the text color inherits from the body */
 }
