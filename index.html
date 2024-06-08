@@ -4,9 +4,6 @@
   
   <head>
     <meta charset="utf-8">
-    <!--<style media="all">     
-      h6, h6+p {font-weight: bold;}
-    </style>-->
     <meta http-equiv='cache-control' content='no-cache'> 
     <meta http-equiv='expires' content='0'> 
     <meta http-equiv='pragma' content='no-cache'>
@@ -16,7 +13,6 @@
     <meta property="og:title" content="Jaehong Yoon" />
     <meta property="og:description" content="Postdoctoral Research Associate, UNC Chapel Hill" />
     <meta property="og:url" content="https://jaehong31.github.io" />
-    <!-- <meta property="og:image" content="https://jaehong31.github.io/materials/jyoon-image.jpg" /> -->
     <meta property="og:image" content="https://jaehong31.github.io/materials/20240116_120125.jpg" />
     <!-- <meta property="og:type" content="website" /> -->
     <meta property="og:image:width" content="1200"/>
@@ -42,7 +38,18 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
-    
+    <script language="javascript">
+      function show( elem ) {
+          var x=document.getElementById(elem);
+          if (x.style.display === "block") {x.style.display="none";}
+          else {x.style.display="block";}
+      }
+    </script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
     <meta name="twitter:title" content="Jaehong Yoon">
     <meta name="twitter:description" content="Postdoctoral Research Associate, UNC Chapel Hill">
     <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
@@ -58,23 +65,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
-    <script language="javascript">
-      function show( elem ) {
-          var x=document.getElementById(elem);
-          if (x.style.display === "block") {x.style.display="none";}
-          else {x.style.display="block";}
-      }
-    </script>
-    <script>
-      $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-      })
-  </script>
-  <link rel="icon" type="image/x-icon" href="materials/unc_icon.png">
+    <link rel="icon" type="image/png" href="materials/unc_icon.png">    
   </head>
-  
-  <!-- <body class="light-mode" onload="window.scrollTo(0,0);"> -->
   <body>
     <script src="get_func.js"></script>
     <div class="container resume"  style="margin-top: 3em">
