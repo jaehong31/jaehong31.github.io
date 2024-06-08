@@ -31,10 +31,10 @@ body {
   color: #000000;
 }
 /* Light mode styles */
-/* body.light-mode {
+body.light-mode {
   background-color: #FFF;
   color: #000000; 
-} */
+}
 
 /* Additional style changes for specific elements in night mode */
 body blu {
