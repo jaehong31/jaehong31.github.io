@@ -97,22 +97,38 @@
               </div>
               <div class="row pb-2">
                 <!-- <p class="col-9"> -->
-                  <div class="switch-container">
-                    &nbsp;&nbsp;
-                    <a href="https://github.com/jaehong31" target="_blank" title="GitHub"><i class="fab fa-github" style="font-size: 1.8em;"></i></a>&nbsp;&nbsp;
-                    <a href="https://twitter.com/jaeh0ng_yoon" target="_blank" title="Twitter"><i class="fab fa-twitter" style="font-size: 1.8em;"></i></a>&nbsp;&nbsp;
-                    <a href="https://www.linkedin.com/in/jaehongyoon/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin" style="font-size: 1.8em;"></i></a>&nbsp;&nbsp;
-                    <a href="https://scholar.google.com/citations?user=-5comoUAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar" style="font-size: 1.8em;"></i></a>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <button id="mode-toggle" class="note" style="font-size: 1.1em;">Dark Mode🌙</button>
-                  </div>                
+                <div class="switch-container">
+                  &nbsp;&nbsp;
+                  <a href="https://github.com/jaehong31" target="_blank" title="GitHub"><i class="fab fa-github" style="font-size: 1.8em;"></i></a>&nbsp;&nbsp;
+                  <a href="https://twitter.com/jaeh0ng_yoon" target="_blank" title="Twitter"><i class="fab fa-twitter" style="font-size: 1.8em;"></i></a>&nbsp;&nbsp;
+                  <a href="https://www.linkedin.com/in/jaehongyoon/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin" style="font-size: 1.8em;"></i></a>&nbsp;&nbsp;
+                  <a href="https://scholar.google.com/citations?user=-5comoUAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar" style="font-size: 1.8em;"></i></a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <button id="mode-toggle" class="note" style="font-size: 1.1em;">Dark Mode🌙</button>
+                  <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const toggleButton = document.getElementById('mode-toggle');
+                        toggleButton.addEventListener('click', function() {
+                            if (document.body.classList.contains('night-mode')) {
+                              document.body.classList.remove('night-mode');
+                              // document.body.classList.add('light-mode');
+                              toggleButton.textContent = 'Dark Mode 🌙';
+                            } else {
+                                // document.body.classList.remove('light-mode');
+                                document.body.classList.add('night-mode');
+                                toggleButton.textContent = 'Light Mode ☀️';
+                            }
+                        });
+                    });
+                </script>
+                </div>                
               </div>              
               <div class="row pb-2" style="text-align: center;">
                 <h5 class="text-center">
@@ -128,8 +144,7 @@
                   <hr style="width: 100%; height: 1px; margin-top: 4px; margin-bottom: 4px;">                     
                   <hr style="width: 100%; height: 3px; margin-top: 4px; margin-bottom: 4px;">              
                 </h5>                
-              </div>              
-              
+              </div>                            
             </div>
           </div>
         </div>
