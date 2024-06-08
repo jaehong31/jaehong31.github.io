@@ -33,70 +33,76 @@ function addArxivContent(img_, title_, author_, year_) {
   container.innerHTML += htmlContent;
 }
 
-function toggleNightMode() {
-  document.body.classList.toggle('night-mode');
-}
+// function toggleNightMode() {
+//   document.body.classList.toggle('night-mode');
+// }
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   const userPreference = localStorage.getItem('nightMode');
+//   if (userPreference === 'enabled' || (userPreference !== 'disabled' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+//       document.body.classList.add('night-mode');
+//   }
+
+//   // Listen for changes in the system theme preference
+//   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+//       if (event.matches) {
+//           // Apply dark mode
+//           document.body.classList.add('night-mode');
+//           localStorage.setItem('nightMode', 'enabled');
+//       } else {
+//           // Apply light mode
+//           document.body.classList.remove('night-mode');
+//           localStorage.setItem('nightMode', 'disabled');
+//       }
+//   });
+// });
+
+// function toggleNightMode() {
+//   if (document.body.classList.contains('night-mode')) {
+//       document.body.classList.remove('night-mode');
+//       localStorage.setItem('nightMode', 'disabled');
+//   } else {
+//       document.body.classList.add('night-mode');
+//       localStorage.setItem('nightMode', 'enabled');
+//   }
+// }
+
 
 document.addEventListener('DOMContentLoaded', function() {
-  const userPreference = localStorage.getItem('nightMode');
-  if (userPreference === 'enabled' || (userPreference !== 'disabled' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.body.classList.add('night-mode');
-  }
-
-  // Listen for changes in the system theme preference
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-      if (event.matches) {
-          // Apply dark mode
-          document.body.classList.add('night-mode');
-          localStorage.setItem('nightMode', 'enabled');
-      } else {
-          // Apply light mode
-          document.body.classList.remove('night-mode');
-          localStorage.setItem('nightMode', 'disabled');
-      }
-  });
-});
-
-function toggleNightMode() {
-  if (document.body.classList.contains('night-mode')) {
-      document.body.classList.remove('night-mode');
-      localStorage.setItem('nightMode', 'disabled');
-  } else {
-      document.body.classList.add('night-mode');
-      localStorage.setItem('nightMode', 'enabled');
-  }
-}
-
-
-document.addEventListener('DOMContentLoaded', function() {
-  // const checkbox = document.getElementById('checkbox');
-  // checkbox.addEventListener('change', function() {
-  //     if (this.checked) {
-  //         document.body.classList.add('night-mode');
-  //     } else {
-  //         document.body.classList.remove('night-mode');
-  //     }
-  // });
-
   const toggleButton = document.getElementById('mode-toggle');
   toggleButton.addEventListener('click', function() {
-      if (document.body.classList.contains('night-mode')) {
-          document.body.classList.remove('night-mode');
-          // document.body.classList.add('light-mode');
+      if (document.body.classList.contains('dark-mode')) {
+          document.body.classList.remove('dark-mode');
+          document.body.classList.add('light-mode');
           toggleButton.textContent = 'Dark Mode 🌙';
       } else {
-          // document.body.classList.remove('light-mode');
-          document.body.classList.add('night-mode');
+          document.body.classList.remove('light-mode');
+          document.body.classList.add('dark-mode');
           toggleButton.textContent = 'Light Mode ☀️';
       }
-      // if (document.body.classList.contains('light-mode')) {
-      //   document.body.classList.remove('light-mode');
-      //   document.body.classList.add('night-mode');
-      //   toggleButton.textContent = 'Light Mode ☀️';
-      // } else {
-      //     document.body.classList.remove('night-mode');
-      //     document.body.classList.add('light-mode');
-      //     toggleButton.textContent = 'Dark Mode 🌙';
-      // }
   });
 });
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   // const checkbox = document.getElementById('checkbox');
+//   // checkbox.addEventListener('change', function() {
+//   //     if (this.checked) {
+//   //         document.body.classList.add('night-mode');
+//   //     } else {
+//   //         document.body.classList.remove('night-mode');
+//   //     }
+//   // });
+
+//   const toggleButton = document.getElementById('mode-toggle');
+//   toggleButton.addEventListener('click', function() {
+//       if (document.body.classList.contains('night-mode')) {
+//           document.body.classList.remove('night-mode');
+//           // document.body.classList.add('light-mode');
+//           toggleButton.textContent = 'Dark Mode 🌙';
+//       } else {
+//           // document.body.classList.remove('light-mode');
+//           document.body.classList.add('night-mode');
+//           toggleButton.textContent = 'Light Mode ☀️';
+//       }
+//   });
+// });

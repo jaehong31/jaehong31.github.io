@@ -50,25 +50,25 @@ body hr {
   background-color: #222222; 
 }
 /* Dark theme styles */
-body.night-mode {
+body.dark-mode {
   background-color: #222222;
   /* background-color: #333333; */
   color: #eeeeee;
 }
 /* Additional style changes for specific elements in night mode */
-body.night-mode gre {
+body.dark-mode gre {
   color: #eeeeee86; /* Gold color for headings */
 }
-body.night-mode rd {
+body.dark-mode rd {
   color: #ffa59b; /* Gold color for headings */
 }
-body.night-mode blu {
+body.dark-mode blu {
   color: #cac8ff; /* Gold color for headings */
 }
-body.night-mode am {
+body.dark-mode am {
   color: #cac8ff; /* Gold color for headings */
 }
-body.night-mode hr {
+body.dark-mode hr {
   background-color: #777777; 
 }
 
