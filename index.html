@@ -95,37 +95,35 @@
               </div>
               <div class="row pb-2">
                 <!-- <p class="col-9"> -->
-                <div class="switch-container">
-                  &nbsp;&nbsp;
-                  <a href="https://github.com/jaehong31" target="_blank" title="GitHub"><i class="fab fa-github" style="font-size: 1.8em;"></i></a>&nbsp;&nbsp;
-                  <a href="https://twitter.com/jaeh0ng_yoon" target="_blank" title="Twitter"><i class="fab fa-twitter" style="font-size: 1.8em;"></i></a>&nbsp;&nbsp;
-                  <a href="https://www.linkedin.com/in/jaehongyoon/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin" style="font-size: 1.8em;"></i></a>&nbsp;&nbsp;
-                  <a href="https://scholar.google.com/citations?user=-5comoUAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar" style="font-size: 1.8em;"></i></a>
-                  &nbsp;&nbsp;&nbsp;&nbsp;
-                  &nbsp;&nbsp;&nbsp;&nbsp;
-                  &nbsp;&nbsp;&nbsp;&nbsp;
-                  &nbsp;&nbsp;&nbsp;&nbsp;
-                  &nbsp;&nbsp;&nbsp;&nbsp;
-                  &nbsp;&nbsp;&nbsp;&nbsp;
-                  &nbsp;&nbsp;&nbsp;&nbsp;
-                  &nbsp;&nbsp;&nbsp;&nbsp;
-                  <button id="mode-toggle" class="note" style="font-size: 1.1em;">Dark Mode🌙</button>
-                </div>                
+                <!-- <div class="switch-container"> -->
+                <div class="col-9" style="display: flex;">
+                  <div>
+                    <a href="https://github.com/jaehong31" target="_blank" title="GitHub"><i class="fab fa-github" style="font-size: 1.8em;"></i></a>&nbsp;&nbsp;
+                    <a href="https://twitter.com/jaeh0ng_yoon" target="_blank" title="Twitter"><i class="fab fa-twitter" style="font-size: 1.8em;"></i></a>&nbsp;&nbsp;
+                    <a href="https://www.linkedin.com/in/jaehongyoon/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin" style="font-size: 1.8em;"></i></a>&nbsp;&nbsp;
+                    <a href="https://scholar.google.com/citations?user=-5comoUAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar" style="font-size: 1.8em;"></i></a>
+                  </div>
+                  <div style="flex-grow: 1"></div>
+                  <div>
+                    <button id="mode-toggle" class="note" style="font-size: 1.1em;">Dark Mode🌙</button>
+                  </div>                
+                </div>
+                <!-- </div> -->
               </div>              
               <div class="row pb-2" style="text-align: center;">
-                <h5 class="text-center">
-                  <hr style="width: 100%; height: 1px; margin-top: 4px; margin-bottom: 4px;">              
-                  <!-- <hr style="width: 100%; height: 1px; margin-top: 4px; margin-bottom: 4px;">                      -->
-                  &nbsp;&nbsp;
-                  <a href=#introduction class="note"><am><u><b>ABOUT ME</b></u></am></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                  <a href=#publications class="note"><am><u><b>PUBLICATIONS</b></u></am></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                  <a href=#services class="note"><am><u><b>SERVICES</b></u></am></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                  <a href=#misc class="note"><am><u><b>TALKS</b></u></am></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                  <a href="materials/jhyoon-cv.pdf" target="_blank" class="note"><am><u><b>[CV]</b></u></am></a>
-                  &nbsp;&nbsp;
-                  <!-- <hr style="width: 100%; height: 1px; margin-top: 4px; margin-bottom: 4px;">                      -->
-                  <hr style="width: 100%; height: 1px; margin-top: 4px; margin-bottom: 4px;">              
-                </h5>                
+                <div class="col-9">
+                  <h5 class="text-center">
+                    <hr style="width: 100%; height: 1px; margin-top: 4px; margin-bottom: 4px;">              
+                    <!-- <hr style="width: 100%; height: 1px; margin-top: 4px; margin-bottom: 4px;">                      -->
+                    <a href=#introduction class="note"><am><u><b>ABOUT ME</b></u></am></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href=#publications class="note"><am><u><b>PUBLICATIONS</b></u></am></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href=#services class="note"><am><u><b>SERVICES</b></u></am></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href=#misc class="note"><am><u><b>TALKS</b></u></am></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="materials/jhyoon-cv.pdf" target="_blank" class="note"><am><u><b>[CV]</b></u></am></a>
+                    <!-- <hr style="width: 100%; height: 1px; margin-top: 4px; margin-bottom: 4px;">                      -->
+                    <hr style="width: 100%; height: 1px; margin-top: 4px; margin-bottom: 4px;">              
+                  </h5>  
+                </div>              
               </div>                            
             </div>
           </div>
@@ -251,7 +249,7 @@
               </div>
             </div>
             <h6>
-            <a type="button" class="badge badge-bibtexwhite" href="javascript:void(0)" onclick="show('oldnews')">Old News (~2022)</a>                             
+            <a type="button" class="badge badge-gray" href="javascript:void(0)" onclick="show('oldnews')">Old News (~2022)</a>                             
             </h6>
             <div id="oldnews" class="popup-old-news">
               <div class="row no-gutters">
@@ -357,22 +355,24 @@
                   <div class="col-md-7 col-sm-12 text-md-left text-center">              
                     <div class="col text-left text-md-left">
                       <h6 class="darkgray"><b>[P${callCounter}] ${title_}</b></h6>
-                      <p class="ssmall authors">${author_.replace('Jaehong Yoon', '<u><b>Jaehong Yoon</b></u>')}</p>
-                      <h6 class="pprint">arXiv ${year_}</h6>
-                      <h6 class="black">
-                        <a href="${project_}" target="_blank"><span class="badge badge-white">Project Page</span></a>
-                        <a href="https://arxiv.org/abs/${arxiv_}" target="_blank"><span class="badge badge-white">Paper</span></a>                  
-                        <a href="${code_}" target="_blank"><span class="badge badge-white">Code</span></a>
-                        <a type="button" class="badge badge-bibtexwhite" href="javascript:void(0)" onclick="show('bib${title_.replace(/\s+/g, '')}')">BibTeX</a>          
+                      <h6 class="ssmall authors">${author_.replace('Jaehong Yoon', '<u><b>Jaehong Yoon</b></u>')}</h6>
+                      <h6>
+                        <a class="pprint" style="margin-top: 0em; margin-bottom: 0em">
+                          arXiv ${year_}</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="${project_}" target="_blank"><b class="badge badge-white"><c class="authors">[Project Page]</c></b></a>/
+                        <a href="https://arxiv.org/abs/${arxiv_}" target="_blank"><b class="badge badge-white"><c class="note-thin-large">[Paper]</c></b></a>/
+                        <a href="${code_}" target="_blank"><b class="badge badge-white">[Code]</b></a>/
+                        <a type="button" class="badge badge-white" href="javascript:void(0)" onclick="show('bib${title_.replace(/\s+/g, '')}')">
+                          <c class="authors">[Bibtex]</c></a>          
+                        <div id="bib${title_.replace(/\s+/g, '')}" class="popup">
+                          @article{${name_},<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;title={${title_}},<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;author={${bib_author_}},<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:${arxiv_}},<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;year={${year_}},<br>                
+                          }
+                        </div>       
                       </h6>
-                      <div id="bib${title_.replace(/\s+/g, '')}" class="popup">
-                        @article{${name_},<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;title={${title_}},<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;author={${bib_author_}},<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:${arxiv_}},<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;year={${year_}},<br>                
-                        }
-                      </div>        
                     </div>                            
                   </div>
                 </div>
