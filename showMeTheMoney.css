@@ -336,8 +336,7 @@ html {
   background-color: #aadbff;
 }
 
-
-.badge-bibtex {
+/* .badge-bibtex {
   color: #fff;
   background-color: #DBC7BE;
   border-color: transparent;
@@ -347,7 +346,7 @@ html {
   color: #fff;
   text-decoration: none;
   background-color: #68717a;
-}
+} */
 
 /* Styling for the toggle switch */
 /* .theme-switch-wrapper {
