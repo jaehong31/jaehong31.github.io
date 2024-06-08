@@ -82,10 +82,10 @@ document.addEventListener('DOMContentLoaded', function() {
   toggleButton.addEventListener('click', function() {
       if (document.body.classList.contains('night-mode')) {
           document.body.classList.remove('night-mode');
-          // document.body.classList.add('light-mode');
+          document.body.classList.add('light-mode');
           toggleButton.textContent = 'Dark Mode 🌙';
       } else {
-          // document.body.classList.remove('light-mode');
+          document.body.classList.remove('light-mode');
           document.body.classList.add('night-mode');
           toggleButton.textContent = 'Light Mode ☀️';
       }
