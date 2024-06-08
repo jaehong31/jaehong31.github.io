@@ -358,12 +358,12 @@
                       <h6 class="ssmall authors">${author_.replace('Jaehong Yoon', '<u><b>Jaehong Yoon</b></u>')}</h6>
                       <h6>
                         <a class="pprint" style="margin-top: 0em; margin-bottom: 0em">
-                          arXiv ${year_}</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="${project_}" target="_blank"><b class="badge badge-white"><c class="authors">[Project Page]</c></b></a>/
-                        <a href="https://arxiv.org/abs/${arxiv_}" target="_blank"><b class="badge badge-white"><c class="note-thin-large">[Paper]</c></b></a>/
-                        <a href="${code_}" target="_blank"><b class="badge badge-white">[Code]</b></a>/
+                          arXiv ${year_}</a>&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                        <a href="${project_}" target="_blank"><b class="badge badge-white">Project Page</b></a>
+                        <a href="https://arxiv.org/abs/${arxiv_}" target="_blank"><b class="badge badge-white">Paper</b></a>
+                        <a href="${code_}" target="_blank"><b class="badge badge-white">Code</b></a>
                         <a type="button" class="badge badge-white" href="javascript:void(0)" onclick="show('bib${title_.replace(/\s+/g, '')}')">
-                          <c class="authors">[Bibtex]</c></a>          
+                          Bibtex</a>          
                         <div id="bib${title_.replace(/\s+/g, '')}" class="popup">
                           @article{${name_},<br>
                               &nbsp;&nbsp;&nbsp;&nbsp;title={${title_}},<br>

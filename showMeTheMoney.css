@@ -259,7 +259,7 @@ html {
   margin-left: 6em;
 }
 
-/* .badge {
+.badge {
   display: inline-block;
   font-size: 1em;
   font-weight: 300;
@@ -270,20 +270,17 @@ html {
   border-radius: 15px;
   padding: 1em;
   padding-bottom: .4em;  
-} */
+}
 
-.badge {
+/* .badge {
   display: inline-block;
-  /* font-size: 1em; */
-  /* font-weight: 300; */
-  /* line-height: 1; */
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 15px;
   padding: 1em;
   padding-bottom: .4em;  
-}
+} */
 
 .badge:empty {
   display: none;
@@ -315,8 +312,8 @@ html {
 
 .badge-white {
   color: #000000;
-  /* background-color: #ebedff; */
-  background-color: transparent;
+  background-color: #ebedff;
+  /* background-color: transparent; */
   border-color: #000000;
   height:1.6em;
 }
@@ -328,8 +325,8 @@ html {
 
 .badge-bibtexwhite {
   color: #000000;
-  /* background-color: #ebedff; */
-  background-color: transparent;
+  background-color: #ebedff;
+  /* background-color: transparent; */
   border-color: #000000;
   height:1.6em;
 }
