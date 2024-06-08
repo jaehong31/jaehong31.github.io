@@ -233,6 +233,7 @@ html {
 .popup-old-news {
   display: inline-block;
   display:none;
+  background-color:transparent;
 }
 .popup-news {
   font-size: 0.9em;
