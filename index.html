@@ -64,11 +64,24 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="icon" href="https://jaehong31.github.io/materials/unc_icon.png" type="image/png">    
+    <script src="get_func.js"></script>
   </head>
   <a name="top"></a>
   <body>
-    <script src="get_func.js"></script>
-    <div class="container resume"  style="margin-top: 3em">
+    <nav class="navbar fixed-top navbar-inverse navbar-collapse">
+      <a class="note" href="#top"><u><b>Jaehong</b></u></a>
+      <ul class="nav nav-right" style="display: inline;">
+        <li><a href="#news"><u><b>NEWS</b></u></a></li>
+        <li><a href="#publications"><u><b>PUBLICATIONS</b></u></a></li>
+        <li><a href="#services"><u><b>SERVICES</b></u></a></li>
+        <li><a href="#misc"><b><u>TALKS</u></b></a></li>
+        <li><a href="#materials/jhyoon-cv.pdf" target="_blank" class="note"><u><b>[CV]</b></u></a></li>
+        <li>
+          <button id="mode-toggle" class="note" style="font-size: 1em; float: right; color: #FFF">Dark Mode🌙</button>
+        </li>
+      </ul>      
+    </nav>
+    <div class="container resume"  style="padding-top:100px">
       <!-- Profile Start -->
       <div class="row mt-2">
         <div class="col-md-3 col-sm-12 pb-3 text-md-right text-center">
@@ -96,32 +109,16 @@
               <div class="row pb-2" style="text-align: center; margin-top: -20px">
                 <div class="col-12">
                   <h5 class="text-center">
-                      &nbsp;&nbsp;
-                      <div style="display: flex; justify-content: space-between;">
-                        <div class="note">
-                          <a href="https://github.com/jaehong31" target="_blank" title="GitHub"><i class="fab fa-github" style="font-size: 1.6em;"></i></a>&nbsp;&nbsp;
-                          <a href="https://twitter.com/jaeh0ng_yoon" target="_blank" title="Twitter"><i class="fab fa-twitter" style="font-size: 1.6em;"></i></a>&nbsp;&nbsp;
-                          <a href="https://www.linkedin.com/in/jaehongyoon/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin" style="font-size: 1.6em;"></i></a>&nbsp;&nbsp;
-                          <a href="https://scholar.google.com/citations?user=-5comoUAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar" style="font-size: 1.6em;"></i></a>
-                        </div>
-                        <div>
-                          <button id="mode-toggle" class="note" style="font-size: 1em; float: right;">Dark Mode🌙</button>
-                        </div>
+                    &nbsp;&nbsp;
+                    <div style="display: flex; justify-content: space-between;">
+                      <div class="note">
+                        <a href="https://github.com/jaehong31" target="_blank" title="GitHub"><i class="fab fa-github" style="font-size: 1.6em;"></i></a>&nbsp;&nbsp;
+                        <a href="https://twitter.com/jaeh0ng_yoon" target="_blank" title="Twitter"><i class="fab fa-twitter" style="font-size: 1.6em;"></i></a>&nbsp;&nbsp;
+                        <a href="https://www.linkedin.com/in/jaehongyoon/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin" style="font-size: 1.6em;"></i></a>&nbsp;&nbsp;
+                        <a href="https://scholar.google.com/citations?user=-5comoUAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar" style="font-size: 1.6em;"></i></a>
                       </div>
-                    <hr style="width: 100%; height: 1px; margin-top: 4px; margin-bottom: 4px;">              
-                    <!-- <hr style="width: 100%; height: 1px; margin-top: 4px; margin-bottom: 4px;">                      -->
-                    &nbsp;&nbsp;
-                    <!-- <a href=#introduction class="note"><am><u><b>ABOUT ME</b></u></am></a>&nbsp;&nbsp;&nbsp;&nbsp; -->
-                     <a href=#news class="note"><am><u><b>NEWS</b></u></am></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href=#publications class="note"><am><u><b>PUBLICATIONS</b></u></am></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href=#services class="note"><am><u><b>SERVICES</b></u></am></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href=#misc class="note"><am><u><b>TALKS</b></u></am></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="materials/jhyoon-cv.pdf" target="_blank" class="note"><am><u><b>[CV]</b></u></am></a>
-                    <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
-                    <!-- <button id="mode-toggle" class="note"><am><u><b>Dark Mode🌙</b></u></am></button> -->
-                    &nbsp;&nbsp;
-                    <!-- <hr style="width: 100%; height: 1px; margin-top: 4px; margin-bottom: 4px;">                      -->
-                    <hr style="width: 100%; height: 1px; margin-top: 4px; margin-bottom: 4px;">              
+                    </div>
+                    <hr style="width: 100%; height: 1px; margin-top: 4px; margin-bottom: 4px;">                                         
                   </h5>  
                 </div>              
               </div>                            
@@ -219,12 +216,6 @@
             <h3 class="secfont text-md-right">News</h3>
           </div>
           <div class="col-12 col-md-10 no-gutters">
-            <div class="row no-gutters">
-              <div class="col-12 text-md-left" style="line-height:120%;">
-                <rd class="bbold ">07. 2024</rd>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">✈️ <u>Will be in Vienna for <rd>ICML 2024</rd>. Feel free to reach out to grab a coffee and chat😊!</u></a> 
-              </div>
-            </div>
             <div class="row no-gutters">
               <div class="col-12 text-md-left" style="line-height:120%;">
                 <rd class="bbold ">07. 2024</rd>&nbsp;&nbsp;&nbsp;&nbsp;
