@@ -48,8 +48,7 @@ body {
 body.light-mode {
   margin: 0;
   background-color: #FFF;
-  color: #000000; 
-  /* padding-top: 55px; */
+  color: #000000;
 }
 
 .navbar {
@@ -79,6 +78,53 @@ nav ul li {
 
 .navbar a {
   color: #ffffff;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-item {
+    margin: 0;
+  }
+
+  .navbar-item a {
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /* Additional style changes for specific elements in night mode */
