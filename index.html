@@ -85,22 +85,50 @@
       </div>
     </nav>
     -->
-    <nav class="navbar fixed-top navbar-inverse navbar-collapse">
-      <a style="margin-right: auto;" href="#top">Jaehong</a>
-      <ul class="navbar-menu">
-        <li><a href="#news">News</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#misc">Talks</a></li>
-        <li><button id="mode-toggle">Dark Mode🌙</button></li>
-      </ul>      
-      <div class="navbar-toggle">
-        <button id="toggle-button">☰</button>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#top" style="padding-left: 20px">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div style="margin-left: auto;">
+          <button id="mode-toggle" style="font-size: 1em; float: right; align-items: center;">Dark Mode🌙</button>        
+        </div>
+        <ul class="navbar-nav navbar-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#news">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#publications">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>        
+          <li class="nav-item">
+            <a class="nav-link" href="#misc">Talks</a>
+          </li>        
+          <li class="nav-item">
+            <a class="nav-link" href="materials/jhyoon-cv.pdf" target="_blank">[CV]</a>
+          </li>        
+        </ul>
+        <div class="navbar-toggle">
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              ☰
+            </a> -->
+            <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#top">Home</a>
+              <a class="dropdown-item" href="#news">News</a>
+              <a class="dropdown-item" href="#publications">Publications</a>
+              <div class="navbar-menu">
+                <button id="mode-toggle" style="font-size: 1em; float: right; color: #FFF">Dark Mode🌙</button>        
+              </div>
+            </div>             -->
+          </li>
+        </div>
       </div>
-      <!-- <div>
-        <button id="mode-toggle">Dark Mode🌙</button>        
-      </div> -->
-    </nav>  
+    </nav>
+    <script src="get_func.js"></script>
     <div class="container resume"  style="padding-top:100px">
       <!-- Profile Start -->
       <div class="row mt-2">
@@ -147,7 +175,7 @@
         </div>
       </div >
       <!-- Profile End -->
-      <a name="introduction"></a>
+      <section id="introduction"></section>
       <!-- <hr> -->
       <!-- Introduce Start -->
       <div class="row pt-2">
@@ -227,7 +255,7 @@
         </div>        
       </div>
       <!-- Introduce End -->
-      <a name="news"></a>
+      <section id="news">
       <hr>
       <!-- News Start -->
       <div class="row pt-2">                
@@ -400,7 +428,7 @@
             <br>
         </div>          
       </div>
-      <a name="publications"></a>
+      <section id="publications">
       <hr>
       <!-- Preprints Start -->
       <div class="row pt-2">
@@ -490,7 +518,7 @@
       <div class="row pt-2">
         <div class="col-md-1 col-12"></div>
         <div class="col-md-11 col-12">
-          <a name="recent_publication"></a>
+          <section id="recent_publication"></section>
           <head> 
             <script> 
             $(function(){
@@ -503,7 +531,7 @@
           </body>                     
         </div>
       </div>
-      <a name="services"></a>
+      <section id="services"></section>
       <hr>
       <!-- Service Start -->
       <div class="row pt-2">
@@ -534,7 +562,7 @@
         </div>        
       </div>
       <!-- Service End -->
-      <a name="misc"></a>
+      <section id="misc"></section>
       <hr>
       <!-- Talks Start -->
       <div class="row pt-2">
