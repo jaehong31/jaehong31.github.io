@@ -48,9 +48,9 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-const mobileMenu = document.getElementById('mobile-menu');
+const toggleButton = document.getElementById('toggle-button');
 const navbarMenu = document.querySelector('.navbar-menu');
 
-mobileMenu.addEventListener('click', () => {
+toggleButton.addEventListener('click', () => {
   navbarMenu.classList.toggle('active');
 });
