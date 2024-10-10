@@ -215,7 +215,9 @@
               <li><a href="https://envgen-llm.github.io/" target="_blank" class="note" style="font-size:0.9em">
                 <blu>EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents (COLM 2024)</blu></a></li>              
               <!-- <li><a href="https://jaehong31.github.io/" target="_blank" class="note" style="font-size:0.9em">
-                <rd>Safe Generation  (arXiv 24.10)</rd></a></li>               -->
+                <rd>Blindness and Hallucinations: Revisiting Multi-modal Alignment in Vision-Language Large Models (arXiv 24.10)</rd></a></li>                 -->
+              <!-- <li><a href="https://jaehong31.github.io/" target="_blank" class="note" style="font-size:0.9em">
+                <rd>SAFREE: Training-Free and Adaptive Guard for Safe Text-to-Image And Video Generation (arXiv 24.10)</rd></a></li>               -->
             </ul>
             <li style="margin-top: -12px"><span class="note" style="font-size:1em"><b>MLLM/LLM-guided Multimodal Video Reasoning, Generation, and Editing</b></span></li>
             <ul>
@@ -238,8 +240,8 @@
                 <blu>Carpe Diem: Evaluation of World Knowledge in Lifelong LLMs (NAACL 2024)</blu></a></li>
               <li><a href="https://cl-stella.github.io/" target="_blank" class="note" style="font-size:0.9em">
                 <blu>STELLA: Continual Pre-training over Audio-Video Modalities (ICML 2024)</blu></a></li>
-              <!-- <li><a href="https://jaehong31.github.io/" target="_blank" class="note" style="font-size:0.9em"> -->
-                <!-- <rd>Continual Multimodal Instruction Tuning  (arXiv 24.09)</rd></a></li>               -->
+              <!-- <li><a href="https://jaehong31.github.io/" target="_blank" class="note" style="font-size:0.9em">
+                <rd>LAMP: Scalable Lifelong Multimodal Instruction Tuning via Dynamic Data Selection (arXiv 24.10)</rd></a></li>               -->
             </ul>
             <li style="margin-top: -12px"><span class="note" style="font-size:1em"><b>Efficient Training and Inference for Large Models</b></span></li>            
             <ul>
@@ -251,13 +253,17 @@
                 <blu>BECoTTA: Mixture-of-Domain-Experts for Continual Test-Time Adaptation (ICML 2024)</blu></a></li>     
               <li><a href="https://arxiv.org/abs/2211.10636" target="_blank" class="note" style="font-size:0.9em">
                 <blu>EVEREST: Efficient Masked Video Autoencoder by Removing Redundant Tokens (ICML 2024)</blu></a></li>                   
-                <!-- <li><a href="https://jaehong31.github.io/" target="_blank" class="note" style="font-size:0.9em"> -->
-                  <!-- <rd>MoE Compositional Generalization (arXiv 24.09)</rd></a></li>               -->
+                <li><a href="http://arxiv.org/abs/2410.07172" target="_blank" class="note" style="font-size:0.9em">
+                  <blu>Glider: Global and Local Instruction-Driven Expert Router (arXiv 24.10)</blu></a></li>              
             </ul>
           </p>
-          <p class="note" style="font-size:1em"> 
-            <blu>Related techniques:</blu> video-language reasoning, video generation and editing, multimodal foundation models, hallucination, toxicity, and bias detection and mitigation, data-efficient learning, continual learning, federated learning, model pruning and merging, parameter-efficient modular learning.
-          </p>          
+          <!-- <p class="note" style="font-size:1em"> 
+            <blu>Related techniques:</blu> 
+            multimodal/video foundation models and generation, 
+            reliablilty, faithfulness and safe generation, 
+            data-efficient learning, continual learning, federated learning, 
+            model pruning and merging, parameter-efficient modular learning.
+          </p>           -->
         </div>        
       </div>
       <!-- Introduce End -->
@@ -271,10 +277,25 @@
           </div>
           <div class="col-12 col-md-10 no-gutters">
             <div class="row no-gutters">
+              <!-- <div class="col-12 text-md-left" style="line-height:120%;">
+                <rd class="bbold ">10. 2024</rd>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">New preprints released; Check out </a>                
+                <a href="https://jaehong31.github.io/" target="_blank" class="note"  style="color:#44a5c0;"><b><i>LAMP*</i></b></a><a class="note">,</a>
+                <a href="https://jaehong31.github.io/" target="_blank" class="note"  style="color:#44a5c0;"><b><i>Glider</i></b></a><a class="note">, and </a>
+                <a href="https://jaehong31.github.io/" target="_blank" class="note"  style="color:#44a5c0;"><b><i>SAFREE*</i></b></a><a class="note">.</a>
+              </div>
+            </div> -->
+            <div class="col-12 text-md-left" style="line-height:120%;">
+                <rd class="bbold ">10. 2024</rd>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">New preprint released; Check out </a>                
+                <a href="https://jaehong31.github.io/" target="_blank" class="note"  style="color:#44a5c0;"><b><i>Glider</i></b></a><a class="note">.</a>                
+              </div>
+            </div>
+            <div class="row no-gutters">
               <div class="col-12 text-md-left" style="line-height:120%;">
                 <rd class="bbold ">09. 2024</rd>&nbsp;&nbsp;&nbsp;&nbsp;
                 <a class="note">One paper got accepted to</a>
-                <a href=#recent_publication class="note" style="color:#fa753c;"><rd>NeurIPS 2024</rd></a><a>.</a>             
+                <a href=#recent_publication class="note" style="color:#fa753c;"><rd>NeurIPS 2024</rd>.</a>
               </div>
             </div>
             <div class="row no-gutters">
@@ -453,7 +474,7 @@
           <div id="content-container">
           </div>
           <script>
-            let callCounter = 3;
+            let callCounter = 4;
             let jy_ = 'https://jaehong31.github.io/';
             function addArxivContent(year_, name_, arxiv_, img_, title_, author_, bib_author_, project_= jy_, code_ = jy_) {
               const container = document.getElementById('content-container'); // Assuming you have a div with this ID to hold the content
@@ -491,9 +512,32 @@
               callCounter--;
               container.innerHTML += htmlContent;
             }
+
+            // addArxivContent(2024, 'sung2024improving', '2405.18406', 'tmp.png', 
+            //         'Improving Layer-wise Quantization for Long-Context Performance Via Attention Map Optimization', 
+            //         'Yi-Lin Sung, Prateek Yadav, Jialu Li, Jaehong Yoon, Mohit Bansal',
+            //         'Yoon, Jaehong and Yu, Shoubin and Bansal, Mohit');     
+
+            // addArxivContent(2024, 'yoon2024safree', '2405.18406', 'tmp.png', 
+                    // 'SAFREE: Training-Free and Adaptive Guard for Safe Text-to-Image And Video Generation', 
+                    // 'Jaehong Yoon*, Shoubin Yu*, Vaidehi Patil, Huaxiu Yao, Mohit Bansal',
+                    // 'Yoon, Jaehong and Yu, Shoubin and Bansal, Mohit');     
             
+            // addArxivContent(2024, 'maharana2024llava', '2405.18406', 'tmp.png', 
+                    // 'Scalable Lifelong Multimodal Instruction Tuning via Dynamic Data Selection', 
+                    // 'Adyasha Maharana*, Jaehong Yoon*, Tianlong Chen, Mohit Bansal',
+                    // 'Yoon, Jaehong and Yu, Shoubin and Bansal, Mohit');     
+
+            addArxivContent(2024, 'li2024glider', '2410.07172', 'glider.png', 
+                    'Glider: Global and Local Instruction-Driven Expert Router', 
+                    'Pingzhi Li*, Prateek Yadav*, Jaehong Yoon, Jie Peng, Yi-Lin Sung, Mohit Bansal, Tianlong Chen',
+                    'Li, Pingzhi and Yadav, Prateek and Yoon, Jaehong and Peng, Jie and Sung, Yi-lin and Bansal, Mohit and Chen, Tianlong',
+                    jy_,
+                    'https://github.com/unites-lab/glider');     
+
+
             addArxivContent(2024, 'yoon2024raccoon', '2405.18406', 'raccoon_teaser.png', 
-                    'RACCooN: Remove, Add, and Change Video Content with Auto-Generated Narratives', 
+                    'RACCooN: A Versatile Instructional Video Editing Framework with Auto-Generated Narratives', 
                     'Jaehong Yoon*, Shoubin Yu*, and Mohit Bansal',
                     'Yoon, Jaehong and Yu, Shoubin and Bansal, Mohit',
                     'https://raccoon-mllm-gen.github.io/',
@@ -505,18 +549,20 @@
                     'https://videotree2024.github.io/',
                     'https://github.com/Ziyang412/VideoTree');      
             addArxivContent(2024, 'yu2024crema', '2402.05889', 'crema_v2.png', 
-                    'CREMA: Generalizable and Efficient Video-Language Reasoning via Multimodal Modular Fusion', 
+                    'Generalizable and Efficient Video-Language Reasoning via Multimodal Modular Fusion', 
                     'Shoubin Yu*, Jaehong Yoon*, Mohit Bansal',
                     'Yu, Shoubin and Yoon, Jaehong and Bansal, Mohit',
                     'https://crema-videollm.github.io/',
                     'https://github.com/Yui010206/CREMA');               
           </script>          
-          <!-- addArxivContent(2024, 'zala2024envgen', '2403.12014', 'envgen.png', 
-          'EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents', 
-          'Abhay Zala*, Jaemin Cho*, Han Lin, Jaehong Yoon, and Mohit Bansal',
-          'Zala, Abhay and Cho, Jaemin and Lin, Han and Yoon, Jaehong and Bansal, Mohit',
-          'https://envgen-llm.github.io/',
-          'https://github.com/aszala/envgen');   -->
+
+<!-- 
+          addArxivContent(2024, 'yang2024blindness', '2405.18406', 'tmp.png', 
+          'Blindness and Hallucinations: Revisiting Multi-modal Alignment in Vision-Language Large Models', 
+          'Xinyu Yang, Chenhang Cui, Jaehong Yoon, Yiyang Zhou, Yi-Lin Sung, Mohit Bansal, Beidi Chen, Huaxiu Yao',
+          'Yoon, Jaehong and Yu, Shoubin and Bansal, Mohit');    -->
+  
+
         </div>
       </div>
       <hr>      
@@ -549,13 +595,14 @@
           <a class="note" style="font-size:1em">
             <b>Area Chair</b>
             <li>2024 <blu class="note">Conference on Empirical Methods in Natural Language Processing</blu> <b class="note">(EMNLP)</b></li>
+            <li>2024 <blu class="note">Continual Foundation Model Workshop</blu><b class="note"> @ NeurIPS 2024</b></li>
           </a>
           <br>
           <a class="note" style="font-size:1em">
             <b>Reviewer</b>
             <li>2018, 2019, 2020, 2021, 2022, 2023, 2024 <blu class="note">Neural Information Processing System</blu> <b class="note">(NeurIPS)</b></li>
             <li>2019, 2020, 2021, 2022, 2023, 2024 <blu class="note">International Conference on Machine Learning</blu> <b class="note">(ICML)</b></li>
-            <li>2019, 2020, 2021, 2022, 2023, 2024 <blu class="note">International Conference on Learning Representations</blu> <b class="note">(ICLR)</b></li>
+            <li>2019, 2020, 2021, 2022, 2023, 2024, 2025 <blu class="note">International Conference on Learning Representations</blu> <b class="note">(ICLR)</b></li>
             <li>2022, 2023, 2024 <blu class="note">Conference on Lifelong Learning Agents</blu> <b class="note">(CoLLAs)</b></li>
             <li>2020 <blu class="note">International Joint Conferences on Artificial Intelligence</blu> <b class="note">(IJCAI)</b></li>
             <li>2020 <blu class="note">Association for the Advancement of Artificial Intelligence</blu> <b class="note">(AAAI)</b></li>
@@ -603,7 +650,7 @@
       <div class="row">
         <div class="col footer-cover">
           <div class="footer text-center small">
-            <div>Last modified:&nbsp 09.25. 2024.</div>              
+            <div>Last modified:&nbsp 10.10. 2024.</div>              
             <a href="#top"><blu>Back to top of page</blu></a>
             <br>
             <br>
