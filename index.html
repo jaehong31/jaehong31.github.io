@@ -480,6 +480,7 @@
             let jy_ = 'https://jaehong31.github.io/';
             function addArxivContent(year_, name_, arxiv_, img_, title_, author_, bib_author_, project_= jy_, code_ = jy_) {
               const container = document.getElementById('content-container'); // Assuming you have a div with this ID to hold the content
+              const projectPageBadge = project_ !== jy_ ? `<a href="${project_}" target="_blank"><b class="badge badge-white">Project Page</b></a>` : '';
               const htmlContent = `
                 <div class="row mt-2">
                   <div class="col-md-1 pb-3 text-md-right text-left"></div>
@@ -493,7 +494,7 @@
                       <h6>
                         <a class="pprint" style="margin-top: 0em; margin-bottom: 0em">
                           arXiv ${year_}</a>&nbsp;&nbsp;&nbsp;&nbsp;<br>
-                        <a href="${project_}" target="_blank"><b class="badge badge-white">Project Page</b></a>
+                        ${projectPageBadge} <!-- Only add this if project_ is not equal to jy_ -->
                         <a href="https://arxiv.org/abs/${arxiv_}" target="_blank"><b class="badge badge-white">Paper</b></a>
                         <a href="${code_}" target="_blank"><b class="badge badge-white">Code</b></a>
                         <a type="button" class="badge badge-white" href="javascript:void(0)" onclick="show('bib${title_.replace(/\s+/g, '')}')">
