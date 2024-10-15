@@ -216,8 +216,8 @@
                 <blu>EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents (COLM 2024)</blu></a></li>              
               <!-- <li><a href="https://jaehong31.github.io/" target="_blank" class="note" style="font-size:0.9em">
                 <rd>Blindness and Hallucinations: Revisiting Multi-modal Alignment in Vision-Language Large Models (arXiv 24.10)</rd></a></li>                 -->
-              <!-- <li><a href="https://jaehong31.github.io/" target="_blank" class="note" style="font-size:0.9em">
-                <rd>SAFREE: Training-Free and Adaptive Guard for Safe Text-to-Image And Video Generation (arXiv 24.10)</rd></a></li>               -->
+              <li><a href="https://safree-safe-t2i-t2v.github.io/" target="_blank" class="note" style="font-size:0.9em">
+                <blu>SAFREE: Training-Free and Adaptive Guard for Safe Text-to-Image And Video Generation (arXiv 24.10)</blu></a></li>              
             </ul>
             <li style="margin-top: -12px"><span class="note" style="font-size:1em"><b>MLLM/LLM-guided Multimodal Video Reasoning, Generation, and Editing</b></span></li>
             <ul>
@@ -240,8 +240,8 @@
                 <blu>Carpe Diem: Evaluation of World Knowledge in Lifelong LLMs (NAACL 2024)</blu></a></li>
               <li><a href="https://cl-stella.github.io/" target="_blank" class="note" style="font-size:0.9em">
                 <blu>STELLA: Continual Pre-training over Audio-Video Modalities (ICML 2024)</blu></a></li>
-              <!-- <li><a href="https://jaehong31.github.io/" target="_blank" class="note" style="font-size:0.9em">
-                <rd>LAMP: Scalable Lifelong Multimodal Instruction Tuning via Dynamic Data Selection (arXiv 24.10)</rd></a></li>               -->
+              <li><a href="https://arxiv.org/abs/2410.10636" target="_blank" class="note" style="font-size:0.9em">
+                <blu>Adapt-&infin;: Scalable Lifelong Multimodal Instruction Tuning via Dynamic Data Selection (arXiv 24.10)</blu></a></li>              
             </ul>
             <li style="margin-top: -12px"><span class="note" style="font-size:1em"><b>Efficient Training and Inference for Large Models</b></span></li>            
             <ul>
@@ -287,8 +287,10 @@
             </div> -->
             <div class="col-12 text-md-left" style="line-height:120%;">
                 <rd class="bbold ">10. 2024</rd>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">New preprint released; Check out </a>                
-                <a href="https://jaehong31.github.io/" target="_blank" class="note"  style="color:#44a5c0;"><b><i>Glider</i></b></a><a class="note">.</a>                
+                <a class="note">New preprints released; Check out </a>      
+                <a href="https://arxiv.org/abs/2410.10636" target="_blank" class="note"  style="color:#44a5c0;"><b><i>Adapt-&infin;*</i></b></a><a class="note">, </a>          
+                <a href="https://jaehong31.github.io/" target="_blank" class="note"  style="color:#44a5c0;"><b><i>Glider</i></b></a><a class="note">, and </a>
+                <a href="https://safree-safe-t2i-t2v.github.io/" target="_blank" class="note"  style="color:#44a5c0;"><b><i>SAFREE*</i></b></a><a class="note">.</a>            
               </div>
             </div>
             <div class="row no-gutters">
@@ -474,7 +476,7 @@
           <div id="content-container">
           </div>
           <script>
-            let callCounter = 4;
+            let callCounter = 5;
             let jy_ = 'https://jaehong31.github.io/';
             function addArxivContent(year_, name_, arxiv_, img_, title_, author_, bib_author_, project_= jy_, code_ = jy_) {
               const container = document.getElementById('content-container'); // Assuming you have a div with this ID to hold the content
@@ -512,21 +514,19 @@
               callCounter--;
               container.innerHTML += htmlContent;
             }
-
-            // addArxivContent(2024, 'sung2024improving', '2405.18406', 'tmp.png', 
-            //         'Improving Layer-wise Quantization for Long-Context Performance Via Attention Map Optimization', 
-            //         'Yi-Lin Sung, Prateek Yadav, Jialu Li, Jaehong Yoon, Mohit Bansal',
-            //         'Yoon, Jaehong and Yu, Shoubin and Bansal, Mohit');     
-
-            // addArxivContent(2024, 'yoon2024safree', '2405.18406', 'tmp.png', 
-                    // 'SAFREE: Training-Free and Adaptive Guard for Safe Text-to-Image And Video Generation', 
-                    // 'Jaehong Yoon*, Shoubin Yu*, Vaidehi Patil, Huaxiu Yao, Mohit Bansal',
-                    // 'Yoon, Jaehong and Yu, Shoubin and Bansal, Mohit');     
-            
-            // addArxivContent(2024, 'maharana2024llava', '2405.18406', 'tmp.png', 
-                    // 'Scalable Lifelong Multimodal Instruction Tuning via Dynamic Data Selection', 
-                    // 'Adyasha Maharana*, Jaehong Yoon*, Tianlong Chen, Mohit Bansal',
-                    // 'Yoon, Jaehong and Yu, Shoubin and Bansal, Mohit');     
+            // addArxivContent(2024, 'yoon2024safree', '2410.xxxxx', 'safree.png', 
+            //        'SAFREE: Training-Free and Adaptive Guard for Safe Text-to-Image And Video Generation', 
+            //        'Jaehong Yoon*, Shoubin Yu*, Vaidehi Patil, Huaxiu Yao, Mohit Bansal',
+            //        'Yoon, Jaehong and Yu, Shoubin, Patil, Vaidehi and Yao, Huaxiu and Bansal, Mohit',
+            //        'https://safree-safe-t2i-t2v.github.io/',
+            //        'https://github.com/jaehong31/SAFREE');     
+                    
+            addArxivContent(2024, 'maharana2024adapt', '2410.10636', 'adapt-inf.png', 
+                    'Adapt-&infin;: Scalable Lifelong Multimodal Instruction Tuning via Dynamic Data Selection', 
+                    'Adyasha Maharana*, Jaehong Yoon*, Tianlong Chen, Mohit Bansal',
+                    'Maharana, Adyasha and Yoon, Jaehong and Chen, Tianlong and Bansal, Mohit',
+                    jy_,
+                    'https://github.com/adymaharana/adapt-inf');     
 
             addArxivContent(2024, 'li2024glider', '2410.07172', 'glider.png', 
                     'Glider: Global and Local Instruction-Driven Expert Router', 
@@ -650,7 +650,7 @@
       <div class="row">
         <div class="col footer-cover">
           <div class="footer text-center small">
-            <div>Last modified:&nbsp 10.10. 2024.</div>              
+            <div>Last modified:&nbsp 10.14. 2024.</div>              
             <a href="#top"><blu>Back to top of page</blu></a>
             <br>
             <br>
