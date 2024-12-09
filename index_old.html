@@ -2,56 +2,39 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <!--<style media="all">     
-      h6, h6+p {font-weight: bold;}
-    </style>-->
     <meta http-equiv='cache-control' content='no-cache'> 
     <meta http-equiv='expires' content='0'> 
     <meta http-equiv='pragma' content='no-cache'>
-
     <meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width">
     <meta name="description" content=""/>
     <!-- <meta property="og:site_name" content="" /> -->
     <meta property="og:title" content="Jaehong Yoon" />
     <meta property="og:description" content="Postdoctoral Research Associate, UNC Chapel Hill" />
     <meta property="og:url" content="https://jaehong31.github.io" />
-    <!-- <meta property="og:image" content="https://jaehong31.github.io/materials/jyoon-image.jpg" /> -->
     <meta property="og:image" content="https://jaehong31.github.io/materials/20240116_120125.jpg" />
     <!-- <meta property="og:type" content="website" /> -->
     <meta property="og:image:width" content="1200"/>
     <meta property="og:image:height" content="630"/>
 
     <title>Jaehong Yoon</title>
-        
+    <script>
+      // Check if the browser supports scrollRestoration
+      if ('scrollRestoration' in history) {
+          history.scrollRestoration = 'manual'; // Prevents the browser from restoring scroll position
+      }
+      window.scrollTo(0, 0); // Immediately scroll to the top
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3TYEH2DVK2"></script>
     <script>
       window.dataLayer=window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-3TYEH2DVK2');
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
-    
-    <meta name="twitter:title" content="Jaehong Yoon">
-    <meta name="twitter:description" content="Postdoctoral Research Associate, UNC Chapel Hill">
-    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-    <meta name="twitter:image" href="materials/unc_icon.png">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <!-- Fonts & Icons -->    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"  integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
-
-    <link rel="stylesheet" href="./showMeTheMoney.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
     <script language="javascript">
       function show( elem ) {
           var x=document.getElementById(elem);
@@ -63,15 +46,90 @@
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()
       })
-  </script>
-  <link rel="icon" type="image/x-icon" href="materials/unc_icon.png">
-  </head>
+    </script>
+    <meta name="twitter:title" content="Jaehong Yoon">
+    <meta name="twitter:description" content="Postdoctoral Research Associate, UNC Chapel Hill">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" href="https://jaehong31.github.io/materials/unc_icon.png">
+    <meta name="twitter:card" content="summary_large_image">
 
-  
+    <!-- Fonts & Icons -->    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"  integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <link rel="stylesheet" href="./showMeTheMoney.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="icon" href="https://jaehong31.github.io/materials/unc_icon.png" type="image/png">        
+  </head>
   <a name="top"></a>
   <body>
+    <!-- <nav class="navbar fixed-top navbar-inverse navbar-collapse">
+      <a class="note" style="margin-right: auto;" href="#top"><u><b>Jaehong</b></u></a>
+      <div class="navbar-toggle" id="mobile-menu">        
+        <span class="bar"></span>        
+        <span class="bar"></span>        
+        <span class="bar"></span>        
+      </div>
+      <ul class="navbar-menu" style="display: inline;">
+        <li><a href="#news"><u><b>NEWS</b></u></a></li>
+        <li><a href="#publications"><u><b>PUBLICATIONS</b></u></a></li>
+        <li><a href="#services"><u><b>SERVICES</b></u></a></li>
+        <li><a href="#misc"><b><u>TALKS</u></b></a></li>
+        <li><a href="materials/jhyoon-cv.pdf" target="_blank"><u><b>[CV]</b></u></a></li>        
+      </ul>      
+      <div class="navbar-menu">
+        <button id="mode-toggle" style="font-size: 1em; float: right; color: #FFF">Dark Mode🌙</button>        
+      </div>
+    </nav>
+    -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#top" style="padding-left: 20px">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div style="margin-left: auto;">
+          <button id="mode-toggle" style="font-size: 1em; float: right; align-items: center;">Dark Mode🌙</button>        
+        </div>
+        <ul class="navbar-nav navbar-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#news">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#publications">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>        
+          <li class="nav-item">
+            <a class="nav-link" href="#misc">Talks</a>
+          </li>        
+          <li class="nav-item">
+            <a class="nav-link" href="materials/jhyoon-cv.pdf" target="_blank">[CV]</a>
+          </li>        
+        </ul>
+        <div class="navbar-toggle">
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              ☰
+            </a> -->
+            <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#top">Home</a>
+              <a class="dropdown-item" href="#news">News</a>
+              <a class="dropdown-item" href="#publications">Publications</a>
+              <div class="navbar-menu">
+                <button id="mode-toggle" style="font-size: 1em; float: right; color: #FFF">Dark Mode🌙</button>        
+              </div>
+            </div>             -->
+          </li>
+        </div>
+      </div>
+    </nav>
     <script src="get_func.js"></script>
-    <div class="container resume"  style="margin-top: 3em">
+    <div class="container resume"  style="padding-top:100px">
       <!-- Profile Start -->
       <div class="row mt-2">
         <div class="col-md-3 col-sm-12 pb-3 text-md-right text-center">
@@ -80,7 +138,7 @@
         <div class="col-md-9 col-sm-12">
           <div class="row">
             <div class="col text-center text-md-left">
-              <h3 class="darkgray bbbold">Dr. Jaehong Yoon</h3>              
+              <h3 class="bbbold">Dr. Jaehong Yoon</h3>              
             </div>
           </div>
           <div class="row">
@@ -96,178 +154,29 @@
                   <a class="note" style="font-size:1.1em">jhyoon [at] cs [dot] unc [dot] edu</a>
                 </div>              
               </div>
-              <div class="row pb-2">
-                <p class="col-9">
-                  <a href="https://github.com/jaehong31" target="_blank" title="GitHub"><i class="fab fa-github" style="font-size: 1.8em;"></i></a>&nbsp&nbsp&nbsp 
-                  <a href="https://twitter.com/jaeh0ng_yoon" target="_blank" title="Twitter"><i class="fab fa-twitter" style="font-size: 1.8em;"></i></a>&nbsp&nbsp&nbsp 
-                  <a href="https://www.linkedin.com/in/jaehongyoon/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin" style="font-size: 1.8em;"></i></a>&nbsp&nbsp&nbsp 
-                  <a href="https://scholar.google.com/citations?user=-5comoUAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar" style="font-size: 1.8em;"></i></a>&nbsp&nbsp 
-                  <a href="materials/jhyoon-cv.pdf" target="_blank" class="bbold" style="font-size:1.5em"><b>CV</b></a>                                    
-                </p>                                
-              </div>              
+              <div class="row pb-2" style="text-align: center; margin-top: -20px">
+                <div class="col-12">
+                  <h5 class="text-center">
+                    &nbsp;&nbsp;
+                    <div style="display: flex; justify-content: space-between;">
+                      <div class="note">
+                        <a href="https://github.com/jaehong31" target="_blank" title="GitHub"><i class="fab fa-github" style="font-size: 1.6em;"></i></a>&nbsp;&nbsp;
+                        <a href="https://twitter.com/jaeh0ng_yoon" target="_blank" title="Twitter"><i class="fab fa-twitter" style="font-size: 1.6em;"></i></a>&nbsp;&nbsp;
+                        <a href="https://www.linkedin.com/in/jaehongyoon/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin" style="font-size: 1.6em;"></i></a>&nbsp;&nbsp;
+                        <a href="https://scholar.google.com/citations?user=-5comoUAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar" style="font-size: 1.6em;"></i></a>
+                      </div>
+                    </div>
+                    <hr style="width: 100%; height: 1px; margin-top: 4px; margin-bottom: 4px;">                                         
+                  </h5>  
+                </div>              
+              </div>                            
             </div>
           </div>
         </div>
       </div >
       <!-- Profile End -->
-      <hr />
-      <!-- News Start -->
-      <div class="row pt-2">                
-        <!--<div class="row">-->
-          <div class="col-12 col-md-2">
-            <h3 class="secfont text-md-right">News</h3>
-          </div>
-          <div class="col-12 col-md-10 no-gutters">
-            <div class="row no-gutters">
-              <div class="col-12 text-md-left">
-                <b class="bbold" style="color:#fa8072;">04. 2024</b>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">One paper got accepted to</a>
-                <a href=#cvprw24 class="note" style="color:#ff8855;">CVPR 2024 Workshop</a> <a class="note"> on Continual Learning (CLVision)</a>.</a>             
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col-12 text-md-left">
-                <b class="bbold" style="color:#fa8072;">03. 2024</b>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">New preprints released; Check out </a>                
-                <a href="https://selma-t2i.github.io/" target="_blank" class="note"  style="color:#2980f1;"><b><i>SELMA</i></b></a><a class="note"> and </a>
-                <a href="https://envgen-llm.github.io/" target="_blank" class="note"  style="color:#2980f1;"><b><i>EnvGen</i></b></a><a class="note">.</a>
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col-12 text-md-left">
-                <b class="bbold" style="color:#fa8072;">03. 2024</b>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">One paper got accepted to </a>
-                <a href=#naacl24 class="note" style="color:#ff8855;">NAACL 2024</a><a class="note">.</a>
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col-12 text-md-left">
-                <b class="bbold" style="color:#fa8072;">02. 2024</b>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">One paper got accepted to </a>
-                <a href=#cvpr24 class="note" style="color:#ff8855;">CVPR 2024</a><a class="note">.</a>                
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col-12 text-md-left">
-                <b class="bbold" style="color:#fa8072;">02. 2024</b>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">New preprints released; Check out </a>
-                <a href="https://mementos-bench.github.io/" target="_blank" class="note"  style="color:#2980f1;"><b><i>Mementos</i></b></a><a class="note">,</a>
-                <a href="https://becotta-ctta.github.io/" target="_blank" class="note"  style="color:#2980f1;"><b><i>BECoTTA*</i></b></a><a class="note">, and</a>
-                <a href="https://crema-videollm.github.io/" target="_blank" class="note"  style="color:#2980f1;"><b><i>CREMA*</i></b></a><a class="note">.</a>
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col-12 text-md-left">
-                <b class="bbold" style="color:#fa8072;">01. 2024</b>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">Three papers got accepted to </a>
-                <a href=#iclr24 class="note" style="color:#ff8855;">ICLR 2024</a>.
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col-12 text-md-left">
-                <b class="bbold" style="color:#545b62;">10. 2023</b>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">One paper got accepted to</a>
-                <a href=#neurips23w1 class="note" style="color:#ff8855;">NeurIPS 2023 Workshop</a>
-                <a class="note"> on Instruction Tuning and Instruction Following.</a>
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col-12 text-md-left">
-                <b class="bbold" style="color:#545b62;">10. 2023</b>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">One paper got accepted to</a>
-                <a href=#naacl24 class="note" style="color:#ff8855;">NeurIPS 2023 Workshop</a> <a class="note"> on Synthetic Data Generation with Generative AI </a> <b class="note" style="color:#ff8855;">(Oral)</b>.</a>             
-                <!-- <b style="color:#ff8855;">ECCV 2022 Workshop</b><a class="note"> on Computational Aspects of Deep Learning (CADL).</a>              -->
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col-12 text-md-left">
-                <b class="bbold" style="color:#545b62;">08. 2023</b>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">I joined </a> <a href="https://murgelab.cs.unc.edu/" target="_blank" class="note"  style="color:#2980f1;">MURGe-Lab</a>
-                <a class="note"> at UNC Chapel Hill as a Postdoctoral Research Associate, working with </a>
-                <a href="https://www.cs.unc.edu/~mbansal/" target="_blank" class="note"  style="color:#2980f1;">Prof. Mohit Bansal</a><a class="note">!</a></a>
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col-12 text-md-left">
-                <b class="bbold" style="color:#545b62;">07. 2023</b>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">One paper got accepted to </a><a href=#iccv23 class="note" style="color:#ff8855;">ICCV 2023</a>.                
-              </div>
-            </div>            
-            <div class="row no-gutters">
-              <!-- <div class="col-12 col-md-1 text-md-left">
-                <b class="bbold" style="color:#fa8072;">04. 2023</b>
-              </div> -->
-              <div class="col-12 text-md-left">
-                <b class="bbold" style="color:#545b62;">04. 2023</b>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">Two papers got accepted to </a>
-                <a href=#icml23 class="note" style="color:#ff8855;">ICML 2023</a>.                
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <!-- <div class="col-12 col-md-1 text-md-left">
-                <b class="bbold" style="color:#fa8072;">02. 2023</b>
-              </div> -->
-              <div class="col-12 text-md-left">
-                <b class="bbold" style="color:#545b62;">02. 2023</b>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">Jaehong won</a> <b class="note" style="color:#ff8855;">the best Ph.D. Dissertation Award</b> 
-                <a class="note">from the KAIST College of Engineering!</a>
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col-12 text-md-left">
-                <b class="bbold" style="color:#545b62;">01. 2023</b>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">One paper got accepted to </a>
-                <a href=#iclr23 class="note" style="color:#ff8855;">ICLR 2023</a>.                
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <!-- <div class="col-12 col-md-1 text-md-left">
-                <b class="bbold" style="color:#545b62;">12. 2022</b>
-              </div> -->
-              <div class="col-12 text-md-left">
-                <b class="bbold" style="color:#545b62;">12. 2022</b>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">Jaehong successfully</a>
-                <b class="note" style="color:#ff8855;">defended his Ph.D.</b><a class="note"> entitled <i>'On-device, 
-                  Online Continual Learning for the Real World'</i></a>            
-                  <a href="materials/thesis.pdf" target="_blank" ><b class="note"  style="color:#2980f1;">[pdf]</b>!</a> 
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <!-- <div class="col-12 col-md-1 text-md-left">
-                <b class="bbold" style="color:#545b62;">08. 2022</b>
-              </div> -->
-              <div class="col-12 text-md-left">
-                <b class="bbold" style="color:#545b62;">08. 2022</b>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">One paper got accepted to</a>
-                <a href=#eccv22w class="note" style="color:#ff8855;">ECCV 2022 Workshop</a><a class="note"> on Computational Aspects of Deep Learning (CADL).</a>             
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <!-- <div class="col-12 col-md-1 text-md-left">
-                <b class="bbold" style="color:#545b62;">05. 2022</b>
-              </div> -->
-              <div class="col-12 text-md-left">
-                <b class="bbold" style="color:#545b62;">05. 2022</b>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">Two papers got accepted to </a>
-                <a href=#icml22 class="note" style="color:#ff8855;">ICML 2022</a>.                
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <!-- <div class="col-12 col-md-1 text-md-left">
-                <b class="bbold" style="color:#545b62;">01. 2022</b>
-              </div> -->
-              <div class="col-12 text-md-left">
-                <b class="bbold" style="color:#545b62;">01. 2022</b>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">Two papers got accepted to </a>
-                <a href=#iclr22 class="note" style="color:#ff8855;">ICLR 2022</a> 
-                <a class="note">including one </a>
-                <b class="note" style="color:#ff8855;">oral presentation (acceptance rate=54/3391=1.6%)</b>.
-              </div>
-            </div>
-            <br>
-          </div>          
-      </div>
-      <hr />
+      <section id="introduction"></section>
+      <!-- <hr> -->
       <!-- Introduce Start -->
       <div class="row pt-2">
         <div class="col-12 col-md-2">
@@ -275,41 +184,315 @@
         </div>
         <div class="col-12 col-md-10">          
           <p class="note" style="font-size:1em"> 
+            <b style="font-size:1.2em">📌 I'm currently on the 2025 job market, looking for a tenure-track faculty position in several countries. If you'd like to connect, please feel free to reach out!</b>
+            <br><br>
             I'm a Postdoctoral Research Associate in the 
-            <a href="https://murgelab.cs.unc.edu/" target="_blank" style="color:#002dc1;">MURGe-Lab</a> 
-            at the <a href="https://cs.unc.edu/" target="_blank" style="color:#002dc1;">
-              University of North Carolina, Chapel Hill</a>, working with 
-            <a href="https://www.cs.unc.edu/~mbansal/" target="_blank" style="color:#002dc1;">Prof. Mohit Bansal</a>.            
+            <a href="https://murgelab.cs.unc.edu/" target="_blank"><blu>MURGe-Lab</blu></a> (<a href="https://nlp.cs.unc.edu/" target="_blank"><blu>UNC-NLP Group</blu></a>)
+            at the <a href="https://cs.unc.edu/" target="_blank">
+              <blu>University of North Carolina, Chapel Hill</blu></a>, working with 
+            <a href="https://www.cs.unc.edu/~mbansal/" target="_blank"><blu>Prof. Mohit Bansal</blu></a>.            
             Prior to joining UNC, I received my Ph.D. degree from 
-            <a href="https://www.kaist.ac.kr/en/" target="_blank" style="color:#002dc1;">
-              Korea Advanced Institute of Science and Technology (KAIST)</a> in 2023, advised by 
-            <a href="http://www.sungjuhwang.com/" target="_blank" style="color:#002dc1;">Prof. Sung Ju Hwang</a>,            
-            and won <b style="color:#ff8855;"><a class="note" style="font-size:1em">the best Ph.D. Dissertation Award</a></b> 
+            <a href="https://www.kaist.ac.kr/en/" target="_blank">
+              <blu>Korea Advanced Institute of Science and Technology (KAIST)</blu></a> in 2023, advised by 
+            <a href="http://www.sungjuhwang.com/" target="_blank"><blu>Prof. Sung Ju Hwang</blu></a>,            
+            and won <b style="color:#fa753c;"><a class="note" style="font-size:1em"><rd>the best Ph.D. Dissertation Award</rd></a></b> 
               from the KAIST College of Engineering and School of Computing.
             During my Ph.D. study, I interned at Microsoft Research, mentored by 
-            <a href="http://yue-cao.me/" target="_blank" style="color:#002dc1;">Dr. Yue Cao</a>,
+            <a href="http://yue-cao.me/" target="_blank"><blu>Dr. Yue Cao</blu></a>,
             and worked as a short-term visiting student at the Weizmann Institute of Science, 
-            hosted by <a href="https://www.weizmann.ac.il/math/yonina/" target="_blank" style="color:#002dc1;">Prof. Yonina Eldar</a>.       
-            I receivet my B.S. and M.S. degree from Ulsan National Institute of Science and Technology.     
+            hosted by <a href="https://www.weizmann.ac.il/math/yonina/" target="_blank"><blu>Prof. Yonina Eldar</blu></a>. 
+            I received my B.S. and M.S. degrees from <a href="https://www.unist.ac.kr/" target="_blank"><blu>Ulsan National Institute of Science and Technology (UNIST)</blu></a>.            
             <br>            
+            <br>            
+            For my long-term research goal, I've been dedicated to developing lifelong adaptability in embodied AI systems and multimodal foundation models (e.g., VLM, MLLM, diffusion models) within dynamic real-world environments. These systems aim to be reliable, improvable, interactive, and compositional, addressing practical, real-world challenges to better understand human behavior and significantly impact our daily lives.
+            <br>
+            <br>
+            My recent research interest includes the following topics:            
+            <li style="margin-top: -10px"><span class="note" style="font-size:1em"><b> Self-Verification and Self-Evolving Models for Learning Various Skills</b></span></li>
+            <ul>
+              <li><a href="https://arxiv.org/abs/2310.00754" target="_blank" class="note" style="font-size:0.9em">
+                <blu>LURE: Analyzing and Mitigating Object Hallucination in MLLMs (ICLR 2024)</blu></a></li>
+              <li><a href="https://selma-t2i.github.io/" target="_blank" class="note" style="font-size:0.9em">
+                <blu>SELMA: Learning/Merging Skill-Specific T2I Experts with Auto-Generated Data (NeurIPS 2024)</blu></a></li>
+              <li><a href="https://envgen-llm.github.io/" target="_blank" class="note" style="font-size:0.9em">
+                <blu>EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents (COLM 2024)</blu></a></li>              
+              <!-- <li><a href="https://jaehong31.github.io/" target="_blank" class="note" style="font-size:0.9em">
+                <rd>Blindness and Hallucinations: Revisiting Multi-modal Alignment in Vision-Language Large Models (arXiv 24.10)</rd></a></li>                 -->
+              <li><a href="https://safree-safe-t2i-t2v.github.io/" target="_blank" class="note" style="font-size:0.9em">
+                <blu>SAFREE: Training-Free and Adaptive Guard for Safe Text-to-Image And Video Generation (arXiv 24.10)</blu></a></li>              
+              <li><a href="https://video-repair.github.io/" target="_blank" class="note" style="font-size:0.9em">
+                <blu>VideoRepair: Improving T2V Generation via Misalignment Evaluation and Localized Refinement (arXiv 24.11)</blu></a></li>              
+                
+            </ul>
+            <li style="margin-top: -12px"><span class="note" style="font-size:1em"><b>MLLM/LLM-guided Multimodal Video Reasoning, Generation, and Editing</b></span></li>
+            <ul>
+              <li><a href="https://mementos-bench.github.io/" target="_blank" class="note" style="font-size:0.9em">
+                <blu>Mementos: Comprehensive Benchmark for MLLM Reasoning over Image Sequences (ACL 2024)</blu></a></li>
+              <li><a href="https://crema-videollm.github.io/" target="_blank" class="note" style="font-size:0.9em">
+                <blu>CREMA: Generalizable & Efficient Video-Language Reasoning via Any-Modal Modular Fusion (arXiv 24.02)</blu></a></li>
+              <li><a href="https://videotree2024.github.io/" target="_blank" class="note" style="font-size:0.9em">
+                <blu>VideoTree: Query-Adaptive Tree-based Long-Video Understanding (arXiv 24.05)</blu></a></li>
+              <li><a href="https://raccoon-mllm-gen.github.io/" target="_blank" class="note" style="font-size:0.9em">
+                <blu>RACCooN: Interactive Video Content Editing with Auto-Generated Descriptions & Planning (arXiv 24.05)</blu></a></li>              
+              <li><a href="https://dreamrunner-story2video.github.io/" target="_blank" class="note" style="font-size:0.9em">
+                <blu>DreamRunner: Fine-grained Storytelling Video Generation with Retrieval-augmented Motion Adaptation (arXiv 24.11)</blu></a></li>              
+            </ul>
+            <li style="margin-top: -12px"><span class="note" style="font-size:1em"><b>Towards Realistic Continual Learning on Various Modalities</b></span></li>          
+            <ul>
+              <li><a href="https://arxiv.org/abs/2106.01085" target="_blank" class="note" style="font-size:0.9em">
+                <blu>OCS: Online Coreset Selection for Imbanalced and Noisy Continual Learning (ICLR 2022)</blu></a></li>
+              <li><a href="https://arxiv.org/abs/2306.12026" target="_blank" class="note" style="font-size:0.9em">
+                <blu>GLAD: On the Study of Incremental Model Generalizers (ICML 2023)</blu></a></li>
+              <li><a href="https://arxiv.org/abs/2311.08106" target="_blank" class="note" style="font-size:0.9em">
+                <blu>Carpe Diem: Evaluation of World Knowledge in Lifelong LLMs (NAACL 2024)</blu></a></li>
+              <li><a href="https://cl-stella.github.io/" target="_blank" class="note" style="font-size:0.9em">
+                <blu>STELLA: Continual Pre-training over Audio-Video Modalities (ICML 2024)</blu></a></li>
+              <li><a href="https://arxiv.org/abs/2410.10636" target="_blank" class="note" style="font-size:0.9em">
+                <blu>Adapt-&infin;: Scalable Lifelong Multimodal Instruction Tuning via Dynamic Data Selection (arXiv 24.10)</blu></a></li>              
+            </ul>
+            <li style="margin-top: -12px"><span class="note" style="font-size:1em"><b>Efficient Training and Inference for Large Models</b></span></li>            
+            <ul>
+              <li><a href="https://arxiv.org/abs/2202.11453" target="_blank" class="note" style="font-size:0.9em">
+                <blu>ProWD: Federated Learning with Bitwidth Heterogeneity across Participating Devices (ICML 2022)</blu></a></li>
+              <li><a href="https://ecoflap.github.io/" target="_blank" class="note" style="font-size:0.9em">
+                <blu>ECoFLaP: Coarse-to-Fine Layer-Wise Pruning for Multi-/Uni-modal Large Models (ICLR 2024)</blu></a></li>
+              <li><a href="https://becotta-ctta.github.io/" target="_blank" class="note" style="font-size:0.9em">
+                <blu>BECoTTA: Mixture-of-Domain-Experts for Continual Test-Time Adaptation (ICML 2024)</blu></a></li>     
+              <li><a href="https://arxiv.org/abs/2211.10636" target="_blank" class="note" style="font-size:0.9em">
+                <blu>EVEREST: Efficient Masked Video Autoencoder by Removing Redundant Tokens (ICML 2024)</blu></a></li>                   
+                <li><a href="http://arxiv.org/abs/2410.07172" target="_blank" class="note" style="font-size:0.9em">
+                  <blu>Glider: Global and Local Instruction-Driven Expert Router (arXiv 24.10)</blu></a></li>              
+            </ul>
           </p>
-          <a class="note" style="font-size:1em">
-            For the long-term research goal, I've been focusing on tackling practical and real-world challenges
-            to understand humans and impact our real lives through ever-evolving embodied AI systems with multiple agents & modalities.
-            <br>
-            <br>
-            My research interest includes the following topics:            
-          
-            <li><b>Multimodal/Video Large Language Models:</b> <span class="note" style="font-size:1em"> Comprehension, Generation, and Faithfulness</span></li>
-            <li><b>Compositional Generalization:</b> <span class="note" style="font-size:1em">Continual Learning and Compositional Reasoning</span></li>          
-            <li><b>Efficient Training/Inference:</b> <span class="note" style="font-size:1em">Parameter-efficient Learning, Model Compression, and Federated Learning</span></li>            
-          </a>
-          <br>          
-          
+          <!-- <p class="note" style="font-size:1em"> 
+            <blu>Related techniques:</blu> 
+            multimodal/video foundation models and generation, 
+            reliablilty, faithfulness and safe generation, 
+            data-efficient learning, continual learning, federated learning, 
+            model pruning and merging, parameter-efficient modular learning.
+          </p>           -->
         </div>        
       </div>
       <!-- Introduce End -->
-      <hr />
+      <section id="news">
+      <hr>
+      <!-- News Start -->
+      <div class="row pt-2">                
+        <!--<div class="row">-->
+          <div class="col-12 col-md-2">
+            <h3 class="secfont text-md-right">News</h3>
+          </div>
+          <div class="col-12 col-md-10 no-gutters">
+            <!-- <div class="row no-gutters">
+              <div class="col-12 text-md-left" style="line-height:120%;">
+                <rd class="bbold ">01. 2025</rd>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">(NEW!) Three papers got accepted to</a>
+                <a href=#icml24 class="note" style="color:#fa753c;"><rd>ICLR 2025</rd></a><a>.</a>             
+              </div>
+            </div> -->
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left" style="line-height:120%;">
+                <rd class="bbold ">12. 2024</rd>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note"><b>(NEW!) I’ll be in Vancouver to attend NeurIPS 2024</b>. Please reach out if you would like to grab a coffee together!</a>                        
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left" style="line-height:120%;">
+                <rd class="bbold ">11. 2024</rd>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">(NEW!) New preprints released; Check out </a>        
+                <a href="https://video-repair.github.io/" target="_blank" class="note"  style="color:#44a5c0;"><b><i>VideoRepair</i></b></a><a class="note"> and </a>
+                <a href="https://dreamrunner-story2video.github.io/" target="_blank" class="note"  style="color:#44a5c0;"><b><i>DreamRunner</i></b></a><a class="note">.</a>            
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left" style="line-height:120%;">
+                <rd class="bbold ">10. 2024</rd>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">(NEW!) Will serve as an area chair for </a>
+                <a href="https://2025.naacl.org/" target="_blank" class="note" style="color:#fa753c;"><rd>NAACL 2025</rd></a><a class="note">.</a>
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left" style="line-height:120%;">
+                <rd class="bbold ">10. 2024</rd>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">(NEW!) New preprints released; Check out </a>      
+                <a href="https://arxiv.org/abs/2410.10636" target="_blank" class="note"  style="color:#44a5c0;"><b><i>Adapt-&infin;*</i></b></a><a class="note">, </a>          
+                <a href="https://arxiv.org/abs/2410.07172" target="_blank" class="note"  style="color:#44a5c0;"><b><i>Glider</i></b></a><a class="note">, and </a>
+                <a href="https://safree-safe-t2i-t2v.github.io/" target="_blank" class="note"  style="color:#44a5c0;"><b><i>SAFREE*</i></b></a><a class="note">.</a>            
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left" style="line-height:120%;">
+                <rd class="bbold ">09. 2024</rd>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">One paper got accepted to</a>
+              <a href=#recent_publication class="note" style="color:#fa753c;"><rd>NeurIPS 2024</rd>.</a><a class="note">I published <b>11 papers in 2024</b> (3 ICLR, 3 ICML, 1 NeurIPS, 1 CVPR, 1 NAACL, 1 ACL, 1 COLM).</a>   
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left" style="line-height:120%;">
+                <rd class="bbold ">07. 2024</rd>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">Received <rd>Google PaliGemma Academic Program Award</rd>.</a> 
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left" style="line-height:120%;">
+                <rd class="bbold ">07. 2024</rd>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">One paper got accepted to</a>
+                <a href=#recent_publication class="note" style="color:#fa753c;"><rd>COLM 2024</rd></a><a>.</a>             
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left" style="line-height:120%;">
+                <rd class="bbold ">06. 2024</rd>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">Will serve as an area chair for </a>
+                <a href="https://2024.emnlp.org/" target="_blank" class="note" style="color:#fa753c;"><rd>EMNLP 2024</rd></a><a class="note">.</a>
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left" style="line-height:120%;">
+                <rd class="bbold ">05. 2024</rd>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">New preprints released; Check out </a>                
+                <a href="https://raccoon-mllm-gen.github.io/" target="_blank" class="note"  style="color:#44a5c0;"><b><i>RACCooN*</i></b></a>
+                <a class="note"> and </a>
+                <a href="https://videotree2024.github.io/" target="_blank" class="note"  style="color:#44a5c0;"><b><i>VideoTree</i></b></a>
+                <a class="note">.</a>
+              </div>
+            </div>
+            <!-- <div class="row no-gutters">
+              <div class="col-12 text-md-left" style="line-height:120%;">
+                <rd class="bbold ">05. 2024</rd>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">Three papers got accepted to</a>
+                <a href=#icml24 class="note" style="color:#fa753c;"><rd>CVPR 2024 Workshops</rd></a> <a class="note"> on <i>Transformers for Vision <b class="note" style="color:#fa753c;"><rd>(Spotlight)</rd></b></i>, <i>Continual Learning</i>, and <i>Test-time Adaptation</i>.</a>             
+              </div>
+            </div> -->
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left" style="line-height:120%;">
+                <rd class="bbold ">05. 2024</rd>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">One paper got accepted to</a>
+                <a href=#acl24 class="note" style="color:#fa753c;"><rd>ACL 2024</rd></a><a>.</a>             
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left" style="line-height:120%;">
+                <rd class="bbold ">05. 2024</rd>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">Three papers got accepted to</a>
+                <a href=#icml24 class="note" style="color:#fa753c;"><rd>ICML 2024</rd></a><a>.</a>             
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left" style="line-height:120%;">
+                <rd class="bbold ">03. 2024</rd>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">New preprints released; Check out </a>                
+                <a href="https://selma-t2i.github.io/" target="_blank" class="note"  style="color:#44a5c0;"><b><i>SELMA</i></b> (NeurIPS 24')</a><a class="note"> and </a>
+                <a href="https://envgen-llm.github.io/" target="_blank" class="note"  style="color:#44a5c0;"><b><i>EnvGen</i></b> (COLM 24')</a><a class="note">.</a>
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left" style="line-height:120%;">
+                <rd class="bbold ">03. 2024</rd>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">One paper got accepted to </a>
+                <a href=#naacl24 class="note" style="color:#fa753c;"><rd>NAACL 2024</rd></a><a class="note">.</a>
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left" style="line-height:120%;">
+                <rd class="bbold ">02. 2024</rd>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">One paper got accepted to </a>
+                <a href=#cvpr24 class="note" style="color:#fa753c;"><rd>CVPR 2024</rd></a><a class="note">.</a>                
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left" style="line-height:120%;">
+                <rd class="bbold ">02. 2024</rd>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">New preprints released; Check out </a>
+                <a href="https://mementos-bench.github.io/" target="_blank" class="note"  style="color:#44a5c0;"><b><i>Mementos</i></b> (ACL 24')</a><a class="note">,</a>
+                <a href="https://becotta-ctta.github.io/" target="_blank" class="note"  style="color:#44a5c0;"><b><i>BECoTTA*</i></b> (ICML 24')</a><a class="note">, and</a>
+                <a href="https://crema-videollm.github.io/" target="_blank" class="note"  style="color:#44a5c0;"><b><i>CREMA*</i></b></a><a class="note">.</a>
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left" style="line-height:120%;">
+                <rd class="bbold ">01. 2024</rd>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">Three papers got accepted to </a>
+                <a href=#iclr24 class="note" style="color:#fa753c;"><rd>ICLR 2024</rd></a>.
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left" style="line-height:120%;">
+                <gre class="bbold ">08. 2023</gre>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">Joined </a> <a href="https://murgelab.cs.unc.edu/" target="_blank" class="note"><blu>MURGe-Lab</blu></a>
+                <a class="note"> at UNC Chapel Hill as a Postdoctoral Research Associate, working with </a>
+                <a href="https://www.cs.unc.edu/~mbansal/" target="_blank" class="note"><blu>Prof. Mohit Bansal</blu></a><a class="note">!</a></a>
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left" style="line-height:120%;">
+                <gre class="bbold">07. 2023</gre>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">One paper got accepted to </a><a href=#iccv23 class="note"><blu>ICCV 2023</blu></a>.                
+              </div>
+            </div>            
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left" style="line-height:120%;">
+                <gre class="bbold ">04. 2023</gre>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">Two papers got accepted to </a>
+                <a href=#icml23 class="note"><blu>ICML 2023</blu></a>.                
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left" style="line-height:120%;">
+                <gre class="bbold ">02. 2023</gre>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">Won</a> <blu class="note">the best Ph.D. Dissertation Award</blu> 
+                <a class="note">from the KAIST College of Engineering and School of Computing!</a>
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left" style="line-height:120%;">
+                <gre class="bbold ">01. 2023</gre>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">One paper got accepted to </a>
+                <a href=#iclr23 class="note"><blu>ICLR 2023</blu></a>.                
+              </div>
+            </div>
+            <h6>
+            <a type="button" class="badge badge-gray" href="javascript:void(0)" onclick="show('oldnews')">Old News (~2022)</a>                             
+            </h6>
+            <div id="oldnews" class="popup-old-news">
+              <div class="row no-gutters">
+                <div class="col-12 text-md-left" style="line-height:120%;">
+                  <gre class="bbold ">12. 2022</gre>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a class="note">Successfully</a>
+                  <blu class="note">defended his Ph.D.</blu><a class="note"> entitled <i>'On-device, 
+                    Online Continual Learning for the Real World'</i></a>            
+                    <a href="materials/thesis.pdf" target="_blank" ><blu class="note">[pdf]</blu><b>!</b></a> 
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-12 text-md-left" style="line-height:120%;">
+                  <gre class="bbold ">08. 2022</gre>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a class="note">One paper got accepted to</a>
+                  <a href=#eccv22w class="note"><blu>ECCV 2022 Workshop</blu></a><a class="note"> on Computational Aspects of Deep Learning (CADL).</a>             
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-12 text-md-left" style="line-height:120%;">
+                  <gre class="bbold ">05. 2022</gre>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a class="note">Two papers got accepted to </a>
+                  <a href=#icml22 class="note"><blu>ICML 2022</blu></a>.                
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-12 text-md-left" style="line-height:120%;">
+                  <gre class="bbold ">01. 2022</gre>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a class="note">Two papers got accepted to </a>
+                  <a href=#iclr22 class="note"><blu>ICLR 2022</blu></a> 
+                  <a class="note">including one </a>
+                  <b class="note" style="color:#fa753c;"><rd>oral presentation (acceptance rate=54/3391=1.6%)</rd></b>.
+                </div>
+              </div>
+            </div>
+            <br>
+        </div>          
+      </div>
+      <section id="publications">
+      <hr>
       <!-- Preprints Start -->
       <div class="row pt-2">
         <div class="col-md-1 col-12"></div>
@@ -317,24 +500,14 @@
           <h3 class="secfont text-md-left"> Recent Preprints</h3>
           <p class="ssmall authors">(*: equal contribution)            
           </p><br>
-
-          <!-- <div id="input-container">
-            <input type="text" id="imgInput" placeholder="Image Path">
-            <input type="text" id="titleInput" placeholder="Title">
-            <input type="text" id="authorInput" placeholder="Author">
-            <input type="text" id="yearInput" placeholder="Year">
-            <button onclick="addContentFromInputs()">Add Content</button>
-          </div> -->
-          
           <div id="content-container">
-              
           </div>
           <script>
-            let callCounter = 6;
+            let callCounter = 8;
             let jy_ = 'https://jaehong31.github.io/';
-            function addArxivContent(year_, name_, arxiv_, img_, title_, author_, project_= jy_, code_ = jy_) {
+            function addArxivContent(year_, name_, arxiv_, img_, title_, author_, bib_author_, project_= jy_, code_ = jy_) {
               const container = document.getElementById('content-container'); // Assuming you have a div with this ID to hold the content
-              
+              const projectPageBadge = project_ !== jy_ ? `<a href="${project_}" target="_blank"><b class="badge badge-white">Project Page</b></a>` : '';
               const htmlContent = `
                 <div class="row mt-2">
                   <div class="col-md-1 pb-3 text-md-right text-left"></div>
@@ -344,752 +517,182 @@
                   <div class="col-md-7 col-sm-12 text-md-left text-center">              
                     <div class="col text-left text-md-left">
                       <h6 class="darkgray"><b>[P${callCounter}] ${title_}</b></h6>
-                      <p class="ssmall authors">${author_.replace('Jaehong Yoon', '<u><b>Jaehong Yoon</b></u>')}</p>
-                      <h6 class="pprint">arXiv ${year_}</h6>
-                      <h6 class="black">
-                        <a href="${project_}" target="_blank"><span class="badge badge-project">Project Page</span></a>
-                        <a href="https://arxiv.org/pdf/${arxiv_}.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>                  
-                        <a href="${code_}" target="_blank"><span class="badge badge-code">Code</span></a>
-                        <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bib${title_.replace(/\s+/g, '')}')">BibTeX</a>          
+                      <h6 class="ssmall authors">${author_.replace('Jaehong Yoon', '<u><b>Jaehong Yoon</b></u>')}</h6>
+                      <h6>
+                        <a class="pprint" style="margin-top: 0em; margin-bottom: 0em">
+                          arXiv ${year_}</a>&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                        ${projectPageBadge} <!-- Only add this if project_ is not equal to jy_ -->
+                        <a href="https://arxiv.org/abs/${arxiv_}" target="_blank"><b class="badge badge-white">Paper</b></a>
+                        <a href="${code_}" target="_blank"><b class="badge badge-white">Code</b></a>
+                        <a type="button" class="badge badge-white" href="javascript:void(0)" onclick="show('bib${title_.replace(/\s+/g, '')}')">
+                          Bibtex</a>          
+                        <div id="bib${title_.replace(/\s+/g, '')}" class="popup">
+                          @article{${name_},<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;title={${title_}},<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;author={${bib_author_}},<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:${arxiv_}},<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;year={${year_}},<br>                
+                          }
+                        </div>       
                       </h6>
-                      <div id="bib${title_.replace(/\s+/g, '')}" class="popup">
-                        @article{${name_},<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;title={${title_},<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;author={${author_.replace(/\*/g, '').replace(', and', ' and')}},<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:${arxiv_}},<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;year={${year_}},<br>                
-                        }
-                      </div>        
                     </div>                            
                   </div>
                 </div>
-                <hr />`;
+                `;
               callCounter--;
               container.innerHTML += htmlContent;
             }
-            addArxivContent(2024, 'zala2024envgen', '2403.12014', 'envgen.png', 
-                    'EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents', 
-                    'Abhay Zala*, Jaemin Cho*, Han Lin, Jaehong Yoon, and Mohit Bansal',
-                    'https://envgen-llm.github.io/',
-                    'https://github.com/aszala/envgen');          
-            addArxivContent(2024, 'li2024selma', '2403.06952', 'selma.png', 
-                    'SELMA: Learning and Merging Skill-Specific Text-to-Image Experts with Auto-Generated Data', 
-                    'Jialu Li*, Jaemin Cho*, Yi-lin Sung, Jaehong Yoon, and Mohit Bansal',
-                    'https://selma-t2i.github.io/',
-                    'https://github.com/jialuli-luka/selma');              
-          </script>
-          <div class="row mt-2">
-            <div class="col-md-1 pb-3 text-md-right text-left"></div>
-            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-              <img class="img-fluid rounded paper-img" src="./materials/concept_figures/crema_method.png" alt="concept" >
-            </div>
-            <div class="col-md-7 col-sm-12 text-md-left text-center">              
-              <div class="col text-left text-md-left">
-                <h6 class="darkgray"><b>[P4] CREMA: Multimodal Compositional Video Reasoning via Efficient Modular Adaptation and Fusion</b></h6>
-                <p class="ssmall authors">Shoubin Yu*, <u><b>Jaehong Yoon</b></u>*, and Mohit Bansal</p>
-                <h6 class="pprint">arXiv 2024</h6>
-                <h6 class="black">
-                  <a href="https://crema-videollm.github.io/" target="_blank"><span class="badge badge-project">Project Page</span></a>
-                  <a href="https://arxiv.org/pdf/2402.05889.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>                  
-                  <a href="https://github.com/Yui010206/CREMA" target="_blank"><span class="badge badge-code">Code</span></a>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibp5')">BibTeX</a>          
-                </h6>
-                <div id="bibp5"  class="popup">
-                  @article{yu2024crema,<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;title={CREMA: Multimodal Compositional Video Reasoning via Efficient Modular Adaptation and Fusion},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;author={Shoubin Yu, Jaehong Yoon and Mohit Bansal},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:2402.05889},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;year={2024},<br>                
-                  }
-                </div>        
-              </div>                            
-            </div>
-          </div>
-          <hr />
-          <div class="row mt-2">
-            <div class="col-md-1 pb-3 text-md-right text-left"></div>
-            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-              <img class="img-fluid rounded paper-img" src="./materials/concept_figures/becotta.png" alt="concept" >
-            </div>
-            <div class="col-md-7 col-sm-12 text-md-left text-center">              
-              <div class="col text-left text-md-left">
-                <h6 class="darkgray"><b>[P3] BECoTTA: Input-dependent Online Blending of Experts for Continual Test-time Adaptation</b></h6>
-                <p class="ssmall authors">Daeun Lee*, <u><b>Jaehong Yoon</b></u>*, and Sung Ju Hwang</p>
-                <h6 class="pprint">arXiv 2024</h6>
-                <h6 class="black">
-                  <a href="https://becotta-ctta.github.io/" target="_blank"><span class="badge badge-project">Project Page</span></a>
-                  <a href="https://arxiv.org/pdf/2402.08712.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>                  
-                  <a href="https://github.com/daeunni/becotta" target="_blank"><span class="badge badge-code">Code</span></a>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibp4')">BibTeX</a>          
-                </h6>
-                <div id="bibp4"  class="popup">
-                  @article{lee2024becotta,<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;title={BECoTTA: nput-dependent Online Blending of Experts for Continual Test-time Adaptation},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;author={Lee, Daeun and Yoon, Jaehong and Hwang, Sung Ju},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:2402.08712},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;year={2024},<br>                
-                  }
-                </div>        
-              </div>                            
-            </div>
-          </div>        
-          <hr />    
-          <div class="row mt-2">
-            <div class="col-md-1 pb-3 text-md-right text-left"></div>
-            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-              <img class="img-fluid rounded paper-img" src="./materials/concept_figures/mementos.png" alt="concept" >
-            </div>
-            <div class="col-md-7 col-sm-12 text-md-left text-center">              
-              <div class="col text-left text-md-left">
-                <h6 class="darkgray"><b>[P2] Mementos: A Comprehensive Benchmark for Multimodal Large Language Model Reasoning over Image Sequences</b></h6>
-                <p class="ssmall authors">Xiyao Wang, Yuhang Zhou, Xiaoyu Liu, Hongjin Lu, Yuancheng Xu, Feihong He,  <u><b>Jaehong Yoon</b></u>, Taixi Lu, Gedas Bertasius, Mohit Bansal, Huaxiu Yao, and Furong Huang</p>
-                <h6 class="pprint">arXiv 2024</h6>
-                <h6 class="black">
-                  <a href="https://mementos-bench.github.io/" target="_blank"><span class="badge badge-project">Project Page</span></a>
-                  <a href="https://arxiv.org/pdf/2401.10529.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>                  
-                  <a href="https://github.com/umd-huang-lab/Mementos" target="_blank"><span class="badge badge-code">Code</span></a>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibp3')">BibTeX</a>          
-                </h6>
-                <div id="bibp3"  class="popup">
-                  @article{wang2024mementos,<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;title={Mementos: A Comprehensive Benchmark for Multimodal Large Language Model Reasoning over Image Sequences},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;author={Wang, Xiyao and Zhou, Yuhang and Liu, Xiaoyu and Lu, Hongjin and Xu, Yuancheng and He, Feihong and Yoon, Jaehong and Lu, Taixi and Bertasius, Gedas and Bansal, Mohit and others},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:2401.10529},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;year={2024},<br>                
-                  }
-                </div>        
-              </div>                            
-            </div>
-          </div>
-          <hr />
-          <div class="row mt-2">
-            <div class="col-md-1 pb-3 text-md-right text-left"></div>
-            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-              <img class="img-fluid rounded paper-img" src="./materials/concept_figures/everest.JPG" alt="concept" >
-            </div>
-            <div class="col-md-7 col-sm-12 text-md-left text-center">              
-              <div class="col text-left text-md-left">
-                <h6 class="darkgray"><b>[P1] EVEREST: Efficient Masked Video Autoencoder by Removing Redundant Spatiotemporal Tokens </b></h6>
-                <p class="ssmall authors">Sunil Hwang*, <u><b>Jaehong Yoon</b></u>*, Youngwan Lee*, and Sung Ju Hwang</p>
-                <h6 class="pprint">arXiv 2022</h6>
-                <h6 class="black">
-                  <a href="https://arxiv.org/pdf/2211.10636.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
-                  <a href="https://github.com/sunilhoho/VideoMS" target="_blank"><span class="badge badge-code">Code</span></a>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibp1')">BibTeX</a>          
-                </h6>
-                <div id="bibp1"  class="popup">
-                  @article{hwang2022efficient,<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;title={EVEREST: Efficient Masked Video Autoencoder by Removing Redundant Spatiotemporal Tokens},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;author={Hwang, Sunil and Yoon, Jaehong and Lee, Youngwan and Hwang, Sung Ju},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:2211.10636},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;year={2022},<br>                
-                  }
-                </div>                    
-              </div>              
-            </div>            
-          </div>         
-        <hr/>
+
+            addArxivContent(2024, 'wang2024dreamrunner', '2411.16657', 'dreamrunner2.png', 
+                    'DreamRunner: Fine-grained Storytelling Video Generation with Retrieval-augmented Motion Adaptation', 
+                    'Zun Wang, Jialu Li, Han Lin, Jaehong Yoon, and Mohit Bansal',
+                    'Wang, Zun and Li, Jialu and Lin, Han and Yoon, Jaehong and Bansal, Mohit',
+                    'https://dreamrunner-story2video.github.io/',
+                    'https://github.com/wz0919/DreamRunner',                   
+                  );     
+            addArxivContent(2024, 'lee2024videorepair', '2411.15115', 'videorepair2.png', 
+                    'VideoRepair: Improving Text-to-Video Generation via Misalignment Evaluation and Localized Refinement', 
+                    'Daeun Lee, Jaehong Yoon, Jaemin Cho, and Mohit Bansal',
+                    'Lee, Daeun and Yoon, Jaehong and Cho, Jaemin and Bansal, Mohit',
+                    'https://video-repair.github.io/',
+                    'https://github.com/daeunni/VideoRepair');                             
+            addArxivContent(2024, 'yoon2024safree', '2410.12761', 'safree.png', 
+                    'SAFREE: Training-Free and Adaptive Guard for Safe Text-to-Image And Video Generation', 
+                    'Jaehong Yoon*, Shoubin Yu*, Vaidehi Patil, Huaxiu Yao, and Mohit Bansal',
+                    'Yoon, Jaehong and Yu, Shoubin and Patil, Vaidehi and Yao, Huaxiu and Bansal, Mohit',
+                    'https://safree-safe-t2i-t2v.github.io/',
+                    'https://github.com/jaehong31/SAFREE');     
+                    
+            addArxivContent(2024, 'maharana2024adapt', '2410.10636', 'adapt-inf.png', 
+                    'Adapt-&infin;: Scalable Lifelong Multimodal Instruction Tuning via Dynamic Data Selection', 
+                    'Adyasha Maharana*, Jaehong Yoon*, Tianlong Chen, and Mohit Bansal',
+                    'Maharana, Adyasha and Yoon, Jaehong and Chen, Tianlong and Bansal, Mohit',
+                    jy_,
+                    'https://github.com/adymaharana/adapt-inf');     
+            
+            addArxivContent(2024, 'li2024glider', '2410.07172', 'glider.png', 
+                    'Glider: Global and Local Instruction-Driven Expert Router', 
+                    'Pingzhi Li*, Prateek Yadav*, Jaehong Yoon, Jie Peng, Yi-Lin Sung, Mohit Bansal, and Tianlong Chen',
+                    'Li, Pingzhi and Yadav, Prateek and Yoon, Jaehong and Peng, Jie and Sung, Yi-lin and Bansal, Mohit and Chen, Tianlong',
+                    jy_,
+                    'https://github.com/unites-lab/glider');     
+
+
+            addArxivContent(2024, 'yoon2024raccoon', '2405.18406', 'raccoon-teaser.png', 
+                    'RACCooN: A Versatile Instructional Video Editing Framework with Auto-Generated Narratives', 
+                    'Jaehong Yoon*, Shoubin Yu*, and and Mohit Bansal',
+                    'Yoon, Jaehong and Yu, Shoubin and Bansal, Mohit',
+                    'https://raccoon-mllm-gen.github.io/',
+                    'https://github.com/jaehong31/RACCooN');          
+            addArxivContent(2024, 'wang2024videotree', '2405.19209', 'videotree.png', 
+                    'VideoTree: Adaptive Tree-based Video Representation for LLM Reasoning on Long Videos', 
+                    'Ziyang Wang*, Shoubin Yu*, Elias Stengel-Eskin*, Jaehong Yoon, Feng Cheng, Gedas Bertasius, and Mohit Bansal',
+                    'Wang, Ziyang and Yu, Shoubin and Stengel-Eskin, Elias and Yoon, Jaehong and Cheng, Feng and Bertasius, Gedas and Bansal, Mohit',
+                    'https://videotree2024.github.io/',
+                    'https://github.com/Ziyang412/VideoTree');      
+            // addArxivContent(2024, 'yu2024crema', '2402.05889', 'crema_v2.png', 
+            //         'Generalizable and Efficient Video-Language Reasoning via Multimodal Modular Fusion', 
+            //         'Shoubin Yu*, Jaehong Yoon*, and Mohit Bansal',
+            //         'Yu, Shoubin and Yoon, Jaehong and Bansal, Mohit',
+            //         'https://crema-videollm.github.io/',
+            //         'https://github.com/Yui010206/CREMA');               
+          </script>          
+
+<!-- 
+          addArxivContent(2024, 'yang2024blindness', '2405.18406', 'tmp.png', 
+          'Blindness and Hallucinations: Revisiting Multi-modal Alignment in Vision-Language Large Models', 
+          'Xinyu Yang, Chenhang Cui, Jaehong Yoon, Yiyang Zhou, Yi-Lin Sung, Mohit Bansal, Beidi Chen, Huaxiu Yao',
+          'Yoon, Jaehong and Yu, Shoubin and Bansal, Mohit');    -->
+  
+
+        </div>
       </div>
-      <!-- Preprints End -->
-      <hr />
+      <hr>      
+      
       <!-- Publication Start -->
       <div class="row pt-2">
         <div class="col-md-1 col-12"></div>
         <div class="col-md-11 col-12">
-          <h3 class="secfont text-md-left">Publications</h3>
-          <br>
-          <div class="row mt-2">
-            <a name="cvprw24"></a>
-            <div class="col-md-1 pb-3 text-md-right text-left"></div>
-            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-              <img class="img-fluid rounded paper-img" src="./materials/concept_figures/stella-2.png" alt="concept" >
-            </div>
-            <div class="col-md-7 col-sm-12 text-md-left text-center">              
-              <div class="col text-left text-md-left">
-                <h6 class="darkgray"><b>[W] STELLA: Continual Audio-Video Pre-training with Spatio-Temporal Localized Alignment</b></h6>
-                <p class="ssmall authors">Jaewoo Lee*, <u><b>Jaehong Yoon</b></u>*, Wonjae Kim, Yunji Kim, and Sung Ju Hwang</p>
-                <p class="confsize"><b>CVPR 2024</b> Workshop on Continual Learning (CLVision)</b></p>                
-                <h6 class="black">
-                  <a href="https://cl-stella.github.io/" target="_blank"><span class="badge badge-project">Project Page</span></a>
-                  <a href="https://arxiv.org/pdf/2310.08204.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>      
-                  <a href="https://github.com/G-JWLEE/STELLA_code" target="_blank"><span class="badge badge-code">Code</span></a>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibp2')">BibTeX</a>                             
-                </h6>
-                <div id="bibp2"  class="popup">
-                  @article{lee2023lifelong,<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;title={STELLA: Continual Audio-Video Pre-training with Spatio-Temporal Localized Alignment},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;author={Lee, Jaewoo and Yoon, Jaehong and Kim, Wonjae and Kim, Yunji and Hwang, Sung Ju},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:2310.08204},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;year={2023},<br>                
-                  }
-                </div>        
-              </div>                            
-            </div>
-          </div>        
-          <hr />       
-          <div class="row mt-2">
-            <a name="naacl24"></a>               
-            <div class="col-md-1 pb-3 text-md-right text-left"></div>
-            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-              <img class="img-fluid rounded paper-img" src="./materials/concept_figures/evolvingqa_new.png" alt="concept">
-            </div>
-            <div class="col-md-7 col-sm-12 text-md-left text-center">              
-              <div class="col text-left text-md-left">
-                <h6 class="darkgray"><b>[C18] Carpe Diem: On the Evaluation of World Knowledge in Lifelong Language Models</b></h6>
-                <p class="ssmall authors">Yujin Kim, <u><b>Jaehong Yoon</b></u>, Seonghyeon Ye, Sangmin Bae, Namgyu Ho, Sung Ju Hwang, and Se-Young Yun</p>
-                <b class="ssmall authors"><b>NeurIPS 2023</b></b>&nbsp;<b><b class="ssmall authors">Workshop on Synthetic Data Generation with Generative AI <b class="ssmall authors" style="color:#ff8855;"><b>(Oral)</b></b></b></b>
-                <h6 class="conf">NAACL 2024</h6>
-                <h6 class="black">
-                  <a href="https://anonymous.4open.science/r/EvolvingQA/README.md" target="_blank"><span class="badge badge-project">Dataset</span></a>
-                  <a href="https://arxiv.org/pdf/2311.08106.pdf" target="_blank"><span class="badge badge-pdf">Paper</span>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc18')">BibTeX</a>
-                </h6>
-                <div id="bibc18"  class="popup">
-                  @inproceedings{kim2024carpe,<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;title={Carpe Diem: On the Evaluation of World Knowledge in Lifelong Language Models},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;author={Yujin Kim and Jaehong Yoon and Seonghyeon Ye and Sangmin Bae and Namgyu Ho and Sung Ju Hwang and Se-Young Yun},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;booktitle={The North American Chapter of the Association for Computational Linguistics},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;year={2024},<br>                
-                  }
-                </div>                 
-              </div>              
-            </div>
-          </div>         
-          <hr/>         
-          <div class="row mt-2">
-            <a name="cvpr24"></a>
-            <div class="col-md-1 pb-3 text-md-right text-left"></div>
-            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-              <img class="img-fluid rounded paper-img" src="./materials/concept_figures/unimodal.png" alt="concept" >
-            </div>
-            <div class="col-md-7 col-sm-12 text-md-left text-center">              
-              <div class="col text-left text-md-left">
-                <h6 class="darkgray"><b>[C17] Multimodal Representation Learning by Alternating Unimodal Adaptation</b></h6>
-                <p class="ssmall authors">Xiaohui Zhang, <u><b>Jaehong Yoon</b></u>, Mohit Bansal, and Huaxiu Yao</p>
-                <h6 class="conf">CVPR 2024</h6>
-                <h6 class="black">
-                  <a href="https://arxiv.org/pdf/2311.10707.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>   
-                  <a href="https://github.com/Cecile-hi/Multimodal-Learning-with-Alternating-Unimodal-Adaptation" target="_blank"><span class="badge badge-code">Code</span></a>               
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc17')">BibTeX</a>          
-                </h6>
-                <div id="bibc17"  class="popup">
-                  @inproceedings{zhang2024multimodal,<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;title={Multimodal Representation Learning by Alternating Unimodal Adaptation},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;author={Zhang, Xiaohui and Yoon, Jaehong and Bansal, Mohit and Yao, Huaxiu},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;year={2024},<br>                
-                  }
-                </div>        
-              </div>                            
-            </div>
-          </div>
-          <hr />          
-          <div class="row mt-2">
-            <a name="iclr24"></a>
-            <div class="col-md-1 pb-3 text-md-right text-left"></div>
-            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-              <img class="img-fluid rounded paper-img" src="./materials/concept_figures/ecoflap.JPG" alt="concept" >
-            </div>
-            <div class="col-md-7 col-sm-12 text-md-left text-center">
-              <div class="col text-left text-md-left">
-                <h6 class="darkgray"><b>[C16] ECoFLaP: Efficient Coarse-to-Fine Layer-Wise Pruning for Vision-Language Models </b></h6>
-                <p class="ssmall authors">Yi-lin Sung, <u><b>Jaehong Yoon</b></u>, and Mohit Bansal</p>
-                <h6 class="conf">ICLR 2024</h6>
-                <h6 class="black">
-                  <a href="https://ecoflap.github.io/" target="_blank"><span class="badge badge-project">Project Page</span></a>
-                  <a href="https://arxiv.org/pdf/2310.02998.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
-                  <a href="https://github.com/ylsung/ECoFLaP" target="_blank"><span class="badge badge-code">Code</span></a>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc16')">BibTeX</a>          
-                </h6>
-                <div id="bibc16"  class="popup">
-                  @inproceedings{sung2024ecoflap,<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;title={ECoFLaP: Efficient Coarse-to-Fine Layer-Wise Pruning for Vision-Language Models},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;author={Sung, Yi-lin and Yoon, Jaehong and Bansal, Mohit},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Conference on Learning Representations},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;year={2024},<br>                  
-                  }
-                </div>
-              </div>      
-            </div>
-          </div>
-          <hr/>
-
-
-          <div class="row mt-2">
-            <a name="neurips23w1"></a>
-            <div class="col-md-1 pb-3 text-md-right text-left"></div>
-            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-              <img class="img-fluid rounded paper-img" src="./materials/concept_figures/lure.JPG" alt="concept" >
-            </div>
-            <div class="col-md-7 col-sm-12 text-md-left text-center">              
-              <div class="col text-left text-md-left">
-                <h6 class="darkgray"><b>[C15] Analyzing and Mitigating Object Hallucination in Large Vision-Language Models</b></h6>
-                <p class="ssmall authors">Yiyang Zhou*, Chenhang Cui*,  <u><b>Jaehong Yoon</b></u>, Linjun Zhang, Zhun Deng, Chelsea Finn, Mohit Bansal, and Huaxiu Yao</p>
-                <!-- <h6 class="pprint">NeurIPS 2023 on Instruction Tuning and Instruction Following</h6> -->
-                <b class="ssmall authors"><b>NeurIPS 2023</b></b>&nbsp;<b><b class="ssmall authors">Workshop on Instruction Tuning and Instruction Following</b></b>
-                <h6 class="conf">ICLR 2024</h6>
-                <h6 class="black">
-                  <a href="https://arxiv.org/pdf/2310.00754.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
-                  <a href="https://github.com/YiyangZhou/LURE" target="_blank"><span class="badge badge-code">Code</span></a>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc15')">BibTeX</a>          
-                </h6>
-                <div id="bibc15"  class="popup">
-                  @inproceedings{Zhou2024analyzing,<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;title={Analyzing and Mitigating Object Hallucination in Large Vision-Language Models},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;author={Zhou, Yiyang and Cui, Chenhang and Yoon, Jaehong and Zhang, Linjun and Deng, Zhun and Finn, Chelsea and Bansal, Mohit and Yao, Huaxiu},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Conference on Learning Representations},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;year={2024},<br>                
-                  }
-                </div>
-              </div> 
-            </div>
-          </div>          
-          <hr />    
-          
-          <div class="row mt-2">
-            <div class="col-md-1 pb-3 text-md-right text-left"></div>
-            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-              <img class="img-fluid rounded paper-img" src="./materials/concept_figures/pfnr_new.png" alt="concept" >
-            </div>
-            <div class="col-md-7 col-sm-12 text-md-left text-center">              
-              <div class="col text-left text-md-left">
-                <h6 class="darkgray"><b>[C14] Progressive Fourier Neural Representation for Sequential Video Compilation</b></h6>
-                <p class="ssmall authors">Haeyong Kang, <u><b>Jaehong Yoon</b></u>, Dahyun Kim, Sung Ju Hwang, and Chang D. Yoo</p>
-                <h6 class="conf">ICLR 2024 </h6>
-                <h6 class="black">
-                  <a href="https://arxiv.org/pdf/2306.11305.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
-                  <a href="https://github.com/ihaeyong/PNR" target="_blank"><span class="badge badge-code">Code</span></a>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc14')">BibTeX</a>          
-                </h6>
-                <div id="bibc14"  class="popup">
-                  @inproceedings{kang2024progressive,<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;title={Progressive Fourier Neural Representation for Sequential Video Compilation},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;author={Kang, Haeyong and Yoon, Jaehong and Kim, DaHyun and Hwang, Sung Ju and Yoo, Chang D},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Conference on Learning Representations},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;year={2024},<br>                
-                  }
-                </div>
-                <!-- <hr/> -->
-              </div>      
-            </div>
-          </div>        
-          <hr/>                    
-          <div class="row mt-2">
-            <a name="iccv23"></a>
-            <div class="col-md-1 pb-3 text-md-right text-left"></div>
-            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-              <img class="img-fluid rounded paper-img" src="./materials/concept_figures/tcts.JPG" alt="concept" >
-            </div>
-            <div class="col-md-7 col-sm-12 text-md-left text-center">              
-              <div class="col text-left text-md-left">
-                <h6 class="darkgray"><b>[C13] Text-Conditioned Sampling Framework for Text-to-Image Generation with Masked Generative Models</b></h6>
-          <p class="ssmall authors">Jaewoong Lee*, Sangwon Jang*, Jaehyeong Jo, <u><b>Jaehong Yoon</b></u>, Yunji Kim, Jin-Hwa Kim, Jung-Woo Ha, and Sung Ju Hwang</p>
-          <h6 class="conf">ICCV 2023 </h6>
-          <h6 class="black">
-            <a href="https://hello3196.github.io/TCTS_FAS/" target="_blank"><span class="badge badge-project">Project Page</span></a>
-            <a href="https://arxiv.org/pdf/2304.01515.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
-            <!-- <span class="badge badge-tbd">Code</span></a> -->
-            <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc13')">BibTeX</a>          
-          </h6>
-          <div id="bibc13"  class="popup">
-            @article{lee2023text,<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;title={Text-Conditioned Sampling Framework for Text-to-Image Generation with Masked Generative Models},<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;author={Lee, Jaewoong and Jang, Sangwon and Jo, Jaehyeong and Yoon, Jaehong and Kim, Yunji and Kim, Jin-Hwa and Ha, Jung-Woo and Hwang, Sung Ju},<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;journal={International Conference on Computer Vision},<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;year={2023},<br>                
-            }
-          </div>                  
-              </div>              
-            </div>
-          </div>         
-          <hr />
-          
-          
-          <div class="row mt-2">
-            <a name="icml23"></a>     
-            <div class="col-md-1 pb-3 text-md-right text-left"></div>
-            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-              <img class="img-fluid rounded paper-img" src="./materials/concept_figures/glad.png" alt="concept" >
-            </div>
-            <div class="col-md-7 col-sm-12 text-md-left text-center">    
-              <div class="col text-left text-md-left">
-                <h6 class="darkgray"><b>[C12] Continual Learners are Incremental Model Generalizers</b></h6>
-                <p class="ssmall authors"><u><b>Jaehong Yoon</b></u>, Sung Ju Hwang, and Yue Cao</p>
-                <h6 class="conf">ICML 2023 </h6>
-                <h6 class="black">
-                  <a href="https://arxiv.org/pdf/2306.12026.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc12')">BibTeX</a>
-                </h6>
-                <div id="bibc12"  class="popup">
-                  @inproceedings{yoon2023continual,<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;title={Continual Learners are Incremental Model Generalizers},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;author={Yoon, Jaehong and Hwang, Sung Ju and Cao, Yue},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Conference on Machine Learning},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;year={2023},<br>
-                  }
-                </div>               
-              </div>              
-            </div>
-          </div>         
-          
-          <hr/>
-          <div class="row mt-2">
-            <div class="col-md-1 pb-3 text-md-right text-left"></div>
-            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-              <img class="img-fluid rounded paper-img" src="./materials/concept_figures/gfl_concept.PNG" alt="concept" >
-            </div>
-            <div class="col-md-7 col-sm-12 text-md-left text-center">              
-              <div class="col text-left text-md-left">
-                <h6 class="darkgray"><b>[C11] Personalized Subgraph Federated Learning</b></h6>
-                <p class="ssmall authors">Jinheon Baek*, Wonyong Jeong*, Jiongdao Jin, <u><b>Jaehong Yoon</b></u>, and Sung Ju Hwang</p>
-                <h6 class="conf">ICML 2023 </h6>
-                <h6 class="black">
-                  <a href="https://arxiv.org/pdf/2206.10206.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
-                  <a href="https://github.com/JinheonBaek/FED-PUB" target="_blank"><span class="badge badge-code">Code</span></a>            
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc11')">BibTeX</a>
-                </h6>
-                <div id="bibc11"  class="popup">
-                  @inproceedings{Baek2023personalized,<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;title={Personalized Subgraph Federated Learning},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;author={Baek, Jinheon and Jeong, Wonyong and Jin, Jiongdao and Yoon, Jaehong and Hwang, Sung Ju},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Conference on Machine Learning},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;year={2023},<br>
-                  }
-                </div>            
-              </div>              
-            </div>
-          </div>         
-          
-          <hr/>
-          <div class="row mt-2">
-            <a name="iclr23"></a>
-            <div class="col-md-1 pb-3 text-md-right text-left"></div>
-            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-              <img class="img-fluid rounded paper-img" src="./materials/concept_figures/soft-subnet.png" alt="concept" >
-            </div>
-            <div class="col-md-7 col-sm-12 text-md-left text-center">              
-              <div class="col text-left text-md-left">
-                <h6 class="darkgray"><b>[C10] On the Soft-Subnetwork for Few-shot Class Incremental Learning</b></h6>
-                <p class="ssmall authors">Haeyong Kang, <u><b>Jaehong Yoon</b></u>, Sultan R. H. Madjid, Sung Ju Hwang, and Chang D. Yoo</p>
-                <h6 class="conf">ICLR 2023</h6>    
-                <h6 class="black">
-                  <a href="https://openreview.net/forum?id=z57WK5lGeHd" target="_blank"><span class="badge badge-pdf">Paper</span></a>
-                  <a href="https://github.com/ihaeyong/SoftNet-FSCIL" target="_blank"><span class="badge badge-code">Code</span></a>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc10')">BibTeX</a>
-                </h6>
-                <div id="bibc10"  class="popup">
-                  @inproceedings{kang2023on,<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;title={On the Soft-Subnetwork for Few-shot Class Incremental Learning},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;author={Kang, Haeyong and Yoon, Jaehong and Madjid, Sultan Rizky Hikmawan and Hwang, Sung Ju and Yoo, Chang D},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Conference on Learning Representation},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;year={2023},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;url={https://openreview.net/forum?id=z57WK5lGeHd}<br>
-                  }
-                </div>          
-              </div>              
-            </div>
-          </div>         
-    
-          <hr/>
-          <div class="row mt-2">
-            <a name="eccv22w"></a>
-            <div class="col-md-1 pb-3 text-md-right text-left"></div>
-            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-              <img class="img-fluid rounded paper-img" src="./materials/concept_figures/bitat.JPG" alt="concept" >
-            </div>
-            <div class="col-md-7 col-sm-12 text-md-left text-center">              
-              <div class="col text-left text-md-left">
-                <h6 class="darkgray"><b>[W] BiTAT: Neural Network Binarization with Task-dependent Aggregated Transformation</b></h6>
-                <p class="ssmall authors">Geon Park*, <u><b>Jaehong Yoon</b></u>*, Haiyang Zhang, Xing Zhang, Sung Ju Hwang, and Yonina Eldar</p>
-                <!-- <h6 class="pprint"><b class="conf-color">ECCV 2022</b> Workshop on Computational Aspects of Deep Learning (CADL)</h6> -->
-                <p class="confsize"><b>ECCV 2022</b> Workshop on Computational Aspects of Deep Learning</b></p>                
-                <h6 class="black">
-                  <a href="https://arxiv.org/pdf/2207.01394.pdf" target="_blank"><span class="badge badge-pdf">Paper</span>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibw1')">BibTeX</a>
-                </h6>
-                <div id="bibw1"  class="popup">
-                  @article{park2022bitat,<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;title={BiTAT: Neural Network Binarization with Task-dependent Aggregated Transformation},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;author={Park, Geon and Yoon, Jaehong and Zhang, Haiyang and Zhang, Xing and Hwang, Sung Ju and Eldar, Yonina C},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;journal={ECCV Workshop on Computational Aspects of Deep Learning (CADL)},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;year={2022},<br>                
-                  }
-                </div>                 
-              </div>              
-            </div>
-          </div>         
-          <hr/>
-          <div class="row mt-2">
-            <a name="icml22"></a>     
-            <div class="col-md-1 pb-3 text-md-right text-left"></div>
-            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-              <img class="img-fluid rounded paper-img" src="./materials/concept_figures/prowd.png" alt="concept" >
-            </div>
-            <div class="col-md-7 col-sm-12 text-md-left text-center">         
-              <div class="col text-left text-md-left">
-                <h6 class="darkgray"><b>[C9] Bitwidth Heterogeneous Federated Learning with Progressive Weight Dequantization</b></h6>
-                <p class="ssmall authors"><u><b>Jaehong Yoon</b></u>*, Geon Park*, Wonyong Jeong, and Sung Ju Hwang</p>
-                <h6 class="conf">ICML 2022</h6>    
-                <h6 class="black">
-                  <a href="http://arxiv.org/abs/2202.11453.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
-                  <a href="https://github.com/jaehong31/ProWD" target="_blank"><span class="badge badge-code">Code</span></a>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc9')">BibTeX</a>
-                </h6>
-                <div id="bibc9"  class="popup">
-                  @inproceedings{yoon2022bitwidth,<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;title={Bitwidth Heterogeneous Federated Learning with Progressive Weight Dequantization},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;author={Yoon, Jaehong and Park, Geon and Jeong, Wonyong and Hwang, Sung Ju},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Conference on Machine Learning},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;pages={25552--25565},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;year={2022},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;organization={PMLR}<br>
-                  }
-                </div>              
-              </div>              
-            </div>
-          </div>         
-          <hr/>          
-          <div class="row mt-2">
-            <div class="col-md-1 pb-3 text-md-right text-left"></div>
-            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-              <img class="img-fluid rounded paper-img" src="./materials/concept_figures/ffcl.png" alt="concept" >
-            </div>
-            <div class="col-md-7 col-sm-12 text-md-left text-center">              
-              <div class="col text-left text-md-left">
-                <h6 class="darkgray"><b>[C8] Forget-free Continual Learning with Winning Subnetworks</b></h6>
-                <p class="ssmall authors">Haeyong Kang*, Rusty J. L. Mina*, Sultan R. H. Madjid, <u><b>Jaehong Yoon</b></u>, Mark Hasegawa-Johnson, Sung Ju Hwang, and Chang D. Yoo</p>
-                <h6 class="conf">ICML 2022</h6>
-                <h6 class="black">
-                  <a href="https://proceedings.mlr.press/v162/kang22b/kang22b.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
-                  <a href="https://github.com/ihaeyong/WSN" target="_blank"><span class="badge badge-code">Code</span></a>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc8')">BibTeX</a>
-                </h6>
-                <div id="bibc8"  class="popup">
-                  @inproceedings{kang2022forget,<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;title={Forget-free Continual Learning with Winning Subnetworks},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;author={Kang, Haeyong and Mina, Rusty John Lloyd and Madjid, Sultan Rizky Hikmawan and Yoon, Jaehong and Hasegawa-Johnson, Mark and Hwang, Sung Ju and Yoo, Chang D},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Conference on Machine Learning},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;pages={10734--10750},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;year={2022},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;organization={PMLR}<br>           
-                  }
-                </div>           
-              </div>
-            </div>
-          </div>                   
-          <hr/>
-          <div class="row mt-2">
-            <a name="iclr22"></a>
-            <div class="col-md-1 pb-3 text-md-right text-left"></div>
-            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-              <img class="img-fluid rounded paper-img" src="./materials/concept_figures/ucl.png" alt="concept" >
-            </div>
-            <div class="col-md-7 col-sm-12 text-md-left text-center">              
-              <div class="col text-left text-md-left">
-                <h6 class="darkgray"><b>[C7] Representational Continuity for Unsupervised Continual Learning</b></h6>
-                <p class="ssmall authors">Divyam Madaan, <u><b>Jaehong Yoon</b></u>, Yuanchun Li, Yunxin Liu, and Sung Ju Hwang</p>
-                <b class="conf">ICLR 2022 </b>&nbsp;<b class="ssmall authors" style="color:#ff8855;">&nbsp;<b>Oral Presentation (Acceptance Rate=1.6%)</b></b>
-                <h6 class="black">
-                  <a href="https://openreview.net/pdf?id=9Hrka5PA7LW" target="_blank"><span class="badge badge-pdf">Paper</span></a>
-                  <a href="https://github.com/divyam3897/UCL" target="_blank"><span class="badge badge-code">Code</span></a>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc7')">BibTeX</a>
-                </h6>
-                
-                <div id="bibc7"  class="popup">
-                  @inproceedings{madaan2022rethinking,<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;title={Rethinking the Representational Continuity: Towards Unsupervised Continual Learning},<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;author={Madaan, Divyam and Yoon, Jaehong and Li, Yuanchun and Liu, Yunxin and Hwang, Sung Ju},<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Conference on Learning Representations},<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;year={2022},<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;url={https://openreview.net/forum?id=9Hrka5PA7LW}<br>
-                  }
-                </div>           
-              </div>              
-            </div>
-          </div>             
-          <hr/>
-          <div class="row mt-2">
-            <div class="col-md-1 pb-3 text-md-right text-left"></div>
-            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-              <img class="img-fluid rounded paper-img" src="./materials/concept_figures/ocs.png" alt="concept" >
-            </div>
-            <div class="col-md-7 col-sm-12 text-md-left text-center">              
-              <div class="col text-left text-md-left">
-                <h6 class="darkgray"><b>[C6] Online Coreset Selection for Rehearsal-based Continual Learning</b></h6>
-                <p class="ssmall authors"><u><b>Jaehong Yoon</b></u>, Divyam Madaan, Eunho Yang, and Sung Ju Hwang</p>
-                <h6 class="conf">ICLR 2022</h6>
-                <h6 class="black">
-                  <a href="https://openreview.net/pdf?id=f9D-5WNG4Nv" target="_blank"><span class="badge badge-pdf">Paper</span></a>
-                  <a href="https://github.com/jaehong31/OCS" target="_blank"><span class="badge badge-code">Code</span></a>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc6')">BibTeX</a>
-                </h6>
-                <div id="bibc6"  class="popup">
-                  @inproceedings{yoon2022online,<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;title={Online Coreset Selection for Rehearsal-based Continual Learning},<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;author={Yoon, Jaehong and Madaan, Divyam and Yang, Eunho and Hwang, Sung Ju},<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Conference on Learning Representations},<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;year={2022},<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;url={https://openreview.net/forum?id=f9D-5WNG4Nv}<br>
-                  }
-                </div>                
-              </div>              
-            </div>
-          </div>                   
-          <hr />
-          <div class="row mt-2">
-            <div class="col-md-1 pb-3 text-md-right text-left"></div>
-            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-              <img class="img-fluid rounded paper-img" src="./materials/concept_figures/fcl.JPG" alt="concept" >
-            </div>
-            <div class="col-md-7 col-sm-12 text-md-left text-center">              
-              <div class="col text-left text-md-left">
-                <h6 class="darkgray"><b>[C5] Federated Continual Learning with Weighted Inter-client Transfer</b></h6>
-                <p class="ssmall authors"><u><b>Jaehong Yoon</b></u>*, Wonyong Jeong*, Giwoong Lee, Eunho Yang, and Sung Ju Hwang</p>
-                <b class="ssmall authors"><b>ICML 2020</b></b>&nbsp;
-                <b class="ssmall authors">Workshop on Lifelong Machine Learning</b>
-                <h6 class="conf">ICML 2021</h6>
-                <h6 class="black">
-                  <a href="http://proceedings.mlr.press/v139/yoon21b/yoon21b.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
-                  <a href="https://github.com/wyjeong/FedWeIT" target="_blank"><span class="badge badge-code">Code</span></a>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc5')">BibTeX</a>
-                </h6>
-                <div id="bibc5"  class="popup">
-                  @inproceedings{yoon2021federated,<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;title={Federated continual learning with weighted inter-client transfer},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;author={Yoon, Jaehong and Jeong, Wonyong and Lee, Giwoong and Yang, Eunho and Hwang, Sung Ju},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Conference on Machine Learning},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;pages={12073--12086},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;year={2021},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;organization={PMLR}<br>
-                  }
-                </div>                  
-              </div>              
-            </div>
-          </div>                   
-          <hr />
-          <div class="row mt-2">
-            <div class="col-md-1 pb-3 text-md-right text-left"></div>
-            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-              <img class="img-fluid rounded paper-img" src="./materials/concept_figures/fssl.png" alt="concept" >
-            </div>
-            <div class="col-md-7 col-sm-12 text-md-left text-center">              
-              <div class="col text-left text-md-left">
-                <h6 class="darkgray"><b>[C4] Federated Semi-supervised Learning with Inter-Client Consistency & Disjoint Learning</b></h6>
-                <p class="ssmall authors">Wonyong Jeong, <u><b>Jaehong Yoon</b></u>, Eunho Yang, and Sung Ju Hwang</p>
-                <b class="ssmall authors"><b>ICML 2020</b></b>&nbsp;
-                <b class="ssmall authors">Workshop on Federated Learning 
-                  <b style="color:#ff8855;">(Long Presentation, Best Student Paper Award)</b></b>
-                  <h6 class="conf">ICLR 2021</h6>
-                <h6 class="black">
-                  <a href="https://openreview.net/pdf?id=ce6CFXBh30h" target="_blank"><span class="badge badge-pdf">Paper</span></a>
-                  <a href="https://github.com/wyjeong/FedMatch" target="_blank"><span class="badge badge-code">Code</span></a>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc4')">BibTeX</a>
-                </h6>
-                <div id="bibc4"  class="popup">
-                  @inproceedings{jeong2021federated,<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;title={Federated Semi-Supervised Learning with Inter-Client Consistency \& Disjoint Learning},<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;author={Jeong, Wonyong and Yoon, Jaehong and Yang, Eunho and Hwang, Sung Ju},<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Conference on Learning Representations},<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;year={2021},<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;url={https://openreview.net/forum?id=ce6CFXBh30h}<br>
-                  }
-                </div>           
-              </div>              
-            </div>
-          </div>                   
-          <hr />
-          <div class="row mt-2">
-            <div class="col-md-1 pb-3 text-md-right text-left"></div>
-            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-              <img class="img-fluid rounded paper-img" src="./materials/concept_figures/apd.jpg" alt="concept" >
-            </div>
-            <div class="col-md-7 col-sm-12 text-md-left text-center">              
-              <div class="col text-left text-md-left">
-                <h6 class="darkgray"><b>[C3] Scalable and Order-robust Continual Learning with Additive Parameter Decomposition</b></h6>
-                <p class="ssmall authors"><u><b>Jaehong Yoon</b></u>, Saehoon Kim, Eunho Yang, and Sung Ju Hwang</p>
-                <h6 class="conf">ICLR 2020</h6>
-                <h6 class="black">
-                  <a href="https://openreview.net/pdf?id=r1gdj2EKPB" target="_blank"><span class="badge badge-pdf">Paper</span></a>
-                  <a href="https://github.com/jaehong31/APD" target="_blank"><span class="badge badge-code">Code</span></a>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc3')">BibTeX</a>
-                </h6>
-                <div id="bibc3"  class="popup">
-                  @inproceedings{Yoon2020Scalable,<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;title={Scalable and Order-robust Continual Learning with Additive Parameter Decomposition},<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;author={Yoon, Jaehong and Kim, Saehoon and Yang, Eunho and Hwang, Sung Ju},<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Conference on Learning Representations},<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;year={2020},<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;url={https://openreview.net/forum?id=r1gdj2EKPB}<br>
-                  }
-                </div>                  
-              </div>              
-            </div>
-          </div>                   
-          <hr />
-          <div class="row mt-2">
-            <div class="col-md-1 pb-3 text-md-right text-left"></div>
-            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-              <img class="img-fluid rounded paper-img" src="./materials/concept_figures/den.JPG" alt="concept" >
-            </div>
-            <div class="col-md-7 col-sm-12 text-md-left text-center">              
-              <div class="col text-left text-md-left">
-                <h6 class="darkgray"><b>[C2] Lifelong Learning with Dynamically Expandable Networks</b></h6>
-                <p class="ssmall authors"><u><b>Jaehong Yoon</b></u>, Eunho Yang, Jeongtae Lee, and Sung Ju Hwang</p>
-                <h6 class="conf">ICLR 2018</h6>
-                <h6 class="black">
-                  <a href="https://openreview.net/pdf?id=Sk7KsfW0-" target="_blank"><span class="badge badge-pdf">Paper</span></a>
-                  <a href="https://github.com/jaehong31/DEN" target="_blank"><span class="badge badge-code">Code</span></a>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc2')">BibTeX</a>
-                </h6>
-                <div id="bibc2"  class="popup">
-                  @inproceedings{yoon2018lifelong,<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;title={Lifelong Learning with Dynamically Expandable Networks},<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;author={Yoon, Jaehong and Yang, Eunho and Lee, Jeongtae and Hwang, Sung Ju},<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Conference on Learning Representations},<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;year={2018},<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;url={https://openreview.net/forum?id=Sk7KsfW0-},<br>
-                  }            
-                </div>               
-              </div>              
-            </div>
-          </div>         
-          <hr />
-          <div class="row mt-2">
-            <div class="col-md-1 pb-3 text-md-right text-left"></div>
-            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-              <img class="img-fluid rounded paper-img" src="./materials/concept_figures/cges.JPG" alt="concept" >
-            </div>
-            <div class="col-md-7 col-sm-12 text-md-left text-center">              
-              <div class="col text-left text-md-left">
-                <h6 class="darkgray"><b>[C1] Combined Group and Exclusive Sparsity for Deep Neural Networks</b></h6>
-                <p class="ssmall authors"><u><b>Jaehong Yoon</b></u> and Sung Ju Hwang</p>
-                <h6 class="ssmall conf">ICML 2017</h6>
-                <h6 class="black">
-                  <a href="http://proceedings.mlr.press/v70/yoon17a/yoon17a.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
-                  <a href="https://github.com/jaehong31/CGES" target="_blank"><span class="badge badge-code">Code</span></a>
-                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc1')">BibTeX</a>
-                </h6>
-                <div id="bibc1"  class="popup">
-                  @inproceedings{yoon2017combined,<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;title={Combined group and exclusive sparsity for deep neural networks},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;author={Yoon, Jaehong and Hwang, Sung Ju},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Conference on Machine Learning},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;pages={3958--3966},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;year={2017},<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;organization={PMLR}<br>
-                  }
-                </div>                    
-              </div>              
-            </div>
-          </div>                   
-      <hr />
+          <section id="recent_publication"></section>
+          <head> 
+            <script> 
+            $(function(){
+              $("#includedContent").load("publication.html"); 
+            });
+            </script> 
+          </head> 
+          <body> 
+            <div id="includedContent"></div>
+          </body>                     
+        </div>
+      </div>
+      <section id="services"></section>
+      <hr>
+      <!-- Service Start -->
+      <div class="row pt-2">
+        <div class="col-12 col-md-2">
+          <h3 class="secfont text-md-right">Professional Services</h3>
+        </div>
+        <div class="col-12 col-md-10">          
+          <a class="note" style="font-size:1em">
+            <b>Area Chair</b>
+            <li>2025 <blu class="note">North American Chapter of the Association for Computational Linguistics</blu> <b class="note">(NAACL)</b></li>
+            <li>2024 <blu class="note">Conference on Empirical Methods in Natural Language Processing</blu> <b class="note">(EMNLP)</b></li>
+            <li>2024 <blu class="note">Continual Foundation Model Workshop</blu><b class="note"> @ NeurIPS 2024</b></li>
+          </a>
+          <a class="note" style="font-size:1em">
+            <b>Reviewer</b>
+            <li>2018, 2019, 2020, 2021, 2022, 2023, 2024 <blu class="note">Neural Information Processing System</blu> <b class="note">(NeurIPS)</b></li>
+            <li>2019, 2020, 2021, 2022, 2023, 2024 <blu class="note">International Conference on Machine Learning</blu> <b class="note">(ICML)</b></li>
+            <li>2019, 2020, 2021, 2022, 2023, 2024, 2025 <blu class="note">International Conference on Learning Representations</blu> <b class="note">(ICLR)</b></li>
+            <li>2022, 2023, 2024 <blu class="note">Conference on Lifelong Learning Agents</blu> <b class="note">(CoLLAs)</b></li>
+            <li>2020 <blu class="note">International Joint Conferences on Artificial Intelligence</blu> <b class="note">(IJCAI)</b></li>
+            <li>2020 <blu class="note">Association for the Advancement of Artificial Intelligence</blu> <b class="note">(AAAI)</b></li>
+            <li>2021, 2023 <blu class="note">IEEE Transactions on Pattern Analysis and Machine Intelligence</blu> <b class="note">(TPAMI)</b></li>
+            <li>2020, 2022 <blu class="note">IEEE Transactions on Neural Networks and Learning Systems</blu> <b class="note">(TNNLS)</b></li>
+            <li>2022 <blu class="note">Journal of Artificial Intelligence Research</blu> <b class="note">(JAIR)</b></li>
+            <li>2021 <blu class="note">IEEE/ACM Transactions on Networking</blu> <b class="note">(ToN)</b></li>
+            <li>2020 <blu class="note">Neural Networks</blu> <b class="note">(NN)</b></li>            
+          </a>          
+        </div>        
+      </div>
+      <!-- Service End -->
+      <section id="misc"></section>
+      <hr>
+      <!-- Talks Start -->
+      <div class="row pt-2">
+        <div class="col-12 col-md-2">
+          <h3 class="secfont text-md-right">Invited Talks</h3>
+        </div>
+        <div class="col-12 col-md-10">          
+          <a class="note" style="font-size:1em">
+            <!-- <li><b>06. 2024.</b><c class="note" style="color:#002dc1">asdasd</c></li> -->
+            <li>Aug. 2024 <blu class="note">DCDL Tutorial @ MICCAI 2024</blu><c class="note">, "On the Communicability of Heterogeneous and Continual Learning Agents"</c></li>
+            <li>Jul. 2024 <blu class="note">CSE/GSAI, Postech</blu><c class="note">, "Lifelong-Adaptable and Self-Evolving Multimodal AI Systems for Real-World Dynamics"</c></li>
+            <li>Jul. 2024 <blu class="note">Electronics and Telecommunications Research Institute (ETRI)</blu><c class="note">, "Lifelong-Adaptable and Self-Evolving Multimodal AI Systems for Real-World Dynamics"</c></li>            
+            <li>Jul. 2024 <blu class="note">Graduate School of AI, KAIST</blu><c class="note">, "Lifelong-Adaptable and Self-Evolving Multimodal AI Systems for Real-World Dynamics"</c></li>        
+            <li>Jun. 2024 <blu class="note">AI Graduate School, UNIST</blu><c class="note">, "Large-scale Multimodal Learning: Continuity, Efficiency, and Unification"</c></li>
+            <li>Nov. 2023 <blu class="note">LG AI Research</blu><c class="note">, "Lightweight Video & Multimodal Learning"</c></li>            
+            <li>Jun. 2023 <blu class="note">Edinburgh University</blu><c class="note">, "Towards Continuously Evolving AI"</c></li>            
+            <li>Apr. 2023 <blu class="note">CMU & MBZUAI, Prof. Eric Xing's Group</blu><c class="note"">, "Federated and Continual Learning with Heterogeneous Clients"</c></li>            
+            <li>2022 <blu class="note">UT Austin, Prof. Kristin Grauman's Group</blu><c class="note">, "Online Coreset Selection for Rehearsal-based Conitnual Learning"</c></li>            
+            <li>2022 <blu class="note">Korea Computer Congress (KCC)</blu><c class="note">, "Representational Continuity for Unsupervised Continual Learning"</c></li>            
+            <li>2019 <blu class="note">Samsung SDS</blu><c class="note">, "Lifelong Learning with Dynamically Expandable Networks"</c></li>            
+            <li>2018 <blu class="note">NAVER Corp., Tech. Talk</blu><c class="note">, "Lifelong Learning with Dynamically Expandable Networks"</c></li>            
+            <li>2018 <blu class="note">SK-Telecom, Tech. Open Connect (T-T.O.C)</blu><c class="note">, "Lifelong Learning with Dynamically Expandable Networks"</c></li>            
+            <li>2017 <blu class="note">Korea Software Congress (KSC)</blu><c class="note">, "Combined Group and Exclusive Sparsity for Deep Neural Networks"</c></li>                                    
+          </a>          
+        </div>        
+      </div>
+      <!-- Talks End -->
+      <hr>
       
       <!-- Footer Start -->
       <div class="row">
         <div class="col footer-cover">
           <div class="footer text-center small">
-            <div>Last modified:&nbsp<c class="badge badge-secondary">03. 18. 2024.</c></div>              
-            <a href="#top">Back to top of page</a>
+            <div>Last modified:&nbsp 11.24. 2024.</div>              
+            <a href="#top"><blu>Back to top of page</blu></a>
             <br>
             <br>
           </div>
@@ -1099,3 +702,4 @@
     </div>
   </body>
 </html>
+
