@@ -259,6 +259,8 @@
                 <blu>EVEREST: Efficient Masked Video Autoencoder by Removing Redundant Tokens (ICML 2024)</blu></a></li>                   
                 <li><a href="http://arxiv.org/abs/2410.07172" target="_blank" class="note" style="font-size:0.9em">
                   <blu>Glider: Global and Local Instruction-Driven Expert Router (arXiv 24.10)</blu></a></li>              
+                <li><a href="https://arxiv.org/abs/2503.01820" target="_blank" class="note" style="font-size:0.9em">
+                  <blu>RSQ: Learning from Important Tokens Leads to Better Quantized LLMs (arXiv 25.03)</blu></a></li>              
             </ul>
           </p>
           <!-- <p class="note" style="font-size:1em"> 
@@ -282,18 +284,18 @@
           <div class="col-12 col-md-10 no-gutters">
             <div class="row no-gutters">
               <div class="col-12 text-md-left" style="line-height:120%;">
+                <rd class="bbold ">03. 2025</rd>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">(NEW!) New preprint on LLM Quantization is released; Check out </a>        
+                <a href="https://arxiv.org/abs/2503.01820" target="_blank" class="note"  style="color:#44a5c0;"><b><i>RSQ</i></b></a><a class="note">.</a>
+              </div> 
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left" style="line-height:120%;">
                 <rd class="bbold ">02. 2025</rd>&nbsp;&nbsp;&nbsp;&nbsp;
                 <a class="note">(NEW!) One paper on long video understanding got accepted to</a>
                 <a href=#recent_publication class="note" style="color:#fa753c;"><rd>CVPR 2025</rd>.</a>   
               </div> 
             </div>
-            <!-- <div class="row no-gutters">
-              <div class="col-12 text-md-left" style="line-height:120%;">
-                <rd class="bbold ">02. 2025</rd>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">(NEW!) New preprint on LLM Quantization is released; Check out </a>        
-                <a href="https://jaehong31.github.io/" target="_blank" class="note"  style="color:#44a5c0;"><b><i>RSQ</i></b></a><a class="note">.</a>
-              </div> 
-            </div> -->
             <div class="row no-gutters">
               <div class="col-12 text-md-left" style="line-height:120%;">
                 <rd class="bbold ">02. 2025</rd>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -526,7 +528,36 @@
           <h3 class="secfont text-md-left"> Recent Preprints</h3>
           <p class="ssmall authors">(*: equal contribution)            
           </p><br>
-
+          
+          <div class="row mt-2">            
+            <div class="col-md-1 pb-3 text-md-right text-left"></div>
+            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
+                <img class="img-fluid rounded paper-img" src="./materials/concept_figures/rsq.png" alt="concept" >
+            </div>
+            <div class="col-md-7 col-sm-12 text-md-left text-center">              
+              <div class="col text-left text-md-left">
+                <h6 class="darkgray"><b>[P6] RSQ: Learning from Important Tokens Leads to Better Quantized LLMs</b></h6>
+                <!-- Author list with expandable "et al." -->
+                <h6 class="ssmall authors">Yi-Lin Sung, Prateek Yadav, Jialu Li, <u><b>Jaehong Yoon</b></u>, Mohit Bansal</h6>
+                <h6>
+                  <!-- <span class="conf">arXiv 2025</span><br> -->
+                  <a class="pprint" style="margin-top: 0em; margin-bottom: 0em">
+                    arXiv 2025</a>&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                  <a href="https://arxiv.org/abs/2503.01820" target="_blank"><span class="badge badge-white">Paper</span></a>      
+                  <a href="https://github.com/ylsung/rsq" target="_blank"><span class="badge badge-white">Code</span></a>
+                  <a type="button" class="badge badge-bibtexwhite" href="javascript:void(0)" onclick="show('bibp101')">BibTeX</a>                             
+                  <div id="bibp101"  class="popup">
+                  @article{sung2025rsq,<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;title={RSQ: Learning from Important Tokens Leads to Better Quantized LLMs},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;author={Sung, Yi-Lin and Yadav, Prateek and Li, Jialu and Yoon, Jaehong and Bansal, Mohit},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:2503.01820},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;year={2025},<br>                
+                  }
+                  </div>        
+                </h6>
+              </div>                            
+            </div>
+          </div>  
           <div class="row mt-2">            
             <div class="col-md-1 pb-3 text-md-right text-left"></div>
             <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
@@ -576,16 +607,6 @@
               </div>                            
             </div>
           </div>  
-          <!-- <script>
-            function toggleAuthors() {
-                var etAl = document.querySelector('.et-al');
-                var fullAuthors = document.querySelector('.full-authors');
-                
-                // Remove "et al." and show full author list
-                etAl.style.display = 'none';
-                fullAuthors.style.display = 'inline';
-            }
-          </script> -->
           <script>
             function toggleAuthors(expand) {
                 var etAl = document.querySelector('.et-al');
@@ -643,11 +664,6 @@
               container.innerHTML += htmlContent;
             }
             
-            // addArxivContent(2025, 'sung2025rsq', '2502.xxxxx', 'rsq.png', 
-            //         'RSQ: Learning from Important Tokens Leads to Better Quantized LLMs', 
-            //         'Yi-Lin Sung, Prateek Yadav, Jialu Li, Jaehong Yoon, and Mohit Bansal',
-            //         'Sung, Yi-Lin and Yadav, Prateek and Li, Jialu and Yoon, Jaehong and Bansal, Mohit',
-            //         );     
             addArxivContent(2024, 'wang2024dreamrunner', '2411.16657', 'dreamrunner2.png', 
                     'DreamRunner: Fine-grained Storytelling Video Generation with Retrieval-augmented Motion Adaptation', 
                     'Zun Wang, Jialu Li, Han Lin, Jaehong Yoon, and Mohit Bansal',
@@ -833,7 +849,7 @@
       <div class="row">
         <div class="col footer-cover">
           <div class="footer text-center small">
-            <div>Last modified:&nbsp 02. 26. 2025.</div>              
+            <div>Last modified:&nbsp 03. 04. 2025.</div>              
             <a href="#top"><blu>Back to top of page</blu></a>
             <br>
             <br>
