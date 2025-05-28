@@ -65,68 +65,50 @@
   </head>
   <a name="top"></a>
   <body>
-    <!-- <nav class="navbar fixed-top navbar-inverse navbar-collapse">
-      <a class="note" style="margin-right: auto;" href="#top"><u><b>Jaehong</b></u></a>
-      <div class="navbar-toggle" id="mobile-menu">        
-        <span class="bar"></span>        
-        <span class="bar"></span>        
-        <span class="bar"></span>        
+    <div id="navbar"></div>
+    <!-- <script>
+      fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+    </script>
+     -->
+    <!-- <div class="navbar-outer">
+      <div class="navbar-inner">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#top" style="padding-left: 20px">Home</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div style="margin-left: auto;">
+              <button id="mode-toggle" style="font-size: 1em; float: right; align-items: center;">Dark Mode🌙</button>        
+            </div>
+            <ul class="navbar-nav navbar-menu">
+              <li class="nav-item">
+                <a class="nav-link" href="#news">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#publications">Publications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>        
+              <li class="nav-item">
+                <a class="nav-link" href="#misc">Talks</a>
+              </li>        
+              <li class="nav-item">
+                <a href="people.html">People</a>
+              </li>        
+              <li class="nav-item">
+                <a class="nav-link" href="materials/jhyoon-cv.pdf" target="_blank">[CV]</a>
+              </li>        
+            </ul>        
+          </div>
+        </nav>
       </div>
-      <ul class="navbar-menu" style="display: inline;">
-        <li><a href="#news"><u><b>NEWS</b></u></a></li>
-        <li><a href="#publications"><u><b>PUBLICATIONS</b></u></a></li>
-        <li><a href="#services"><u><b>SERVICES</b></u></a></li>
-        <li><a href="#misc"><b><u>TALKS</u></b></a></li>
-        <li><a href="materials/jhyoon-cv.pdf" target="_blank"><u><b>[CV]</b></u></a></li>        
-      </ul>      
-      <div class="navbar-menu">
-        <button id="mode-toggle" style="font-size: 1em; float: right; color: #FFF">Dark Mode🌙</button>        
-      </div>
-    </nav>
-    -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#top" style="padding-left: 20px">Home</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <div style="margin-left: auto;">
-          <button id="mode-toggle" style="font-size: 1em; float: right; align-items: center;">Dark Mode🌙</button>        
-        </div>
-        <ul class="navbar-nav navbar-menu">
-          <li class="nav-item">
-            <a class="nav-link" href="#news">News</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#publications">Publications</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>        
-          <li class="nav-item">
-            <a class="nav-link" href="#misc">Talks</a>
-          </li>        
-          <li class="nav-item">
-            <a class="nav-link" href="materials/jhyoon-cv.pdf" target="_blank">[CV]</a>
-          </li>        
-        </ul>
-        <div class="navbar-toggle">
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              ☰
-            </a> -->
-            <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#top">Home</a>
-              <a class="dropdown-item" href="#news">News</a>
-              <a class="dropdown-item" href="#publications">Publications</a>
-              <div class="navbar-menu">
-                <button id="mode-toggle" style="font-size: 1em; float: right; color: #FFF">Dark Mode🌙</button>        
-              </div>
-            </div>             -->
-          </li>
-        </div>
-      </div>
-    </nav>
+    </div> -->
     <script src="get_func.js"></script>
     <div class="container resume"  style="padding-top:100px">
       <!-- Profile Start -->
@@ -144,11 +126,11 @@
             <div class="col pt-3">
               <div class="row pb-2">
                 <div class="col-12">
-                  <a class="note bbbold" style="font-size:1.3em">Postdoctoral Research Associate, UNC Chapel Hill</a>
+                  <a class="note bbbold" style="font-size:1.3em">Incoming Assistant Professor, NTU Singapore</a>
                 </div>
-                <div class="col-12">
+                <!-- <div class="col-12">
                   <a class="note" style="font-size:1.1em">FB-232, 201 S. Columbia St., Chapel Hill, NC</a>
-                </div>              
+                </div>               -->
                 <div class="col-12">
                   <a class="note" style="font-size:1.1em">jhyoon [at] cs [dot] unc [dot] edu</a>
                 </div>              
@@ -183,9 +165,14 @@
         </div>
         <div class="col-12 col-md-10">          
           <p class="note" style="font-size:1em"> 
-            <b style="font-size:1.2em">📌 I'm currently on the 2025 job market, looking for a tenure-track faculty position in several countries. If you'd like to connect, please feel free to reach out!</b>
+            <!-- <b style="font-size:1.2em">📌 I'm currently on the 2025 job market, looking for a tenure-track faculty position in several countries. If you'd like to connect, please feel free to reach out!</b> -->
+            <b>📌 I am joining the
+              <a href="https://www.ntu.edu.sg/computing" target "_blank"><blu>College of Computing and Data Science (CCDS)</blu></a> at 
+              <a href="https://www.ntu.edu.sg/" target "_blank"><blu>Nanyang Technological University (NTU)</blu></a> as an Assistant Professor in Fall 2025 🇸🇬</b>
+            <br>
+            <b>I will be recruiting Ph.D. students for Fall 2026 and actively looking for interns throughout 2025 and 2026.</b>
             <br><br>
-            I'm a Postdoctoral Research Associate in the 
+            I'm a Postdoctoral Research Associate in the
             <a href="https://murgelab.cs.unc.edu/" target="_blank"><blu>MURGe-Lab</blu></a> (<a href="https://nlp.cs.unc.edu/" target="_blank"><blu>UNC-NLP Group</blu></a>)
             at the <a href="https://cs.unc.edu/" target="_blank">
               <blu>University of North Carolina, Chapel Hill</blu></a>, working with 
@@ -232,7 +219,7 @@
               <li><a href="https://becotta-ctta.github.io/" target="_blank" class="note" style="font-size:0.9em">
                 <blu>BECoTTA: Mixture-of-Domain-Experts for Continual Test-Time Adaptation (ICML 2024)</blu></a></li>     
               <li><a href="https://zunwang1.github.io/DreamRunner" target="_blank" class="note" style="font-size:0.9em">
-                <blu>DreamRunner: Fine-grained Storytelling Video Generation with Retrieval-augmented Motion Adaptation (arXiv 24.11)</blu></a></li>                              
+                <blu>DreamRunner: Fine-grained Storytelling Video Generation with Retrieval-augmented Motion Adaptation (2024)</blu></a></li>                              
             </ul>
             <li style="margin-top: -12px"><span class="note" style="font-size:1em"><b>Trustworthy Multimodal Reasoning and Generation</b></span></li>
             <ul>
@@ -241,11 +228,11 @@
               <li><a href="https://mementos-bench.github.io/" target="_blank" class="note" style="font-size:0.9em">
                 <blu>Mementos: Comprehensive Benchmark for MLLM Reasoning over Image Sequences (ACL 2024)</blu></a></li>
               <li><a href="https://raccoon-mllm-gen.github.io/" target="_blank" class="note" style="font-size:0.9em">
-                <blu>RACCooN: Interactive Video Content Editing with Auto-Generated Descriptions & Planning (arXiv 24.05)</blu></a></li>                            
+                <blu>RACCooN: Interactive Video Content Editing with Auto-Generated Descriptions & Planning (2024)</blu></a></li>                            
               <li><a href="https://videotree2024.github.io/" target="_blank" class="note" style="font-size:0.9em">
                 <blu>VideoTree: Query-Adaptive Tree-based Long-Video Understanding (CVPR 2025)</blu></a></li>
               <li><a href="https://video-repair.github.io/" target="_blank" class="note" style="font-size:0.9em">
-                <blu>VideoRepair: Improving T2V Generation via Misalignment Evaluation and Localized Refinement (arXiv 24.11)</blu></a></li>              
+                <blu>VideoRepair: Improving T2V Generation via Misalignment Evaluation and Localized Refinement (2024)</blu></a></li>              
               <li><a href="https://safree-safe-t2i-t2v.github.io/" target="_blank" class="note" style="font-size:0.9em">
                 <blu>SAFREE: Training-Free and Adaptive Guard for Safe Text-to-Image And Video Generation (ICLR 2025)</blu></a></li>                            
             </ul>
@@ -258,9 +245,9 @@
               <li><a href="https://arxiv.org/abs/2211.10636" target="_blank" class="note" style="font-size:0.9em">
                 <blu>EVEREST: Efficient Masked Video Autoencoder by Removing Redundant Tokens (ICML 2024)</blu></a></li>                   
                 <li><a href="http://arxiv.org/abs/2410.07172" target="_blank" class="note" style="font-size:0.9em">
-                  <blu>Glider: Global and Local Instruction-Driven Expert Router (arXiv 24.10)</blu></a></li>              
+                  <blu>Glider: Global and Local Instruction-Driven Expert Router (2024)</blu></a></li>              
                 <li><a href="https://arxiv.org/abs/2503.01820" target="_blank" class="note" style="font-size:0.9em">
-                  <blu>RSQ: Learning from Important Tokens Leads to Better Quantized LLMs (arXiv 25.03)</blu></a></li>              
+                  <blu>RSQ: Learning from Important Tokens Leads to Better Quantized LLMs (2025)</blu></a></li>              
             </ul>
           </p>
           <!-- <p class="note" style="font-size:1em"> 
@@ -870,7 +857,7 @@
       <div class="row">
         <div class="col footer-cover">
           <div class="footer text-center small">
-            <div>Last modified:&nbsp 4. 28. 2025.</div>              
+            <div>Last modified:&nbsp 5. 28. 2025.</div>              
             <a href="#top"><blu>Back to top of page</blu></a>
             <br>
             <br>
@@ -881,4 +868,3 @@
     </div>
   </body>
 </html>
-
