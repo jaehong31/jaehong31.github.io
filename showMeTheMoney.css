@@ -137,7 +137,8 @@ section {
 
 /* Additional style changes for specific elements in night mode */
 body blu {
-  color: #002dc1; /* Gold color for headings */
+  /* color: #002dc1; */
+  color: #00aec1;
 }
 body am {
   color: #596384; /* Gold color for headings */
