@@ -134,9 +134,12 @@ section {
   }
 }
 
-
 /* Additional style changes for specific elements in night mode */
 body blu {
+  /* color: #3a91e3; */
+  color: #140083;
+}
+body bblu {
   /* color: #002dc1; */
   color: #3a91e3;
 }
@@ -145,6 +148,9 @@ body am {
 }
 body rd {
   color: #fa8072; /* Gold color for headings */  
+}
+body drk {
+  color: #000000; /* Gold color for headings */  
 }
 body hr {
   background-color: #222222; 
@@ -159,11 +165,17 @@ body.dark-mode {
 body.dark-mode gre {
   color: #eeeeee86; /* Gold color for headings */
 }
+body.dark-mode drk {
+  color: #eeeeee; /* Gold color for headings */
+}
 body.dark-mode rd {
   color: #ffa59b; /* Gold color for headings */
 }
 body.dark-mode blu {
   color: #cac8ff; /* Gold color for headings */
+}
+body.dark-mode bblu {
+  color: #44a5c0; /* Gold color for headings */
 }
 body.dark-mode am {
   color: #cac8ff; /* Gold color for headings */
