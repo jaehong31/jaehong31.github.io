@@ -134,6 +134,66 @@ section {
   }
 }
 
+.student-grid {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  gap: 50px;
+  margin-top: 40px;
+  justify-content: flex-start;
+}
+
+.student-card {
+  width: 230px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.student-card img {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.profile-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.photo-box {
+  text-align: center;
+}
+.photo-box img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  display: block;
+  margin-bottom: 10px;
+}
+.photo-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.profile-info {
+  flex: 1;
+  margin-top: -12px;
+  margin-right: 150px;
+}
+.profile-info h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+.profile-info p {
+  margin-top: 8px;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
 /* Additional style changes for specific elements in night mode */
 body blu {
   /* color: #3a91e3; */
