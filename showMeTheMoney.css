@@ -217,9 +217,10 @@ body hr {
 }
 /* Dark theme styles */
 body.dark-mode {
-  background-color: #333;
+  /* background-color: #333; */
+  background-color: #273045;
   /* background-color: #333333; */
-  color: #eeeeee;
+  color: #E6EDF3;
 }
 /* Additional style changes for specific elements in night mode */
 body.dark-mode gre {
@@ -437,8 +438,8 @@ html {
   }
 
   body.dark-mode .research-topics .topic {
-    border-color: #444444;       
-    background-color: #2f2f2f;   
+    border-color: #171717;       
+    background-color: #21262D;   
   }
   
   body.dark-mode .research-topics .topic summary {
@@ -446,11 +447,11 @@ html {
   }
   
   body.dark-mode .research-topics .topic summary:hover {
-    background-color: #3a3a3a;   
+    background-color: #161B22;   
   }
   
   body.dark-mode .research-topics .topic[open] summary {
-    background-color: #3f3f3f;   
+    background-color: #0A0F1A;   
   }
   
   body.dark-mode .research-topics .topic-body {
