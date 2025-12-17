@@ -1,49 +1,111 @@
 <div class="navbar-outer">
     <div class="navbar-inner">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light align-items: flex-end">
-            <a class="navbar-brand" href="index.html#top" style="padding-left: 20px">
-                <img src="materials/icons/home.png" alt="Home Icon" style="height: 20px; vertical-align: middle; margin-right: 2px;margin-bottom: 4px;">
-                Jaehong Yoon</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+      <nav class="navbar">
+        <a class="navbar-brand" href="index.html#top">
+          <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 10.5L12 3l9 7.5"></path>
+            <path d="M5 9.5V21h14V9.5"></path>
+            <path d="M9 21v-6h6v6"></path>
+          </svg>
+          <span class="brand-name">Jaehong Yoon</span>
+        </a>
+  
+        <ul class="navbar-menu" id="navbarMenu">
+          <li><a class="nav-link" href="index.html#news">News</a></li>
+          <li><a class="nav-link" href="publications.html">Publications</a></li>
+          <li><a class="nav-link" href="services_and_talks.html">Services and Talks</a></li>
+          <li><a class="nav-link" href="people.html">People</a></li>
+          <li><a class="nav-link" href="lecture.html">Teaching</a></li>
+          <li><a class="nav-link" href="materials/jhyoon-cv.pdf" target="_blank" rel="noopener">CV</a></li>
+        </ul>
+  
+        <div class="navbar-right">
+            <button class="nav-toggle" type="button"
+                    aria-label="Toggle navigation"
+                    aria-controls="navbarMenu"
+                    aria-expanded="false">                    
+              <span class="hamburger"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav navbar-menu">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#news">News</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="index.html#publications">Publications</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="publications.html">Publications</a>
-                    </li>    
-                    <li class="nav-item">
-                        <a class="nav-link" href="services_and_talks.html">Services and Talks</a>
-                    </li>                            
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="index.html#services">Services</a>
-                    </li>        
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#misc">Talks</a>
-                    </li>         -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="people.html">People</a>
-                    </li>        
-                    <li class="nav-item">
-                        <a class="nav-link" href="lecture.html">Teaching</a>
-                    </li>                            
-                    <li class="nav-item">
-                        <a class="nav-link" href="materials/jhyoon-cv.pdf" target="_blank">CV</a>
-                    </li>        
-                    <!-- <div style="margin-left: auto;">
-                        <button id="mode-toggle" style="font-size: 1em; float: middle; align-items: center;">Dark Mode🌙</button>        
-                    </div> -->
-                </ul>  
-                <div style="margin-left: auto;">
-                    <button id="mode-toggle" style="font-size: 1em; float: right; align-items: center;">Dark Mode🌙</button>        
-                </div>
-            </div>
-        </nav>
+            </button>
+          <button id="mode-toggle" class="mode-toggle-btn" type="button">
+            Dark Mode 🌙
+          </button>
+        </div>
+      </nav>
     </div>
-</div>
+  </div>
+  
+  <!-- <script>
+  (function () {
+    /* ---------- Dark mode ---------- */
+    const root = document.documentElement;
+    const modeBtn = document.getElementById("mode-toggle");
+  
+    function setModeLabel() {
+      if (!modeBtn) return;
+      const isDark = root.classList.contains("dark-mode");
+      modeBtn.textContent = isDark ? "Light Mode ☀️" : "Dark Mode 🌙";
+    }
+  
+    const saved = localStorage.getItem("theme_mode");
+    if (saved === "dark") root.classList.add("dark-mode");
+    setModeLabel();
+  
+    if (modeBtn) {
+      modeBtn.addEventListener("click", () => {
+        root.classList.toggle("dark-mode");
+        localStorage.setItem(
+          "theme_mode",
+          root.classList.contains("dark-mode") ? "dark" : "light"
+        );
+        setModeLabel();
+      });
+    }
+  
+    /* ---------- Active nav link ---------- */
+    const links = document.querySelectorAll(".navbar-menu .nav-link");
+    const path = location.pathname.split("/").pop() || "index.html";
+    const hash = location.hash;
+  
+    links.forEach(a => {
+      const href = a.getAttribute("href") || "";
+      const [hrefPath, hrefHashRaw] = href.split("#");
+      const hrefHash = hrefHashRaw ? "#" + hrefHashRaw : "";
+  
+      const samePage =
+        (hrefPath === "" && path === "index.html") ||
+        (hrefPath === path);
+  
+      const matchIndexSection =
+        path === "index.html" &&
+        hrefPath === "index.html" &&
+        hrefHash &&
+        hrefHash === hash;
+  
+      if (matchIndexSection || (samePage && !hrefHash)) {
+        a.classList.add("active");
+      }
+    });
+  
+    /* ---------- Mobile menu toggle ---------- */
+    const toggle = document.querySelector(".nav-toggle");
+    const menu = document.getElementById("navbarMenu");
+  
+    if (toggle && menu) {
+      toggle.addEventListener("click", () => {
+        const open = menu.classList.toggle("is-open");
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+  
+      menu.querySelectorAll("a").forEach(a => {
+        a.addEventListener("click", () => {
+          if (window.matchMedia("(max-width: 820px)").matches) {
+            menu.classList.remove("is-open");
+            toggle.setAttribute("aria-expanded", "false");
+          }
+        });
+      });
+    }
+  })();
+  </script> -->
+  

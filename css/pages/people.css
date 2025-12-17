@@ -1,0 +1,206 @@
+
+:root {
+  --icon-fg: #111;
+  --icon-fg-hover: #111;
+  --icon-border: rgba(0,0,0,0.18);
+  --icon-bg: rgba(0,0,0,0.03);
+  --icon-bg-hover: rgba(0,0,0,0.08);
+  --intern-bg: rgba(0, 0, 0, 0.55);
+}
+
+.dark-mode {
+  --icon-fg: rgba(255,255,255,0.92);
+  --icon-fg-hover: rgba(255,255,255,1);
+  --icon-border: rgba(255,255,255,0.30);
+  --icon-bg: rgba(255,255,255,0.10);
+  --icon-bg-hover: rgba(255,255,255,0.18);
+  --intern-bg: rgba(255, 255, 255, 0.65);
+}
+
+/* =========================
+   People page layout
+   ========================= */
+
+   .note-std-nm {
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: Arial;
+    line-height:1.5;
+  } 
+  .note-std-bg {
+    font-size: 0.9em;
+    color: rgb(171, 171, 171);
+    font-weight: 500;
+    font-family: Arial;
+    line-height:1.5;
+  } 
+
+  .note span.note-intern-bg {
+    color: var(--intern-bg);
+    font-size: 0.9em;
+    font-weight: 500;
+    font-family: Arial;
+    line-height:1.5;
+  }
+
+
+   .peopleGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(420px, 1fr));
+    gap: 24px 20px;
+    align-items: stretch; /* 카드 높이 맞추기 */
+  }
+  
+  /* 반응형 */
+  @media (max-width: 1100px) {
+    .peopleGrid { grid-template-columns: 1fr; gap: 44px; }
+  }
+  
+  /* =========================
+     Card
+     ========================= */
+  
+  .personCard {
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+  
+    padding: 0;
+    min-height: 150px; 
+  }
+  
+  .avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 999px;
+    object-fit: cover;
+    flex-shrink: 0;
+  
+    background: rgba(0,0,0,0.04);
+  }
+  
+  .dark-mode .avatar {
+    background: rgba(255,255,255,0.08);
+  }
+  
+  .personBody {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-width: 0; 
+  }
+  
+  .personBody .note-std-nm {
+    margin: 0;
+    /* font-size: 28px; */
+    font-weight: 650;
+    line-height: 1.15;
+    color: var(--fg);
+  }
+  
+  .note-std-bg {
+    margin: 14px 0 0;
+    /* font-size: 22px; */
+    line-height: 1.35;
+    color: rgba(0,0,0,0.45);
+  }
+  
+  .dark-mode .note-std-bg {
+    color: rgba(255,255,255,0.60);
+  }
+  
+  /* =========================
+     Links row (icons) - aligned
+     ========================= */
+  
+  .links {
+    margin-top: auto;
+    padding-top: -20px;
+  
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  
+  /* =========================
+     Icon buttons (shared style)
+     ========================= */
+  
+  .iconBtn,
+  .iconBtn:link,
+  .iconBtn:visited {
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+  
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  
+    color: var(--icon-fg);
+    border: 1px solid var(--icon-border);
+    background: var(--icon-bg);
+  
+    text-decoration: none;
+    transition: background 0.15s ease,
+                border-color 0.15s ease,
+                color 0.15s ease,
+                transform 0.12s ease;
+  }
+  
+  .iconBtn:hover,
+  .iconBtn:active,
+  .iconBtn:focus-visible {
+    background: var(--icon-bg-hover);
+    color: var(--icon-fg-hover);
+    transform: translateY(-1px);
+  }
+  
+  .iconBtn:focus-visible {
+    outline: 2px solid var(--icon-border);
+    outline-offset: 2px;
+  }
+  
+  .iconBtn svg {
+    width: 18px;
+    height: 18px;
+    display: block;
+    fill: currentColor;
+  }
+  
+  .iconBtn[aria-label="Google Scholar"] svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  /* =========================
+     Optional: tighter layout on small screens
+     ========================= */
+  
+  @media (max-width: 520px) {
+    .personCard {
+      gap: 18px;
+      min-height: 0;
+    }
+  
+    .avatar {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .personBody .note {
+      font-size: 24px;
+    }
+  
+    .note-std-bg {
+      font-size: 18px;
+    }
+  
+    .iconBtn {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+
+  

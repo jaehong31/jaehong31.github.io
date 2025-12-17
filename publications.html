@@ -49,7 +49,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
 
-    <link rel="stylesheet" href="./showMeTheMoney.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/navbar.js" defer></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -81,13 +82,14 @@
                             }
                         }
                         
-                        let callCounter = 10;
+                        let callCounter = 12;
                         const jy_ = 'https://jaehong31.github.io/';
                         const contentContainer = document.getElementById("content-container");
                         
                         function addArxivContent({year, name, arxiv, img, title, author, bib_author, project = jy_, dataset = jy_, code = jy_, toggleID = null, etalPreview = '', fullAuthorHTML = ''}) {
                             const projectPageBadge = project !== jy_ ? `<a href="${project}" target="_blank"><b class="badge badge-white">Project Page</b></a>` : '';
                             const datasetBadge = dataset !== jy_ ? `<a href="${dataset}" target="_blank"><b class="badge badge-white">Dataset</b></a>` : '';
+                            const codeBadge = code !== jy_ ? `<a href="${code}" target="_blank"><b class="badge badge-white">Code</b></a>` : '';
                             const authorsHTML = toggleID
                                 ? `<p class="ssmall authors">${etalPreview}<span class="et-al-${toggleID}" onclick="toggleAuthors('${toggleID}', true)" style="cursor:pointer;text-decoration:underline;">et al.</span>
                                     <span class="full-authors-${toggleID}" style="display:none;">${fullAuthorHTML}
@@ -107,9 +109,9 @@
                                     <h6>
                                         <a class="pprint">arXiv ${year}</a><br>
                                         ${projectPageBadge}
-                                        ${datasetBadge}
                                         <a href="https://arxiv.org/abs/${arxiv}" target="_blank"><span class="badge badge-white">Paper</span></a>
-                                        <a href="${code}" target="_blank"><span class="badge badge-white">Code</span></a>
+                                        ${datasetBadge}
+                                        ${codeBadge}
                                         <a type="button" class="badge badge-white" href="javascript:void(0)" onclick="show('bib${title.replace(/\s+/g, '')}')">BibTeX</a>
                                         <div id="bib${title.replace(/\s+/g, '')}" class="popup">
                                         @article{${name},<br>
@@ -146,15 +148,26 @@
                         //     author: 'Taekyung Ki, Sangwon Jang, Jaehyeong Jo, Jaehong Yoon, Sung Ju Hwang',
                         //     bib_author: 'Taekyung Ki, Sangwon Jang, Jaehyeong Jo, Jaehong Yoon, Sung Ju Hwang',
                         // });
-                        // addArxivContent({
-                        //     year: 2025, 
-                        //     name: 'wu2025medforget', 
-                        //     arxiv: 'xxxx.xxxxx', 
-                        //     img: 'medforget.png', 
-                        //     title: 'MedForget: Hierarchy-Aware Multimodal Unlearning Testbed for Medical AI', 
-                        //     author: 'Fengli Wu*, Vaidehi Patil*, Jaehong Yoon, Yue Zhang, Mohit Bansal',
-                        //     bib_author: 'Fengli Wu, Vaidehi Patil, Jaehong Yoon, Yue Zhang, Mohit Bansal',
-                        // });
+                        addArxivContent({
+                            year: 2025, 
+                            name: 'wu2025medforget', 
+                            arxiv: '2512.09867', 
+                            img: 'medforget.png', 
+                            title: 'MedForget: Hierarchy-Aware Multimodal Unlearning Testbed for Medical AI', 
+                            author: 'Fengli Wu*, Vaidehi Patil*, Jaehong Yoon, Yue Zhang, Mohit Bansal',
+                            bib_author: 'Fengli Wu, Vaidehi Patil, Jaehong Yoon, Yue Zhang, Mohit Bansal',
+                            dataset: 'https://github.com/fengli-wu/MedForget',
+                        });
+                        addArxivContent({
+                            year: 2025, 
+                            name: 'sivakumaran2025dart', 
+                            arxiv: '2512.07132', 
+                            img: 'dart.png', 
+                            title: 'DART: Leveraging Multi-Agent Disagreement for Tool Recruitment in Multimodal Reasoning', 
+                            author: 'Nithin Sivakumaran, Justin Chih-Yao Chen, David Wan, Yue Zhang, Jaehong Yoon, Elias Stengel-Eskin, Mohit Bansal',
+                            bib_author: 'Nithin Sivakumaran, Justin Chih-Yao Chen, David Wan, Yue Zhang, Jaehong Yoon, Elias Stengel-Eskin, Mohit Bansal',
+                            code: 'https://github.com/nsivaku/dart',
+                        });
                         addArxivContent({
                             year: 2025, 
                             name: 'yeo2025worldmm', 
@@ -410,7 +423,7 @@
             <div class="row">
                 <div class="col footer-cover">
                 <div class="footer text-center small">
-                    <div>Last modified:&nbsp Dec. 3. 2025.</div>              
+                    <div>Last modified:&nbsp Dec. 12. 2025.</div>              
                     <a href="#top_publ"><blu>Back to top of page</blu></a>
                     <br>
                     <br>

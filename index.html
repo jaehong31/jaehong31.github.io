@@ -57,7 +57,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
 
-    <link rel="stylesheet" href="./showMeTheMoney.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/navbar.js" defer></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -100,13 +102,26 @@
                 <div class="col-12">
                   <h5 class="text-center">
                     &nbsp;&nbsp;
-                    <div style="display: flex; justify-content: space-between;">
-                      <div class="note">
-                        <a href="https://github.com/jaehong31" target="_blank" title="GitHub"><i class="fab fa-github" style="font-size: 1.6em;"></i></a>&nbsp;&nbsp;
-                        <a href="https://twitter.com/jaeh0ng_yoon" target="_blank" title="Twitter"><i class="fab fa-twitter" style="font-size: 1.6em;"></i></a>&nbsp;&nbsp;
-                        <a href="https://www.linkedin.com/in/jaehongyoon/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin" style="font-size: 1.6em;"></i></a>&nbsp;&nbsp;
-                        <a href="https://scholar.google.com/citations?user=-5comoUAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar" style="font-size: 1.6em;"></i></a>
-                      </div>
+                    <div class="socialBar">
+                      <a href="https://github.com/jaehong31" target="_blank" title="GitHub" class="socialIcon github">
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a href="https://twitter.com/jaeh0ng_yoon" target="_blank" title="Twitter" class="socialIcon twitter">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/jaehongyoon/" target="_blank" title="LinkedIn" class="socialIcon linkedin">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                      <a href="https://scholar.google.com/citations?user=-5comoUAAAAJ&hl=en"
+                        target="_blank"
+                        title="Google Scholar"
+                        class="socialIcon scholar"
+                        aria-label="Google Scholar">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M12 3L1 9l11 6 9-4.9V17h2V9L12 3z"></path>
+                          <path d="M4 12.6V16c0 2.8 3.6 5 8 5s8-2.2 8-5v-3.4l-8 4.3-8-4.3z"></path>
+                        </svg>
+                      </a>
                     </div>
                     <hr style="width: 100%; height: 1px; margin-top: 4px; margin-bottom: 4px;">                             
                   </h5>  
@@ -307,12 +322,10 @@
               <div class="col-12 text-md-left" style="line-height:120%;">
                 <rd class="bbold ">12. 2025</rd>&nbsp;&nbsp;&nbsp;&nbsp;
                 <a class="note">(NEW!) New preprints on </a>
-                <a href="https://worldmm.github.io/" target="_blank" class="note"><i><drk><u>multimodal memory agent</u></drk></i></a><a class="note"> and</a>
-                <a href="https://sketchverify.github.io/" target="_blank" class="note"><i><drk><u>test-time planning for video generation</u></drk></i></a><a class="note">.</a>
-                <!-- <a href="https://worldmm.github.io/" target="_blank" class="note"><i><drk><u>multimodal memory agent</u></drk></i></a><a class="note">, </a>
+                <a href="https://worldmm.github.io/" target="_blank" class="note"><i><drk><u>multimodal memory agent</u></drk></i></a><a class="note">, </a>
                 <a href="https://sketchverify.github.io/" target="_blank" class="note"><i><drk><u>test-time planning for video generation</u></drk></i></a><a class="note">, </a>
-                <a href="https://sketchverify.github.io/" target="_blank" class="note"><i><drk><u>interactive avatar generation</u></drk></i></a><a class="note">, and </a>
-                <a href="https://sketchverify.github.io/" target="_blank" class="note"><i><drk><u>multimodal unlearning testbed for medical AI</u></drk></i></a><a class="note">.</a> -->
+                <a href="https://arxiv.org/abs/2512.07132" target="_blank" class="note"><i><drk><u>multimodal multi-agent system</u></drk></i></a><a class="note">, and</a>
+                <a href="https://arxiv.org/abs/2512.09867" target="_blank" class="note"><i><drk><u>multimodal unlearning testbed for medical AI</u></drk></i></a><a class="note">.</a>
               </div>
             </div>
             <div class="row no-gutters">
@@ -346,30 +359,30 @@
             </div>
             <div class="row no-gutters">
               <div class="col-12 text-md-left" style="line-height:120%;">
-                <rd class="bbold ">10. 2025</rd>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">(NEW!) One paper got accepted to</a>
+                <gre class="bbold ">10. 2025</gre>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">One paper got accepted to</a>
                 <a href=#recent_publication class="note"><blu>TMLR</blu></a><a class="note">.</a>
               </div>
             </div>
             <div class="row no-gutters">
               <div class="col-12 text-md-left" style="line-height:120%;">
-                <rd class="bbold ">10. 2025</rd>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">(NEW!) Will serve as an area chair for </a>
+                <gre class="bbold ">10. 2025</gre>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">Will serve as an area chair for </a>
                 <a href="https://2026.eacl.org/" target="_blank" class="note"><blu>EACL 2026</blu></a><a class="note">.</a>
               </div> 
             </div>
             <div class="row no-gutters">
               <div class="col-12 text-md-left" style="line-height:120%;">
-                <rd class="bbold ">08. 2025</rd>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">(NEW!) Five papers got accepted to</a>
+                <gre class="bbold ">08. 2025</gre>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">Five papers got accepted to</a>
               <a href=#emnlp2025 class="note"><blu>EMNLP 2025</blu></a>   
               <a class="note">(3 main, 2 findings).</a>  
               </div>
             </div>
             <div class="row no-gutters">
               <div class="col-12 text-md-left" style="line-height:120%;">
-                <rd class="bbold ">08. 2025</rd>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">(NEW!) Joined the</a>        
+                <gre class="bbold ">08. 2025</gre>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">Joined the</a>        
                 <a href="https://www.ntu.edu.sg/computing" target="_blank" class="note"><blu>CCDS</blu></a>
                 <a class="note"> at </a>
                 <a href="https://www.ntu.edu.sg/" target="_blank" class="note"><blu>NTU Singapore</blu></a>, 
@@ -378,58 +391,21 @@
             </div>
             <div class="row no-gutters">
               <div class="col-12 text-md-left" style="line-height:120%;">
-                <rd class="bbold ">08. 2025</rd>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">(NEW!) Selected for the</a>        
+                <gre class="bbold ">08. 2025</gre>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">Selected for the</a>        
                 <a href="https://lifelong-ml.cc/Conferences/2025/program/mainday2" target="_blank" class="note"><blu>Early-Career Spotlight Program</blu></a><a class="note"> at CoLLAs 2025!</a>
               </div> 
             </div>
-            <!-- <div class="row no-gutters">
-              <div class="col-12 text-md-left" style="line-height:120%;">
-                <rd class="bbold ">07. 2025</rd>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">(NEW!) New preprint on </a>        
-                <a href="https://sites.google.com/cs.unc.edu/videorts2025/" target="_blank" class="note"><i><drk>data-efficient RL approach for video reasoning with video-adaptive TTS</drk></i></a><a class="note"> is released.</a>
-              </div> 
-            </div> -->
-            <!-- <div class="row no-gutters">
-              <div class="col-12 text-md-left" style="line-height:120%;">
-                <rd class="bbold ">06. 2025</rd>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">(NEW!) New preprints on </a>        
-                <a href="https://video-skill-cot.github.io/" target="_blank" class="note"><i><drk>skill-based CoT for video reasoning</drk></i></a><a class="note">,
-                <a href="https://frame-guidance-video.github.io/" target="_blank" class="note"><i><drk>training-free guidance for controllable video generation</drk></i></a><a class="note">, and</a>
-                <a href="https://huggingface.co/datasets/sardinelab/MF2" target="_blank" class="note"><i><drk>long movie understanding benchmark</drk></i></a><a class="note"> are released.</a>
-              </div> 
-            </div> -->
-            <!-- <div class="row no-gutters">
-              <div class="col-12 text-md-left" style="line-height:120%;">
-                <rd class="bbold ">05. 2025</rd>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">(NEW!) New preprint on </a>        
-                <a href="https://zunwang1.github.io/Epic" target="_blank" class="note"><i><drk>camera control video generation</drk></i></a><a class="note"> is released.</a>
-              </div> 
-            </div> -->
-            <!-- <div class="row no-gutters">
-              <div class="col-12 text-md-left" style="line-height:120%;">
-                <rd class="bbold ">04. 2025</rd>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">New preprint on </a>        
-                <a href="https://arxiv.org/abs/2504.08641" target="_blank" class="note"><i><drk>training-free multimodal planning for video generation</drk></i></a><a class="note"> is released.</a>
-              </div> 
-            </div> -->
             <div class="row no-gutters">
               <div class="col-12 text-md-left" style="line-height:120%;">
-                <rd class="bbold ">04. 2025</rd>&nbsp;&nbsp;&nbsp;&nbsp;
+                <gre class="bbold ">04. 2025</gre>&nbsp;&nbsp;&nbsp;&nbsp;
                 <a class="note">Will serve as an area chair for </a>
                 <a href="https://neurips.cc/" target="_blank" class="note"><blu>NeurIPS 2025</blu></a><a class="note">.</a>
               </div> 
             </div>
-            <!-- <div class="row no-gutters">
-              <div class="col-12 text-md-left" style="line-height:120%;">
-                <rd class="bbold ">03. 2025</rd>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">New preprint on </a>        
-                <a href="https://arxiv.org/abs/2503.01820" target="_blank" class="note"><i><drk>LLM Quantization</drk></i></a><a class="note"> is released.</a>
-              </div> 
-            </div> -->
             <div class="row no-gutters">
               <div class="col-12 text-md-left" style="line-height:120%;">
-                <rd class="bbold ">02. 2025</rd>&nbsp;&nbsp;&nbsp;&nbsp;
+                <gre class="bbold ">02. 2025</gre>&nbsp;&nbsp;&nbsp;&nbsp;
                 <a class="note">One paper got accepted to</a>
                 <a href=#recent_publication class="note"><blu>CVPR 2025</blu></a><a class="note">.</a>
               </div> 
@@ -443,86 +419,86 @@
             </div> -->
             <div class="row no-gutters">
               <div class="col-12 text-md-left" style="line-height:120%;">
-                <rd class="bbold ">01. 2025</rd>&nbsp;&nbsp;&nbsp;&nbsp;
+                <gre class="bbold ">01. 2025</gre>&nbsp;&nbsp;&nbsp;&nbsp;
                 <a class="note">Three papers got accepted to</a>
               <a href=#iclr2025 class="note"><blu>ICLR 2025</blu></a><a class="note">.</a>
               </div>
             </div>
-            <div class="row no-gutters">
-              <div class="col-12 text-md-left" style="line-height:120%;">
-                <gre class="bbold ">12. 2024</gre>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">One paper got accepted to</a>
-                  <a href=#tpami class="note"><blu>TPAMI (IF: 20.8)</blu></a><a class="note">.</a>
-                  <!-- <a class="note">I have 12 papers this year (3 ICLR, 3 ICML, 1 NeurIPS, 1 CVPR, 1 NAACL, 1 ACL, 1 COLM, 1 TPAMI).</a> -->
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col-12 text-md-left" style="line-height:120%;">
-                <gre class="bbold ">10. 2024</gre>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">Will serve as an area chair for </a>
-                <a href="https://2025.naacl.org/" target="_blank" class="note"><blu>NAACL 2025</blu></a><a class="note">.</a>
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col-12 text-md-left" style="line-height:120%;">
-                <gre class="bbold ">09. 2024</gre>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">One paper got accepted to</a>
-              <a href=#neurips24 class="note"><blu>NeurIPS 2024</blu></a><a class="note">.</a>
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col-12 text-md-left" style="line-height:120%;">
-                <gre class="bbold ">07. 2024</gre>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">Received <blu>Google PaliGemma Academic Program Award</blu>.</a> 
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col-12 text-md-left" style="line-height:120%;">
-                <gre class="bbold ">07. 2024</gre>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">One paper got accepted to</a>
-                <a href=#colm24 class="note"><blu>COLM 2024</blu></a><a>.</a> 
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col-12 text-md-left" style="line-height:120%;">
-                <gre class="bbold ">06. 2024</gre>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">Will serve as an area chair for </a>
-                <a href="https://2024.emnlp.org/" target="_blank" class="note"><blu>EMNLP 2024</blu></a><a class="note">.</a>
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col-12 text-md-left" style="line-height:120%;">
-                <gre class="bbold ">05. 2024</gre>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">Four papers got accepted - three to</a>
-                <a href=#icml24 class="note"><blu>ICML 2024</blu></a><a> <a class="note">and one to</a>
-                <a href=#acl24 class="note"><blu>ACL 2024</blu></a><a>.</a> 
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col-12 text-md-left" style="line-height:120%;">
-                <gre class="bbold ">03. 2024</gre>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">One paper got accepted to </a>
-                <a href=#naacl24 class="note"><blu>NAACL 2024</blu></a><a class="note">.</a>
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col-12 text-md-left" style="line-height:120%;">
-                <gre class="bbold ">02. 2024</gre>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">One paper got accepted to </a>
-                <a href=#cvpr24 class="note"><blu>CVPR 2024</blu></a><a class="note">.</a>    
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col-12 text-md-left" style="line-height:120%;">
-                <gre class="bbold ">01. 2024</gre>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="note">Three papers got accepted to </a>
-                <a href=#iclr24 class="note"><blu>ICLR 2024</blu></a>.
-              </div>
-            </div>
             <h6>
-            <a type="button" class="badge badge-gray" href="javascript:void(0)" onclick="show('oldnews')">Old News (~2023)</a>                 
-            </h6>
-            <div id="oldnews" class="popup-old-news">
+              <a type="button" class="badge badge-gray" href="javascript:void(0)" onclick="show('oldnews')">Old News (~2024)</a>                 
+              </h6>
+            <div id="oldnews" class="popup-old-news">  
+              <div class="row no-gutters">
+                <div class="col-12 text-md-left" style="line-height:120%;">
+                  <gre class="bbold ">12. 2024</gre>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a class="note">One paper got accepted to</a>
+                    <a href=#tpami class="note"><blu>TPAMI (IF: 20.8)</blu></a><a class="note">.</a>
+                    <!-- <a class="note">I have 12 papers this year (3 ICLR, 3 ICML, 1 NeurIPS, 1 CVPR, 1 NAACL, 1 ACL, 1 COLM, 1 TPAMI).</a> -->
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-12 text-md-left" style="line-height:120%;">
+                  <gre class="bbold ">10. 2024</gre>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a class="note">Will serve as an area chair for </a>
+                  <a href="https://2025.naacl.org/" target="_blank" class="note"><blu>NAACL 2025</blu></a><a class="note">.</a>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-12 text-md-left" style="line-height:120%;">
+                  <gre class="bbold ">09. 2024</gre>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a class="note">One paper got accepted to</a>
+                <a href=#neurips24 class="note"><blu>NeurIPS 2024</blu></a><a class="note">.</a>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-12 text-md-left" style="line-height:120%;">
+                  <gre class="bbold ">07. 2024</gre>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a class="note">Received <blu>Google PaliGemma Academic Program Award</blu>.</a> 
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-12 text-md-left" style="line-height:120%;">
+                  <gre class="bbold ">07. 2024</gre>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a class="note">One paper got accepted to</a>
+                  <a href=#colm24 class="note"><blu>COLM 2024</blu></a><a>.</a> 
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-12 text-md-left" style="line-height:120%;">
+                  <gre class="bbold ">06. 2024</gre>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a class="note">Will serve as an area chair for </a>
+                  <a href="https://2024.emnlp.org/" target="_blank" class="note"><blu>EMNLP 2024</blu></a><a class="note">.</a>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-12 text-md-left" style="line-height:120%;">
+                  <gre class="bbold ">05. 2024</gre>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a class="note">Four papers got accepted - three to</a>
+                  <a href=#icml24 class="note"><blu>ICML 2024</blu></a><a> <a class="note">and one to</a>
+                  <a href=#acl24 class="note"><blu>ACL 2024</blu></a><a>.</a> 
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-12 text-md-left" style="line-height:120%;">
+                  <gre class="bbold ">03. 2024</gre>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a class="note">One paper got accepted to </a>
+                  <a href=#naacl24 class="note"><blu>NAACL 2024</blu></a><a class="note">.</a>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-12 text-md-left" style="line-height:120%;">
+                  <gre class="bbold ">02. 2024</gre>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a class="note">One paper got accepted to </a>
+                  <a href=#cvpr24 class="note"><blu>CVPR 2024</blu></a><a class="note">.</a>    
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-12 text-md-left" style="line-height:120%;">
+                  <gre class="bbold ">01. 2024</gre>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a class="note">Three papers got accepted to </a>
+                  <a href=#iclr24 class="note"><blu>ICLR 2024</blu></a>.
+                </div>
+              </div>
               <div class="row no-gutters">
                 <div class="col-12 text-md-left" style="line-height:120%;">
                   <gre class="bbold ">08. 2023</gre>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -601,7 +577,7 @@
     <div class="row">
       <div class="col footer-cover">
         <div class="footer text-center small">
-          <div>Last modified:&nbsp Dec. 3. 2025.</div>  
+          <div>Last modified:&nbsp Dec. 12. 2025.</div>  
           <a href="#top"><blu>Back to top of page</blu></a>
           <br>
           <br>
