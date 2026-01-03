@@ -1,46 +1,46 @@
 
-    let paperCounter = 34;
-    let journalCounter = 2;
-    let arxivCounter = 12;
-  
-    function escHtml(s) {
-      return String(s ?? "")
-        .replaceAll("&", "\&")
-        .replaceAll("<", "&lt;")
-        .replaceAll(">", "&gt;")
-        .replaceAll('"', "&quot;")
-        .replaceAll("'", "&#039;");
+let paperCounter = 34;
+let journalCounter = 2;
+let arxivCounter = 13;
+
+function escHtml(s) {
+  return String(s ?? "")
+    .replaceAll("&", "\&")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function safeIdFromTitle(title) {
+  return String(title ?? "")
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/[^a-z0-9\-]/g, "")
+    .slice(0, 80);
+}
+
+function linkBtn(label, href) {
+  if (!href || href === "None") return "";
+  return `<a class="paper-btn" href="${escHtml(href)}" target="_blank" rel="noopener">${escHtml(label)}</a>`;
+}
+
+function btn(label, onClickJs) {
+  return `<button class="paper-btn" type="button" onclick="${escHtml(onClickJs)}">${escHtml(label)}</button>`;
+}
+
+function toggleAuthors(id, expand) {
+    const etAl = document.querySelector(`.et-al-${id}`);
+    const fullAuthors = document.querySelector(`.full-authors-${id}`);
+    if (!etAl || !fullAuthors) return;
+    if (expand) {
+      etAl.style.display = "none";
+      fullAuthors.style.display = "inline";
+    } else {
+      etAl.style.display = "inline";
+      fullAuthors.style.display = "none";
     }
-  
-    function safeIdFromTitle(title) {
-      return String(title ?? "")
-        .toLowerCase()
-        .replace(/\s+/g, "-")
-        .replace(/[^a-z0-9\-]/g, "")
-        .slice(0, 80);
-    }
-  
-    function linkBtn(label, href) {
-      if (!href || href === "None") return "";
-      return `<a class="paper-btn" href="${escHtml(href)}" target="_blank" rel="noopener">${escHtml(label)}</a>`;
-    }
-  
-    function btn(label, onClickJs) {
-      return `<button class="paper-btn" type="button" onclick="${escHtml(onClickJs)}">${escHtml(label)}</button>`;
-    }
-  
-    function toggleAuthors(id, expand) {
-        const etAl = document.querySelector(`.et-al-${id}`);
-        const fullAuthors = document.querySelector(`.full-authors-${id}`);
-        if (!etAl || !fullAuthors) return;
-        if (expand) {
-          etAl.style.display = "none";
-          fullAuthors.style.display = "inline";
-        } else {
-          etAl.style.display = "inline";
-          fullAuthors.style.display = "none";
-        }
-      }
+  }
 
 function highlightMeHtml(s) {
     return String(s ?? "").replaceAll("Jaehong Yoon", `<span class="me">Jaehong Yoon</span>`);
@@ -64,9 +64,8 @@ function buildBibtex({ type, key, title, authorBib, venueFull, year, arxivId }) 
     booktitle={${venueFull}},
     year={${year}}
     }`;
-    }
-
-
+}
+    
 function show(id) {
     const el = document.getElementById(id);
     if (el) el.classList.toggle("open");
@@ -145,7 +144,7 @@ function _addCard({
       year: escHtml(year_),
       arxivId: escHtml(arxiv_ ?? ""),
     });
-  
+      
     const projectBtn = linkBtn("Project", project_);
     const paperBtn =
       type === "arxiv"

@@ -14,6 +14,8 @@
     --btn-border: #d6d9f0;
     --bg: #ffffff;
     --card-border: #e6e8ef;
+
+    --bib-code-fg: #5f6b2d;
   }
   
   .dark-mode {
@@ -30,6 +32,8 @@
     --purple-soft: rgba(167,155,255,0.10);
   
     --btn-border: #2f3363;
+
+    --bib-code-fg: #d4dcaa;
   }
   
   .paper-item {
@@ -41,21 +45,7 @@
     /* border: 1px solid #d7efe3; */
     background: var(--bg);
     align-items:flex-start;
-  }
-  /* .paper-tag {
-    background: linear-gradient(
-      135deg,
-      var(--blue-soft),
-      var(--purple-soft)
-    );
-    color: var(--purple-main);
-    font-weight: 600;
-    padding: 4px 10px;
-    border-radius: 999px;
-    font-size: 0.85rem;
-  } */
-
-  
+  } 
 
   .paper-thumb {
     width: 200px;
@@ -82,23 +72,6 @@
     color: var(--gray-900);
     line-height: 1.4;
   }
-  
-  /* .paper-tag {
-    display: inline-block;
-    padding: 3px 10px;
-    margin-right: 8px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    border-radius: 999px;
-    background: rgba(99,102,241,0.10);
-    color: #3730a3;               
-    border: 1px solid rgba(99,102,241,0.22);
-    box-shadow: 0 1px 2px rgba(17,24,39,0.06);
-  }
-  .paper-tag[data-type="arxiv"] { color:#4f46e5; border-color: rgba(79,70,229,0.25); }
-.paper-tag[data-type="conf"]  { color:#0f766e; border-color: rgba(15,118,110,0.22); }
-.paper-tag[data-type="journal"]{ color:#6d28d9; border-color: rgba(109,40,217,0.22); }
-   */
 
    .paper-tag{
     font-weight: 600;
@@ -147,10 +120,6 @@
     margin-top: 0.3em;
   }
   
-  /* .paper-meta .venue {
-    font-weight: 600;
-    color: var(--gray-500);
-  } */
   .paper-meta .venue {
     font-weight: 600;
     color: var(--gray-500);
@@ -179,26 +148,6 @@
     align-items: center;
   }
   
-  /* .paper-btn {
-    display: inline-block;
-    padding: 6px 14px;
-    margin-right: 6px;
-    margin-top: 6px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    border-radius: 10px;
-    text-decoration: none;
-    border: 1px solid var(--gray-300);
-    background: white;
-    color: var(--gray-700);
-    transition: all 0.15s ease;
-  } */
-  /* 
-  .paper-btn:hover {
-    background: var(--blue-soft);
-    border-color: var(--blue-main);
-    color: var(--blue-main);
-  } */
   .paper-btn {
     border: 1px solid var(--btn-border);
     background: #f9fafb;
@@ -221,6 +170,11 @@
     transform: translateY(-1px);
     box-shadow: 0 6px 14px rgba(99, 102, 241, 0.12);
 }
+  .paper-btn:focus{
+    outline: none;
+    box-shadow: none;
+  }
+
 
   .paper-btn:active {
     transform: translateY(0px);
@@ -241,9 +195,17 @@
     display: none;
     margin-top: 12px;
     padding: 12px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     /* background: #f2fbf7; */
-    border: 1px solid #cfeee0;
+    /* border: 1px solid #cfeee0; */
+    background: linear-gradient(
+      180deg,
+      rgba(247,248,255,0.96),
+      rgba(242,244,252,0.96)
+    );
+    border: 1px solid rgba(47,58,140,0.12);
+    box-shadow: 0 8px 20px rgba(47,58,140,0.08);
+    border-radius: 14px;
   }
   
   .bib-popup.open {
@@ -257,11 +219,15 @@
     /* border: 1px solid var(--gray-200); */
     color: var(--gray-700);
   }
-  
+  .bib-popup .bib-key{
+    color: #2f3a8c; 
+    font-weight: 600;
+  }
+
   .bib-popup code {
     font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
     font-size: 0.9em;
-    color: #1b3a5f;
+    color: var(--bib-code-fg);
     background: transparent;
     border: 0;
     padding: 0;
@@ -278,7 +244,8 @@
     color: #e5e7eb;
   }
   .dark-mode .paper-title {
-    color: #f1f5f9;   /* gray-100 */
+    /* color: #f1f5f9; */
+    color: rgba(255,255,255,0.96);
   }
   .dark-mode .paper-tag {
     background: linear-gradient(
@@ -298,7 +265,7 @@
     color: #c7cbe3;  
   }
   .dark-mode .me {
-    color: #c4b5fd;   /* lavender-300 */
+    color: #b7bdf8;
   }
   .dark-mode .arxiv {
     color: #9aa0c3;
@@ -334,102 +301,37 @@
     color: var(--purple-main);
     border-color: rgba(196, 181, 253, 0.45);
     transform: translateY(-1px);
-  } 
-/* 
-  .dark-mode .paper-btn:hover {
-    background: rgba(196, 181, 253, 0.14);
-    border-color: rgba(196, 181, 253, 0.45);
-    transform: translateY(-1px);
   }
-   */
+/* 
+  .dark-mode .paper-btn.active{
+    background: rgba(25, 49, 206, 0.18);
+    border-color: rgba(154,167,255,0.45);
+    color: #2e3ac2;
+    transform: translateY(0px);
+  } */
+  
+  
   .dark-mode .paper-btn:active {
     transform: translateY(0px);
     background: rgba(196, 181, 253, 0.10);
   }
+
   
   .dark-mode .paper-btn:focus-visible {
     outline: none;
     box-shadow: 0 0 0 3px rgba(196, 181, 253, 0.22);
   }
-  /* .dark-mode .paper-btn {
-    color: #e5e7eb;
-    background: #151833;
-  }
   
-  */
+   .dark-mode .bib-popup {
+    background: linear-gradient(
+    180deg,
+    rgba(15,18,30,0.92),
+    rgba(10,12,22,0.92)
+  );
+  border: 1px solid rgba(255,255,255,0.06);
+}
 
-  .dark-mode .bib-popup {
-    background: #0b0e1a;
-    border: 1px solid #2f3363;
-  }
   .dark-mode .paper-item {
     /* border-bottom: 1px solid var(--gray-300); */
     background: transparent;
   }
-  
-  /* .dark-mode .paper-title {
-    color: var(--gray-900);
-  }
-   */
-  /* .dark-mode .paper-tag {
-    color: var(--blue-soft);
-    background: var(--blue-middle);
-  }
-   */
-  /* .dark-mode .paper-thumb img {
-    border: 1px solid var(--gray-300);
-    background: #0b1220;
-  } */
-
-  /* .dark-mode .paper-authors {
-    color: var(--gray-700);
-  } */
-  
-  /* .dark-mode .paper-authors .me {
-    color: var(--blue-main);
-    font-weight: 600;
-  } */
-  
-  /* .dark-mode .paper-meta .venue,
-  .dark-mode .paper-meta .arxiv {
-    color: var(--gray-500);
-  } */
-/* 
-  .dark-mode .paper-btn {
-    background: #151833;
-    color: var(--text-main);
-  }
-  
-  .dark-mode .paper-btn:hover {
-    background: linear-gradient(
-      135deg,
-      var(--blue-soft),
-      var(--purple-soft)
-    );
-    color: var(--purple-main);
-  }
-
-  .dark-mode .bib-popup {
-    background: #0b0e1a;
-    border: 1px solid #2f3363;
-  } */
-  
-  /* .dark-mode .paper-btn {
-    color: #cfe2ff;
-    background-color: #1f2f4f;
-    border: 1px solid #3b5fa0;
-  }
-  
-  .dark-mode .paper-btn:hover {
-    background-color: #2a3f66;
-    border-color: #6fa8ff;
-  }
-  
-  .dark-mode .bib-popup {
-    border: 1px solid #2d4472;
-    background-color: #1a2740;
-  }
-  
-  .dark-mode .bib-popup code {
-    color: #d6ebff;
-  } */
