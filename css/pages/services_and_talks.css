@@ -75,11 +75,11 @@
     display: block;
     /* padding: 4px 0 0; */
     padding-top: 4px;
-    margin: 0;
-    /* padding-left: 0; */
+    margin: 0;    
   }
   
   .svc-list li{
+    margin-left: 20px;
     display: grid;
     grid-template-columns: 64px 1fr;
     gap: 0px;
@@ -157,6 +157,7 @@
   }
   
   .talk-list li{
+    margin-left: 20px;
     display: grid;
     grid-template-columns: 84px 1fr;
     gap: 0px;
