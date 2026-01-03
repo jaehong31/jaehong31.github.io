@@ -167,11 +167,14 @@
   }
   
   .talk-date{
+    display: grid;
     color: var(--svc-muted);
     font-weight: 600;
+    grid-template-columns: minmax(92px, 110px) 1fr;
   }
   
   .talk-item{
+    margin-left: 20px;
     color: var(--svc-fg);
   }
   
