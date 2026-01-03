@@ -5,7 +5,7 @@
   
     function escHtml(s) {
       return String(s ?? "")
-        .replaceAll("&", "&amp;")
+        .replaceAll("&", "\&")
         .replaceAll("<", "&lt;")
         .replaceAll(">", "&gt;")
         .replaceAll('"', "&quot;")
