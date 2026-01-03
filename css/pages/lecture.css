@@ -1,0 +1,106 @@
+/* Teaching */
+.teaching-subtitle{
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .teaching-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .teaching-item{
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    align-items: center;
+    padding: 6px 0;
+    gap: 10px;
+    line-height: 1.4;
+  }
+  
+  /* term pill */
+  .teaching-term{
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #555;
+    background: #f1f2f6;
+    border-radius: 999px;
+    padding: 4px 10px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  /* highlight current / new */
+  .teaching-term.is-new{
+    background: #dcd8ff;
+    color: #1f235c;
+  }
+  
+  /* description */
+  .teaching-desc{
+    font-size: 0.95em;
+    color: #222;
+  }
+  
+  .teaching-desc a{
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .teaching-desc a:hover{
+    text-decoration: underline;
+  }
+  
+  /* subtle secondary text */
+  .muted{
+    color: #666;
+    font-weight: 400;
+  }
+  
+  /* mobile */
+  @media (max-width: 768px){
+    .teaching-item{
+      grid-template-columns: 1fr;
+      gap: 4px;
+    }
+  
+    .teaching-term{
+      width: fit-content;
+    }
+  }
+
+
+/* Teaching dark mode */
+.dark-mode .teaching-subtitle{
+    color: rgba(255,255,255,0.92);
+  }
+  
+  .dark-mode .teaching-item{
+    border-color: rgba(255,255,255,0.10);
+  }
+  
+  .dark-mode .teaching-term{
+    color: rgba(255,255,255,0.78);
+    background: rgba(255,255,255,0.08);
+  }
+  
+  .dark-mode .teaching-term.is-new{
+    background: rgba(154,167,255,0.22);  /* matches --nav-accent-soft vibe */
+    color: rgba(255,255,255,0.92);
+  }
+  
+  .dark-mode .teaching-desc{
+    color: rgba(255,255,255,0.88);
+  }
+  
+  .dark-mode .teaching-desc a{
+    color: inherit;
+  }
+  
+  .dark-mode .muted{
+    color: rgba(255,255,255,0.66);
+  }
+
+  

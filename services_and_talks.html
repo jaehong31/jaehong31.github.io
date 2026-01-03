@@ -1,18 +1,14 @@
-<!-- people.html -->
 <!DOCTYPE html>
 <html lang="en">
-<!-- <head>
-  <meta charset="UTF-8">
-  <title>People</title>
-  <link rel="stylesheet" href="./showMeTheMoney.css">
-</head> -->
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv='cache-control' content='no-cache'> 
     <meta http-equiv='expires' content='0'> 
     <meta http-equiv='pragma' content='no-cache'>
     <meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;650&display=swap" rel="stylesheet">
+
     <title>Jaehong Yoon</title>
     <script>
       // Check if the browser supports scrollRestoration
@@ -56,7 +52,11 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/pages/services_and_talks.css">
     <script src="js/navbar.js" defer></script>
+    <script src="js/footer.js" defer></script>
+    <script src="get_func.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -64,142 +64,166 @@
   </head>
 <body>
     <div id="navbar"></div>
-    <script src="get_func.js"></script>
-    <div class="container resume"  style="padding-top:100px">
+    <div class="container"  style="padding-top:20px">
         <section id="services"></section>
         <!-- Service Start -->
-        <div class="row pt-2">
-          <div class="col-12 col-md-2">
-            <h3 class="secfont text-md-right">Professional Services</h3>
-          </div>
-          <div class="col-12 col-md-10">          
-            <a class="note" style="font-size:1em">
-              <b>Others</b>
-              <li>2026 <blu class="note">Diversity & Inclusion (DEI) Chair, Conference on Lifelong Learning Agents</blu> <b class="note">(CoLLAs)</b></li>              
-            </a>
-            <a class="note" style="font-size:1em">
-              <b>Area Chair</b>
-              <li>2026 <blu class="note">Conference of the European Chapter of the Association for Computational Linguistics</blu> <b class="note">(EACL)</b></li>
-              <li>2025 <blu class="note">Neural Information Processing System</blu> <b class="note">(NeurIPS)</b></li>
-              <li>2025 <blu class="note">Conference on Lifelong Learning Agents</blu> <b class="note">(CoLLAs) (Senior Reviewer)</b></li>
-              <li>2025 <blu class="note">North American Chapter of the Association for Computational Linguistics</blu> <b class="note">(NAACL)</b></li>
-              <li>2024 <blu class="note">Conference on Empirical Methods in Natural Language Processing</blu> <b class="note">(EMNLP)</b></li>
-              <li>2024 <blu class="note">Continual Foundation Model Workshop</blu><b class="note"> @ NeurIPS 2024</b></li>
-            </a>
-            <a class="note" style="font-size:1em">
-              <b>Reviewer</b>
-              <li><blu class="note">Neural Information Processing System</blu> <b class="note">(NeurIPS)</b></li>
-              <li><blu class="note">International Conference on Machine Learning</blu> <b class="note">(ICML)</b></li>
-              <li><blu class="note">International Conference on Learning Representations</blu> <b class="note">(ICLR)</b></li>
-              <li><blu class="note">The IEEE/CVF Conference on Computer Vision and Pattern Recognition</blu> <b class="note">(CVPR)</b></li>
-              <li><blu class="note">Conference on Lifelong Learning Agents</blu> <b class="note">(CoLLAs)</b></li>
-              <li><blu class="note">International Joint Conferences on Artificial Intelligence</blu> <b class="note">(IJCAI)</b></li>
-              <li><blu class="note">Association for the Advancement of Artificial Intelligence</blu> <b class="note">(AAAI)</b></li>
-              <li><blu class="note">IEEE Transactions on Pattern Analysis and Machine Intelligence</blu> <b class="note">(TPAMI)</b></li>
-              <li><blu class="note">IEEE Transactions on Neural Networks and Learning Systems</blu> <b class="note">(TNNLS)</b></li>
-              <li><blu class="note">Journal of Artificial Intelligence Research</blu> <b class="note">(JAIR)</b></li>
-              <li><blu class="note">IEEE/ACM Transactions on Networking</blu> <b class="note">(ToN)</b></li>
-              <li><blu class="note">Neural Networks</blu> <b class="note">(NN)</b></li>            
-              <!-- <li>2018-2024 <blu class="note">Neural Information Processing System</blu> <b class="note">(NeurIPS)</b></li>
-              <li>2019-2024 <blu class="note">International Conference on Machine Learning</blu> <b class="note">(ICML)</b></li>
-              <li>2019-2025 <blu class="note">International Conference on Learning Representations</blu> <b class="note">(ICLR)</b></li>
-              <li>2025 <blu class="note">The IEEE/CVF Conference on Computer Vision and Pattern Recognition</blu> <b class="note">(CVPR)</b></li>
-              <li>2022-2024 <blu class="note">Conference on Lifelong Learning Agents</blu> <b class="note">(CoLLAs)</b></li>
-              <li>2020 <blu class="note">International Joint Conferences on Artificial Intelligence</blu> <b class="note">(IJCAI)</b></li>
-              <li>2020 <blu class="note">Association for the Advancement of Artificial Intelligence</blu> <b class="note">(AAAI)</b></li>
-              <li>2021, 2023, 2025 <blu class="note">IEEE Transactions on Pattern Analysis and Machine Intelligence</blu> <b class="note">(TPAMI)</b></li>
-              <li>2020, 2022 <blu class="note">IEEE Transactions on Neural Networks and Learning Systems</blu> <b class="note">(TNNLS)</b></li>
-              <li>2022 <blu class="note">Journal of Artificial Intelligence Research</blu> <b class="note">(JAIR)</b></li>
-              <li>2021 <blu class="note">IEEE/ACM Transactions on Networking</blu> <b class="note">(ToN)</b></li>
-              <li>2020 <blu class="note">Neural Networks</blu> <b class="note">(NN)</b></li>             -->
-            </a>          
-            <hr>
-          </div>        
-          <hr>
-        </div>
-        <!-- Service End -->
-        <section id="misc"></section>
-        
-        <!-- Talks Start -->
-        <div class="row pt-2">
-          <div class="col-12 col-md-2">
-            <h3 class="secfont text-md-right">Invited Talks</h3>
-          </div>
-          <div class="col-12 col-md-10">          
-            <!-- <c class="note">"AIGC and Controllable Video Generation"</c>
-            <a class="note" style="font-size:1em">
-              <li>Nov. 2025 <blu class="note">Keynote Speech, Huawei Media Technology Summit 2025</blu></li>              
-            </a> -->
-            <c class="note">"Continually-Adaptable Multimodal Agent for the Real World"</c>
-            <a class="note" style="font-size:1em">
-              <li>Oct. 2025 <blu class="note">Seminar, Department of AI, Sungkyunkwan University</blu></li>              
-              <li>Sep. 2025 <blu class="note">Seminar, AI Graduate School, UNIST</blu></li>
-            </a>
-            <c class="note">"Toward Continually Growing Embodied AIs"</c>
-            <a class="note" style="font-size:1em">
-              <li>Aug. 2025 <blu class="note">Early Career Talk, CoLLAs 2025</blu></li>
-            </a>
-            <c class="note">"Lifelong, Adaptable, and Trustworthy Multimodal AI Systems"</c>
-            <a class="note" style="font-size:1em">
-              <li>Dec. 2024 <blu class="note">Electrical Engineering, KAIST</blu></li>
-            </a>
-            <c class="note">"On the Communicability of Heterogeneous and Continual Learning Agents"</c>
-            <a class="note" style="font-size:1em">
-              <li>Dec. 2024 <blu class="note">DCDL Tutorial @ MICCAI 2024</blu></li>
-              <li>Apr. 2023 <blu class="note">CMU & MBZUAI, Prof. Eric Xing's Group</blu></li>
-            </a>
-            <c class="note">"Lifelong-Adaptable and Self-Evolving Multimodal AI Systems for Real-World Dynamics"</c>
-            <a class="note" style="font-size:1em">
-              <li>Jul. 2024 <blu class="note">CSE/GSAI, Postech</blu></li>
-              <li>Jul. 2024 <blu class="note">Electronics and Telecommunications Research Institute (ETRI)</blu></li>
-              <li>Jul. 2024 <blu class="note">Graduate School of AI, KAIST</blu></li>
-            </a>
-            <c class="note">"Large-scale Multimodal Learning: Continuity, Efficiency, and Unification"</c>
-            <a class="note" style="font-size:1em">
-              <li>Jun. 2024 <blu class="note">AI Graduate School, UNIST</blu></li>
-            </a>
-            <c class="note">"Lightweight Video & Multimodal Learning"</c>
-            <a class="note" style="font-size:1em">
-              <li>2023 <blu class="note">LG AI Research</blu></li>
-            </a>
-            <c class="note">"Towards Continuously Evolving AI"</c>
-            <a class="note" style="font-size:1em">
-              <li>2023 <blu class="note">Edinburgh University</blu></li>
-            </a>
-            <c class="note">"Online Coreset Selection for Rehearsal-based Conitnual Learning"</c>
-            <a class="note" style="font-size:1em">
-              <li>2022 <blu class="note">UT Austin, Prof. Kristin Grauman's Group</blu></li>
-            </a>
-            <c class="note">"Representational Continuity for Unsupervised Continual Learning"</c>
-            <a class="note" style="font-size:1em">
-              <li>2022 <blu class="note">Korea Computer Congress (KCC)</blu></li>
-            </a>
-            <c class="note">"Lifelong Learning with Dynamically Expandable Networks"</c>
-            <a class="note" style="font-size:1em">
-              <li>2019 <blu class="note">Samsung SDS</blu></blu></li>
-              <li>2018 <blu class="note">NAVER Corp., Tech. Talk</blu></li>
-              <li>2018 <blu class="note">SK-Telecom, Tech. Open Connect (T-T.O.C)</blu></li>
-            </a>
-            <c class="note">"Combined Group and Exclusive Sparsity for Deep Neural Networks"</c>
-            <a class="note" style="font-size:1em">
-              <li>2017 <blu class="note">Korea Software Congress (KSC)</blu></li>
-            </a>
-          </div>
-        </div>     
-        <!-- Talks End -->
-        <hr>
-        
-        <!-- Footer Start -->
-        <div class="row">
-          <div class="col footer-cover">
-            <div class="footer text-center small">
-              <div>Last modified:&nbsp Dec. 12. 2025.</div>              
-              <a href="#services"><blu>Back to top of page</blu></a>
-              <br>
-              <br>
+        <div class="row pt-2 service-section">
+            <div class="col-12 col-md-3">
+              <h3 class="secfont text-md-right">Professional<br>Services</h3>
+            </div>
+          
+            <div class="col-12 col-md-9">
+              <div class="svc-group">
+                <div class="svc-head">Others</div>
+                <ul class="svc-list">
+                  <li>
+                    <span class="svc-year">2026</span>
+                    <span class="svc-item">
+                      Diversity & Inclusion (DEI) Chair, Conference on Lifelong Learning Agents
+                      <span class="svc-venue">(CoLLAs)</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+          
+              <div class="svc-group">
+                <div class="svc-head">Area Chair</div>
+                <ul class="svc-list">
+                  <li><span class="svc-year">2026</span><span class="svc-item">The Annual Meeting of the Association for Computational Linguistics <span class="svc-venue">(ACL)</span></span></li>
+                  <li><span class="svc-year">2026</span><span class="svc-item">Conference of the European Chapter of the Association for Computational Linguistics <span class="svc-venue">(EACL)</span></span></li>
+                  <li><span class="svc-year">2025</span><span class="svc-item">Neural Information Processing Systems <span class="svc-venue">(NeurIPS)</span></span></li>
+                  <li><span class="svc-year">2025</span><span class="svc-item">Conference on Lifelong Learning Agents <span class="svc-venue">(CoLLAs, Senior Reviewer)</span></span></li>
+                  <li><span class="svc-year">2025</span><span class="svc-item">North American Chapter of the Association for Computational Linguistics <span class="svc-venue">(NAACL)</span></span></li>
+                  <li><span class="svc-year">2024</span><span class="svc-item">Conference on Empirical Methods in Natural Language Processing <span class="svc-venue">(EMNLP)</span></span></li>
+                  <li><span class="svc-year">2024</span><span class="svc-item">Continual Foundation Model Workshop <span class="svc-venue">@ NeurIPS 2024</span></span></li>
+                </ul>
+              </div>
+          
+              <div class="svc-group">
+                <div class="svc-head">Reviewer</div>
+                <ul class="svc-compact">
+                  <li><span class="svc-item">Neural Information Processing Systems <span class="svc-venue">(NeurIPS)</span></span></li>
+                  <li><span class="svc-item">International Conference on Machine Learning <span class="svc-venue">(ICML)</span></span></li>
+                  <li><span class="svc-item">International Conference on Learning Representations <span class="svc-venue">(ICLR)</span></span></li>
+                  <li><span class="svc-item">The IEEE/CVF Conference on Computer Vision and Pattern Recognition <span class="svc-venue">(CVPR)</span></span></li>
+                  <li><span class="svc-item">Conference on Lifelong Learning Agents <span class="svc-venue">(CoLLAs)</span></span></li>
+                  <li><span class="svc-item">International Joint Conference on Artificial Intelligence <span class="svc-venue">(IJCAI)</span></span></li>
+                  <li><span class="svc-item">Association for the Advancement of Artificial Intelligence <span class="svc-venue">(AAAI)</span></span></li>
+                  <li><span class="svc-item">IEEE Transactions on Pattern Analysis and Machine Intelligence <span class="svc-venue">(TPAMI)</span></span></li>
+                  <li><span class="svc-item">IEEE Transactions on Neural Networks and Learning Systems <span class="svc-venue">(TNNLS)</span></span></li>
+                  <li><span class="svc-item">Journal of Artificial Intelligence Research <span class="svc-venue">(JAIR)</span></span></li>
+                  <li><span class="svc-item">IEEE/ACM Transactions on Networking <span class="svc-venue">(ToN)</span></span></li>
+                  <li><span class="svc-item">Neural Networks <span class="svc-venue">(NN)</span></span></li>
+                </ul>
+              </div>
+          
+              <hr class="section-divider">
             </div>
           </div>
-        </div>
+          
+          <div class="row pt-2 service-section">
+            <div class="col-12 col-md-3">
+              <h3 class="secfont text-md-right">Invited Talks</h3>
+            </div>
+        
+            <div class="col-12 col-md-9">
+              <div class="talk-block">
+                <div class="talk-title">“Continually Adaptable Multimodal Agent for the Real World”</div>
+                <ul class="talk-list">
+                  <li><span class="talk-date">Oct. 2025</span><span class="talk-item">Seminar, Department of AI, Sungkyunkwan University</span></li>
+                  <li><span class="talk-date">Sep. 2025</span><span class="talk-item">Seminar, AI Graduate School, UNIST</span></li>
+                </ul>
+              </div>
+          
+              <div class="talk-block">
+                <div class="talk-title">“Toward Continually Growing Embodied AIs”</div>
+                <ul class="talk-list">
+                  <li><span class="talk-date">Aug. 2025</span><span class="talk-item">Early Career Talk, CoLLAs 2025</span></li>
+                </ul>
+              </div>
+          
+              <div class="talk-block">
+                <div class="talk-title">“Lifelong, Adaptable, and Trustworthy Multimodal AI Systems”</div>
+                <ul class="talk-list">
+                  <li><span class="talk-date">Dec. 2024</span><span class="talk-item">Electrical Engineering, KAIST</span></li>
+                </ul>
+              </div>
+          
+              <div class="talk-block">
+                <div class="talk-title">“On the Communicability of Heterogeneous and Continual Learning Agents”</div>
+                <ul class="talk-list">
+                  <li><span class="talk-date">Dec. 2024</span><span class="talk-item">DCDL Tutorial @ MICCAI 2024</span></li>
+                  <li><span class="talk-date">Apr. 2023</span><span class="talk-item">CMU & MBZUAI, Prof. Eric Xing’s Group</span></li>
+                </ul>
+              </div>
+          
+              <div class="talk-block">
+                <div class="talk-title">“Lifelong Adaptable and Self Evolving Multimodal AI Systems for Real World Dynamics”</div>
+                <ul class="talk-list">
+                  <li><span class="talk-date">Jul. 2024</span><span class="talk-item">CSE/GSAI, POSTECH</span></li>
+                  <li><span class="talk-date">Jul. 2024</span><span class="talk-item">Electronics and Telecommunications Research Institute (ETRI)</span></li>
+                  <li><span class="talk-date">Jul. 2024</span><span class="talk-item">Graduate School of AI, KAIST</span></li>
+                </ul>
+              </div>
+          
+              <div class="talk-block">
+                <div class="talk-title">“Large Scale Multimodal Learning: Continuity, Efficiency, and Unification”</div>
+                <ul class="talk-list">
+                  <li><span class="talk-date">Jun. 2024</span><span class="talk-item">AI Graduate School, UNIST</span></li>
+                </ul>
+              </div>
+          
+              <div class="talk-block">
+                <div class="talk-title">“Lightweight Video and Multimodal Learning”</div>
+                <ul class="talk-list">
+                  <li><span class="talk-date">2023</span><span class="talk-item">LG AI Research</span></li>
+                </ul>
+              </div>
+          
+              <div class="talk-block">
+                <div class="talk-title">“Towards Continuously Evolving AI”</div>
+                <ul class="talk-list">
+                  <li><span class="talk-date">2023</span><span class="talk-item">Edinburgh University</span></li>
+                </ul>
+              </div>
+          
+              <div class="talk-block">
+                <div class="talk-title">“Online Coreset Selection for Rehearsal Based Continual Learning”</div>
+                <ul class="talk-list">
+                  <li><span class="talk-date">2022</span><span class="talk-item">UT Austin, Prof. Kristin Grauman’s Group</span></li>
+                </ul>
+              </div>
+          
+              <div class="talk-block">
+                <div class="talk-title">“Representational Continuity for Unsupervised Continual Learning”</div>
+                <ul class="talk-list">
+                  <li><span class="talk-date">2022</span><span class="talk-item">Korea Computer Congress (KCC)</span></li>
+                </ul>
+              </div>
+          
+              <div class="talk-block">
+                <div class="talk-title">“Lifelong Learning with Dynamically Expandable Networks”</div>
+                <ul class="talk-list">
+                  <li><span class="talk-date">2019</span><span class="talk-item">Samsung SDS</span></li>
+                  <li><span class="talk-date">2018</span><span class="talk-item">NAVER Corp., Tech Talk</span></li>
+                  <li><span class="talk-date">2018</span><span class="talk-item">SK Telecom, Tech Open Connect (T T O C)</span></li>
+                </ul>
+              </div>
+          
+              <div class="talk-block">
+                <div class="talk-title">“Combined Group and Exclusive Sparsity for Deep Neural Networks”</div>
+                <ul class="talk-list">
+                  <li><span class="talk-date">2017</span><span class="talk-item">Korea Software Congress (KSC)</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Talks End -->
+        
+        
+        <!-- Footer Start -->
+        <div id="footer-placeholder"></div>
         <!-- Footer End -->        
+      </div>
 </body>
 </html>

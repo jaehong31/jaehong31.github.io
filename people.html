@@ -1,18 +1,13 @@
-<!-- people.html -->
 <!DOCTYPE html>
 <html lang="en">
-<!-- <head>
-  <meta charset="UTF-8">
-  <title>People</title>
-  <link rel="stylesheet" href="./showMeTheMoney.css">
-</head> -->
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv='cache-control' content='no-cache'> 
     <meta http-equiv='expires' content='0'> 
     <meta http-equiv='pragma' content='no-cache'>
     <meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;650&display=swap" rel="stylesheet">
+    
     <title>Jaehong Yoon</title>
     <script>
       // Check if the browser supports scrollRestoration
@@ -56,8 +51,10 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/pages/people.css">
     <script src="js/navbar.js" defer></script>
+    <script src="js/footer.js" defer></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -65,87 +62,210 @@
   </head>
   <a name="top_ppl"></a>
   <body>
-      <div id="navbar"></div>
-      <script src="get_func.js"></script>
-      <div class="container resume"  style="padding-top:100px">
-        <!-- <b>To prospective Ph.D. students</b><br><br> -->
-        
-        <!-- <h3>PhD Students</h3>
-
-        <div class="student-grid">
-          <div class="student-card">
-            <img src="name.jpg" alt="NAME">
-            <div> <a class="note" href="https://scholar.google.com/" target="_blank"><blu><u><b>Name</b></u></blu></a></div>
-            <div class="email">name@email.edu</div>
-            <div class="note">
-              From Aug 2026<br>
-            </div>
-            <div class="research">
-              Deep Learning
-            </div>
-          </div>
-        </div> -->
-        <br>
-        <h3>Professor</h3>
-        <!-- <div class="profile-container">
-          <img src="dr_lee_photo.jpg">
-          <div class="note">
-            I currently serve as an Assistant Professor at Nanyang Technological University (NTU), Singapore, and wish to express my enthusiastic interest in the Nanyang Assistant Professorship (NAP) opportunity. Prior to joining NTU, I was a postdoctoral research associate at UNC Chapel Hill, working with Prof. Mohit Bansal and completed my Ph.D. in the School of Computing at KAIST in 2023, advised by Prof. Sung Ju Hwang. I pursue the vision of AI that lives and learns in the real world, developing systems that see, think, and interact through rich multimodal understanding while continually evolving to remain reliable and adaptive in dynamic environments. I am the recipient of multiple awards, including the Best Ph.D. Dissertation Award by both the KAIST College of Engineering and the School of Computing, the best student paper award at the ICML ‘20 Federated Learning Workshop, and a PaliGemma Academic Program Award from Google (2024). I also serve on the program committee of top NLP and ML conferences and was an area chair for EACL 2026, NeurIPS 2025, EMNLP 2024, NAACL 2024, and NeurIPS 2024 Workshop on Scalable Continual Learning for Lifelong Foundation Models, and a senior reviewer for CoLLAs 2025. In recent years, I have also given invited talks at NTU, HKUST, UCF, UT-Dallas, UT Austin, CMU, Edinburgh University, UNIST, KAIST, and POSTECH; and at conferences, including a DCDL tutorial at MICCAI 2024.
-          </div>
-        </div> -->
-        <br>
-        <div class="profile-container">
-          
-          <div class="photo-box">
+    <div id="navbar"></div>
+    <script src="get_func.js"></script>
+    <div class="container"  style="padding-top:20px">
+      <section class="people-section">
+        <h3 class="people-title">Professor</h3>      
+        <div class="people-card">
+          <div class="people-photo">
             <img src="./materials/Jaehong_Yoon.png" alt="Jaehong Yoon">
-            <!-- <div class="photo-name">Dr. Jaehong Yoon</div> -->
-          </div>
-
-          <div class="profile-info">
-            <!-- <h3>Jaehong Yoon. Assistant Professor at Nanyang Technological University (NTU), Singapore.</h3> -->
-            <p class="note">               
-              <b>Jaehong Yoon</b> is an assistant professor in the College of Computing and Data Science (CCDS) at Nanyang Technological University.<br><br>
-              Prior to joining NTU Sinpapore, he was a postdoctoral research associate at University of North Carolina at Chapel Hill, working with Prof. Mohit Bansal and 
-              completed his Ph.D. in the School of Computing at KAIST in 2023, advised by Prof. Sung Ju Hwang. <br><br>
-              
-              📩 :
-              <a href="mailto:jaehong.yoon@ntu.edu.sg" style="text-decoration: none; font-weight: 500; font-family: monospace;">
-                <blu><u>jaehong.yoon@ntu.edu.sg</u></blu>
+          </div>      
+          <div class="people-info">
+            <h4 class="people-name">Jaehong Yoon</h4>
+            <div class="people-role">Assistant Professor, NTU Singapore</div>
+      
+            <p class="people-bio">
+              Jaehong Yoon is an Assistant Professor in the
+              <span class="inline-accent">College of Computing and Data Science (CCDS)</span>
+              at <span class="inline-accent">Nanyang Technological University</span>.
+              <br><br>
+              Prior to joining NTU, he was a Postdoctoral Research Associate at
+              the University of North Carolina at Chapel Hill, working with
+              Prof. Mohit Bansal. He received his Ph.D. from KAIST in 2023,
+              advised by Prof. Sung Ju Hwang.
+            </p>
+      
+            <div class="people-contact">
+              <span class="mail-icon">📩</span>
+              <a class="people-email" href="mailto:jaehong.yoon@ntu.edu.sg">
+                jaehong.yoon@ntu.edu.sg
               </a>
-              <!-- He serves on the program committee of top NLP and ML conferences and was an area chair for EACL 2026, NeurIPS 2025, EMNLP 2024, NAACL 2024, and NeurIPS 2024 Workshop on Scalable Continual Learning for Lifelong Foundation Models, and a senior reviewer for CoLLAs 2025.  -->
-              <!-- I pursue the vision of AI that lives and learns in the real world, developing systems that see, think, and interact through rich multimodal understanding while continually evolving to remain reliable and adaptive in dynamic environments. 
-               I am the recipient of multiple awards, including the Best Ph.D. Dissertation Award by both the KAIST College of Engineering and the School of Computing, the best student paper award at the ICML ‘20 Federated Learning Workshop, and a PaliGemma Academic Program Award from Google (2024). 
-               In recent years, I have also given invited talks at NTU, HKUST, UCF, UT-Dallas, UT Austin, CMU, Edinburgh University, UNIST, KAIST, and POSTECH; and at conferences, including a DCDL tutorial at MICCAI 2024.             -->
-            </p>            
+            </div>
           </div>
         </div>
+        <hr class="intro-hr"> 
+        <br><br>
+            
+      <a name="openings"></a>
+      </section>
+      
+      <!-- <hr class="intro-hr"> 
+      <br><br>   -->
 
-        <br>
+      <h3 class="people-title">Openings</h3>
 
-        <br>
-        
-        
-<!--         
-        <h3>Ph.D. Students</h3>
-        <br>
-        <section class="people">
-          <div class="peopleGrid">
-        
-            <article class="personCard">
+      <section class="openings">
+        <div class="openingsIntro simpleBackground">
+          <p class="openingsLead">
+            I am looking to hire multiple PhD students to join the <strong>COSMO Lab</strong>
+            (Cognitive Open World Systems for Multimodal Intelligence) at NTU Singapore
+            (College of Computing and Data Science, CCDS), starting in <strong>Fall 2026</strong>.
+          </p>
+
+          <p class="openingsNote">
+            Due to the volume of applications, I may not be able to respond to everyone individually.
+            Thank you for your understanding.
+          </p>
+        </div>
+
+        <div class="openingsGrid">
+
+          <article class="openCard">
+            <div class="openHead">
+              <h4 class="openTitle">Prospective PhD students</h4>
+              <span class="openPill">Fall 2026 intake</span>
+            </div>
+
+            <p class="openText">
+              If you are interested in pursuing a PhD under my supervision, I typically expect applicants to have at least
+              one first authored paper at a top tier conference in ML AI NLP, such as ICML, ICLR, NeurIPS, ICCV, ECCV, CVPR,
+              EMNLP, ACL, or NAACL.
+            </p>
+
+            <p class="openText">
+              Applicants should also demonstrate a strong background in machine learning and deep learning.
+              I am particularly interested in candidates who are excited about <span class="openEm">timely and impactful research</span>
+              in ML, NLP, and multimodal AI, including world models, embodied AI, open ended learning, post training techniques,
+              coding agents, and trustworthy AI (not limited to these areas).
+            </p>
+
+            <div class="openActions">
+              <a class="openBtn primary"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdp21aIpX66K7rj1UfUVNDx17YLE4Y1xqq_r2KskGeX73LL0Q/viewform?usp=sharing&ouid=102612074994892851507"
+                target="_blank" rel="noopener">
+                Apply via Google Form
+              </a>
+
+              <a class="openBtn"
+                href="https://www.ntu.edu.sg/education/graduate-programme/ccds-phd-cs-engineering"
+                target="_blank" rel="noopener">
+                Official NTU PhD process
+              </a>
+            </div>
+          </article>
+
+          <article class="openCard">
+            <div class="openHead">
+              <h4 class="openTitle">Prospective postdocs</h4>
+              <!-- <span class="openPill subtle">Fellowships</span> -->
+            </div>
+
+            <p class="openText">
+              There are several competitive postdoctoral fellowship opportunities available at NTU.
+              If you are considering postdoc positions and are interested in working with our lab on areas such as
+              lifelong learning, self evolving AI, or vision language action models, please feel free to contact me.
+            </p>
+
+            <ul class="openList">
+              <li>
+                <a class="openLink"
+                  href="https://www.ntu.edu.sg/research/research-careers/lee-kuan-yew-postdoctoral-fellowship-(lkypdf)"
+                  target="_blank" rel="noopener">
+                  Lee Kuan Yew Postdoctoral Fellowship (LKYPDF)
+                </a>
+              </li>
+              <li>
+                <a class="openLink"
+                  href="https://www.ntu.edu.sg/research/research-careers/presidential-postdoctoral-fellowship-(ppf)"
+                  target="_blank" rel="noopener">
+                  Presidential Postdoctoral Fellowship (PPF)
+                </a>
+              </li>
+            </ul>
+          </article>
+
+          <article class="openCard">
+            <div class="openHead">
+              <h4 class="openTitle">Prospective interns</h4>
+              <!-- <span class="openPill subtle">Undergrad and MS</span> -->
+            </div>
+
+            <p class="openText">
+              We welcome applications from highly motivated undergraduate or master’s students looking for research internship
+              experience. Ideal candidates have strong programming skills (Python, PyTorch) and solid ML AI CV NLP background.
+            </p>
+
+            <div class="openActions">
+              <a class="openBtn primary"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdp21aIpX66K7rj1UfUVNDx17YLE4Y1xqq_r2KskGeX73LL0Q/viewform?usp=sharing&ouid=102612074994892851507"
+                target="_blank" rel="noopener">
+                Apply via Google Form
+              </a>
+            </div>
+          </article>
+          
+          <article class="openCard simpleBackground">
+            <div class="openHead">
+              <h4 class="openTitle">Scholarships</h4>
+              <!-- <span class="openPill subtle">Examples</span> -->
+            </div>
+
+            <p class="openText">
+              Potential PhD scholarship opportunities include:
+            </p>
+
+            <ul class="openList">
+              <li>
+                <a class="openLink"
+                  href="https://aisingapore.org/research/phd-fellowship-programme/"
+                  target="_blank" rel="noopener">
+                  AISG PhD Fellowship Programme
+                </a>
+              </li>
+              <li>
+                <a class="openLink"
+                  href="https://www.ntu.edu.sg/admissions/graduate/financialmatters/scholarships/npgs"
+                  target="_blank" rel="noopener">
+                  Nanyang President’s Graduate Scholarship
+                </a>
+              </li>
+              <li>
+                <a class="openLink"
+                  href="https://www.a-star.edu.sg/scholarships/home/scholarships/ags--scholarship"
+                  target="_blank" rel="noopener">
+                  A STAR Graduate Scholarship
+                </a>
+              </li>
+              <li><span class="openMuted">and others</span></li>
+            </ul>
+          </article>
+
+        </div>
+      </section>
+      <!-- Footer Start -->
+      <div id="footer-placeholder"></div>
+      <!-- Footer End -->   
+    </div>
+  </body>
+</html>
+
+<!-- <article class="personCard">
               <img class="avatar" src="materials/students/jiachen.jpg"/>
               <div class="personBody">
                 <p class="note-std-nm">Jiachen Guo</p>
-                
-                <p class="note-std-bg">Fall 2025
-                                      <br>M.S., Queen Mary University of London
-                                      <br>B.S., University of Manchester</p>
+                  <p class="note-std-bg">Fall 2025
+                    <br>M.S., Queen Mary University of London, 2024
+                    <br>B.S., University of Manchester, 2020
+                    <br><br> Multimodal AI, Embodied Agents
+                  </p>
                 <div class="links">
-                  <a class="iconBtn" href="https://jaehong31.github.io/pepole.html" target="_blank" rel="noopener" title="Homepage" aria-label="Homepage">
+                  <a class="iconBtn" href="https://jaehong31.github.io/" target="_blank" rel="noopener" title="Homepage" aria-label="Homepage">
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M12 3l9 8h-3v10h-5v-6H11v6H6V11H3l9-8z"></path>
                     </svg>
                   </a>
-                  <a class="iconBtn" href="https://scholar.google.com/citations?user=XXXX" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar">
+                  <a class="iconBtn" href=https://scholar.google.com/citations?hl=en&user=j52Je3MAAAAJ" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar">
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M12 3L1 9l11 6 9-4.9V17h2V9L12 3z"></path>
                       <path d="M4 12.6V16c0 2.8 3.6 5 8 5s8-2.2 8-5v-3.4l-8 4.3-8-4.3z"></path>
@@ -154,124 +274,27 @@
                 </div>
               </div>
             </article>
-
             <article class="personCard">
-              <img class="avatar" src="materials/students/yangfan.jpg"/>
+              <img class="avatar" src="materials/students/jiachen.jpg"/>
               <div class="personBody">
-                <p class="note-std-nm">Yangfan He</p>
-                
-                <p class="note-std-bg">Fall 2026
-                                      <br>B.S., University of Minnesota - Twin Cities</p>
+                <p class="note-std-nm">Jiachen Guo</p>
+                  <p class="note-std-bg">Fall 2025
+                    <br>M.S., Queen Mary University of London, 2024
+                    <br>B.S., University of Manchester, 2020
+                    <br><br> Multimodal AI, Embodied Agents
+                  </p>
                 <div class="links">
-                  <a class="iconBtn" href="https://jaehong31.github.io/pepole.html" target="_blank" rel="noopener" title="Homepage" aria-label="Homepage">
+                  <a class="iconBtn" href="https://jaehong31.github.io/" target="_blank" rel="noopener" title="Homepage" aria-label="Homepage">
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M12 3l9 8h-3v10h-5v-6H11v6H6V11H3l9-8z"></path>
                     </svg>
                   </a>
-                  <a class="iconBtn" href="https://scholar.google.com/citations?user=VI2BuCgAAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar">
+                  <a class="iconBtn" href=https://scholar.google.com/citations?hl=en&user=j52Je3MAAAAJ" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar">
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M12 3L1 9l11 6 9-4.9V17h2V9L12 3z"></path>
                       <path d="M4 12.6V16c0 2.8 3.6 5 8 5s8-2.2 8-5v-3.4l-8 4.3-8-4.3z"></path>
                     </svg>
                   </a>
                 </div>
-              </div>  
-            </article>            
-          </div>
-        </section>
-        <br><br> -->
-        <!-- <div> &nbsp&nbsp• <a href="https://scholar.google.com/citations?user=VI2BuCgAAAAJ&hl=en" target="_blank" class="note" style="font-size:1em">
-            <blu><u><b>Yangfan He</b></u></blu><a class="note" style="font-size:1em">, Undergrad., University of Minnesota, Twin City, from Fall 2025</a></div>
-          <div> &nbsp&nbsp• <a href="https://scholar.google.com/citations?hl=en&user=v-oVANQAAAAJ" target="_blank" class="note" style="font-size:1em">
-            <blu><u><b>Yiwen Tang</b></u></blu><a class="note" style="font-size:1em">, M.S., Northwestern Polytechnical University, from Fall 2025</a></div> -->
-<!--             
-        <h3>Interns</h3>
-        <br>
-            <p class="note" style="font-size:1em">&nbsp&nbsp• <b>Jewoo Park</b>, <span class="note-intern-bg">Undergrad., Sungkyunkwan University, from Fall 2025</span></p>
-            <p class="note" style="font-size:1em">&nbsp&nbsp• <b>Jeongwon Yoo</b>, <span class="note-intern-bg">Undergrad., Yonsei University, from Fall 2025</span></p>
-            <p class="note" style="font-size:1em">&nbsp&nbsp• <b>Hong Phuc Pham</b>, <span class="note-intern-bg">Undergrad., Nanyang Technological University, from Fall 2025 (URECA)</span></p>
-            <p class="note" style="font-size:1em">&nbsp&nbsp• <b>Murali Prithvi Teekaa</b>, <span class="note-intern-bg">Undergrad., Nanyang Technological University, from Fall 2025 (URECA)</span></p>
-        <br>  
-         -->
-        <a name="openings"></a>
-        
-        <br>
-        
-        
-        
-        <h3>Openings</h3>
-        <p class="note" style="font-size:1em">         
-        <br>
-        I am looking to hire multiple PhD students to join the <b>COSMO</b> (<b>C</b>ognitive <b>O</b>pen-World <b>S</b>ystems for <b>M</b>ultim<b>O</b>dal Intelligence) <b>Lab</b> at NTU Singapore, the college of computing and data science (CCDS), starting in Spring or Fall 2026.         
-        Kindly note that due to the volume of applications, I may not be able to respond to everyone individually. Thank you for your understanding. 
-        
-        <br><br>
-        </p>
-        <h3 class="secfont text-md-left">- To prospective Ph.D. students</h3>
-        <br>
-        <p class="note" style="font-size:1em">         
-        If you are interested in pursuing a Ph.D. under my supervision,
-        I typically expect applicants to have at least one first-authored paper at a top-tier conference in ML/AI/NLP,
-        such as ICML, ICLR, NeurIPS, ICCV, ECCV, CVPR, EMNLP, ACL, or NAACL.
-        <br><br>
-        Applicants should also demonstrate a strong background in machine learning, deep learning, or related areas, 
-        and I am planning to recruit students who are interested in <rd>timely and impactful research in ML/NLP/multimodal AI</rd>, including <i>World Models, Embodied AI, Open-ended Learning (Openendedness), 
-          Post-Training Techniques, Coding Agents,</i> and <i>Trustworthy AI</i>, but not limited to these areas.
-
-        To apply to join the group, please complete this <a href="https://docs.google.com/forms/d/e/1FAIpQLSdp21aIpX66K7rj1UfUVNDx17YLE4Y1xqq_r2KskGeX73LL0Q/viewform?usp=sharing&ouid=102612074994892851507" target="_blank"><rd><code>Google form</code></rd></a>.
-        <!-- Please briefly highlight your relevant research experience, publications, and your specific interests in COSMO Lab when reaching out. -->
-        
-        <br><br>
-        For details on the official Ph.D. application process, please refer to the information provided <a href="https://www.ntu.edu.sg/education/graduate-programme/ccds-phd-cs-engineering" target="_blank"><blu><code>Here</code></blu></a>.
-          
-        <br><br>
-        </p>
-        <h3 class="secfont text-md-left">- To prospective postdocs</h3>
-        <br>
-        <p class="note" style="font-size:1em">  
-          There are several competitive postdoctoral fellowship opportunities available at NTU (see below). If you are considering postdoc positions and are interested in these opportunities and working in our lab on areas 
-          such as Lifelong Learning, Self-Evolving AI, Vision-Language-Action Models, etc, please feel free to contact me.
-          <br>
-          <div> &nbsp&nbsp• <a class="note" style="font-size:1em" href="https://www.ntu.edu.sg/research/research-careers/lee-kuan-yew-postdoctoral-fellowship-(lkypdf)" target="_blank"><blu>Lee Kuan Yew Postdoctoral Fellowship (LKYPDF)</blu></a></div>
-          <div> &nbsp&nbsp• <a class="note" style="font-size:1em" href="https://www.ntu.edu.sg/research/research-careers/presidential-postdoctoral-fellowship-(ppf)" target="_blank"><blu>Presidential Postdoctoral Fellowship (PPF)</blu></a></div>      
-          </p>    
-        </p>
-        <br><br>
-        
-        <h3 class="secfont text-md-left">- To prospective interns</h3>
-        <br>
-        <p class="note" style="font-size:1em">  
-          We also welcome applications from highly motivated undergraduate or master's students looking for research internship experience in a related field.
-          The ideal candidate will have strong programming skills (e.g. Python, PyTorch), a solid background and research experience in ML/AI/CV/NLP.  
-          <br><br>
-          To apply to join the group, please complete this <a href="https://docs.google.com/forms/d/e/1FAIpQLSdp21aIpX66K7rj1UfUVNDx17YLE4Y1xqq_r2KskGeX73LL0Q/viewform?usp=sharing&ouid=102612074994892851507" target="_blank"><rd><code>Google form</code></rd></a>.
-          </p>    
-        
-        </p>
-        <br><br>
-        <h3 class="secfont text-md-left">- Scholarships</h3>
-        <br>
-          <p class="note" style="font-size:1em">Potential PhD Scholarship Opportunities:</p>
-          <div> &nbsp&nbsp• <a class="note" style="font-size:1em" href="https://aisingapore.org/research/phd-fellowship-programme/" target="_blank"><blu>AISG PhD Fellowship Programme</blu></a></div>
-          <div> &nbsp&nbsp• <a class="note" style="font-size:1em" href="https://www.ntu.edu.sg/admissions/graduate/financialmatters/scholarships/npgs" target="_blank"><blu>Nanyang President's Graduate Scholarship</blu></a></div>
-          <div> &nbsp&nbsp• <a class="note" style="font-size:1em" href="https://www.a-star.edu.sg/scholarships/home/scholarships/ags--scholarship" target="_blank"><blu>A*STAR Graduate Scholarship</blu></a></div>          
-          <!-- <div> &nbsp&nbsp• <a class="note" style="font-size:1em" href="https://www.a-star.edu.sg/Scholarships/for-graduate-studies/a-star-graduate-scholarship-singapore" target="_blank"><blu>A*STAR Graduate Scholarship (AGS)</blu></a></div> -->
-          <div> &nbsp&nbsp• <a class="note" style="font-size:1em"><blu>etc.</blu></a></div>          
-        </p>
-        <br>
-        <br>
-        <hr>
-                <!-- Footer Start -->
-                <div class="row">
-                  <div class="col footer-cover">
-                    <div class="footer text-center small">
-                      <div>Last modified:&nbsp Dec. 12. 2025.</div>              
-                      <a href="#top_ppl"><blu>Back to top of page</blu></a>
-                      <br>
-                      <br>
-                    </div>
-                  </div>
-                </div>
-                <!-- Footer End -->   
-  </body>
-</html>
+              </div>
+            </article> -->

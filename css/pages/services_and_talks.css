@@ -1,0 +1,181 @@
+/* ===== Services / Talks: palette sync ===== */
+:root{
+    --svc-fg: rgba(17,17,17,0.92);
+    --svc-muted: rgba(17,17,17,0.62);
+    --svc-border: rgba(17,17,17,0.10);
+  
+    --svc-accent: #2f3a8c;      /* indigo */
+    --svc-lav: #a78bfa;         /* soft lavender */
+    --svc-chip: rgba(47,58,140,0.08);
+  }
+  
+  .dark-mode{
+    --svc-fg: rgba(255,255,255,0.92);
+    --svc-muted: rgba(255,255,255,0.72);
+    --svc-border: rgba(255,255,255,0.14);
+  
+    --svc-accent: #9aa7ff;
+    --svc-lav: #c4b5fd;
+    --svc-chip: rgba(154,167,255,0.14);
+  }
+
+  body{
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont;
+    font-weight: 450;
+  }
+
+  .secfont{
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
+    white-space: normal; 
+    margin-top: 4px;
+  }
+
+  .section-divider{
+    border: 0;
+    height: 1px;
+    background: var(--svc-border);
+    margin: 18px 0 6px;
+  }
+  
+
+  
+  /* group header chip */
+  .svc-group{
+    margin: 6px 0 10px;
+    width: 100%;
+  }
+  
+  
+  .svc-head{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 650;
+    color: var(--svc-fg);
+    /* padding: 6px 10px; */
+    /* border: 1px solid var(--svc-border); */
+    /* border-radius: 999px; */
+    /* background: linear-gradient(180deg, var(--svc-chip), transparent); */
+  }
+  
+  .svc-head::before{
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--svc-accent) 70%, var(--svc-lav) 30%);
+    opacity: 0.9;
+  }
+  
+  /* list base */
+  .svc-list{
+    /* list-style: none; */
+    display: block;
+    /* padding: 4px 0 0; */
+    padding-top: 4px;
+    margin: 0;
+    /* padding-left: 0; */
+  }
+  
+  .svc-list li{
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 0px;
+    padding: 3px 0;
+    color: var(--svc-fg);
+    line-height: 1.45;
+  }
+
+  .service-section ul{
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    white-space: normal !important;
+    word-break: normal;
+    overflow-wrap: anywhere;
+  }
+  
+  
+/* Specific selector to override .svc-list grid properties without using !important */
+.svc-group ul.svc-compact {
+    display: block;           /* Standard block layout (prevents flex/grid squashing) */
+    list-style: none;         /* Remove bullet points */
+    padding-left: 0;          /* Align text to the absolute left edge */
+    margin-left: 0;           /* Remove any default side margins */
+    margin-top: 8px;          /* Vertical spacing from the header */
+}
+
+/* Ensure list items stack vertically and reset inherited grid layouts */
+.svc-group ul.svc-compact li {
+    display: block;           /* Force each item to a new line */
+    grid-template-columns: none; /* Disable 64px grid column from .svc-list */
+    width: 100%;              /* Occupy full horizontal width */
+    margin-bottom: 6px;       /* Line spacing between entries */
+    padding-left: 16px;          /* Ensure no indentation */
+    line-height: 1.5;         /* Improve readability */
+    white-space: normal;      /* Allow text to wrap normally (fixes overlapping) */
+}
+
+/* Styling for the conference/journal name */
+.svc-compact .svc-item {
+    display: inline;          /* Let text flow naturally */
+    color: var(--svc-fg);
+}
+
+
+  .svc-year{
+    font-weight: 600;
+    color: var(--svc-muted);
+  }
+  
+  .svc-item{
+    color: var(--svc-fg);
+  }
+  
+  .svc-venue{
+    color: color-mix(in srgb, var(--svc-accent) 65%, var(--svc-muted) 35%);
+    font-weight: 600;
+  }
+  
+  /* Talks */
+  .talk-block{
+    padding: 10px 0 4px;
+  }
+  
+  .talk-title{
+    font-weight: 650;
+    color: var(--svc-fg);
+    margin: 2px 0 0;
+    letter-spacing: -0.01em;
+  }
+  
+  .talk-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .talk-list li{
+    display: grid;
+    grid-template-columns: 84px 1fr;
+    gap: 0px;
+    padding: 3px 0;
+    color: var(--svc-fg);
+    line-height: 1.45;
+  }
+  
+  .talk-date{
+    color: var(--svc-muted);
+    font-weight: 600;
+  }
+  
+  .talk-item{
+    color: var(--svc-fg);
+  }
+  
+  /* mobile tightening */
+  @media (max-width: 820px){
+    .svc-list li{ grid-template-columns: 60px 1fr; }
+    .talk-list li{ grid-template-columns: 78px 1fr; }
+  }

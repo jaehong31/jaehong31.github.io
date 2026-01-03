@@ -33,65 +33,16 @@ function addArxivContent(img_, title_, author_, year_) {
   container.innerHTML += htmlContent;
 }
 
-// document.addEventListener('DOMContentLoaded', function() {
-//   const toggleButton = document.getElementById('mode-toggle');
-//   toggleButton.addEventListener('click', function() {
-//       if (document.body.classList.contains('dark-mode')) {
-//           document.body.classList.remove('dark-mode');
-//           document.body.classList.add('light-mode');
-//           toggleButton.textContent = 'Dark Mode 🌙';
-//       } else {
-//           document.body.classList.remove('light-mode');
-//           document.body.classList.add('dark-mode');
-//           toggleButton.textContent = 'Light Mode ☀️';
-//       }
-//   });
-// });
 
-// const toggleButton = document.getElementById('toggle-button');
-// const navbarMenu = document.querySelector('.navbar-menu');
-
-// toggleButton.addEventListener('click', () => {
-//   navbarMenu.classList.toggle('active');
-// });
-
-// document.addEventListener('DOMContentLoaded', function () {
-//   // ✅ navbar.html을 fetch해서 #navbar에 삽입
-//   fetch('navbar.html')
-//     .then(response => response.text())
-//     .then(data => {
-//       document.getElementById('navbar').innerHTML = data;
-
-//       // ✅ 다크 모드 토글 버튼 이벤트 등록
-//       const modeToggleButton = document.getElementById('mode-toggle');
-//       if (modeToggleButton) {
-//         modeToggleButton.addEventListener('click', function () {
-//           if (document.body.classList.contains('dark-mode')) {
-//             document.body.classList.remove('dark-mode');
-//             document.body.classList.add('light-mode');
-//             modeToggleButton.textContent = 'Dark Mode 🌙';
-//           } else {
-//             document.body.classList.remove('light-mode');
-//             document.body.classList.add('dark-mode');
-//             modeToggleButton.textContent = 'Light Mode ☀️';
-//           }
-//         });
-//       }
-
-//       // ✅ 햄버거 메뉴 토글
-//       const toggleButton = document.getElementById('toggle-button');
-//       const navbarMenu = document.querySelector('.navbar-menu');
-//       if (toggleButton && navbarMenu) {
-//         toggleButton.addEventListener('click', () => {
-//           navbarMenu.classList.toggle('active');
-//         });
-//       }
-//     });
-// });
+let paperContainerId = "pcontent-container";
+function setPaperContainer(id) { paperContainerId = id; }
+function highlightMe(html) {
+  return String(html ?? "")
+    .replaceAll("Jaehong Yoon", '<span class="me">Jaehong Yoon</span>');
+}
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  // ✅ 모드 초기화 (localStorage 확인)
   const savedMode = localStorage.getItem('mode');
   if (savedMode === 'dark') {
     document.body.classList.add('dark-mode');
@@ -99,16 +50,13 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.classList.add('light-mode');
   }
 
-  // ✅ navbar 삽입
   fetch('navbar.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('navbar').innerHTML = data;
 
-      // ✅ 다크모드 버튼
       const modeToggleButton = document.getElementById('mode-toggle');
       if (modeToggleButton) {
-        // 초기 버튼 텍스트 세팅
         if (document.body.classList.contains('dark-mode')) {
           modeToggleButton.textContent = 'Light Mode ☀️';
         } else {
@@ -130,7 +78,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       }
 
-      // ✅ 햄버거 메뉴
       const toggleButton = document.getElementById('toggle-button');
       const navbarMenu = document.querySelector('.navbar-menu');
       if (toggleButton && navbarMenu) {
@@ -140,3 +87,16 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 });
+
+
+window.toggleOldNews = function (e, btn) {
+  e.preventDefault(); 
+
+  const panel = document.getElementById("oldnews");
+  if (!panel) return;
+
+  const opened = panel.classList.toggle("open");
+
+  btn.classList.toggle("is-active", opened);
+  btn.setAttribute("aria-expanded", opened ? "true" : "false");
+};

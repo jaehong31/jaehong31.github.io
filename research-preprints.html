@@ -1,0 +1,194 @@
+<script src="js/publications.js" defer></script>
+
+<h3 class="secfont text-md-left"> Recent Preprints</h3>
+<p class="ssmall authors">(*: equal contribution, †: equal advising)</p>
+<br>
+<div id="content-container"></div>
+<script>
+    setPaperContainer("content-container");
+    addArxivCard(
+  'wu2025medforget',
+  2025,
+  'MedForget: Hierarchy-Aware Multimodal Unlearning Testbed for Medical AI',
+  'Fengli Wu*, Vaidehi Patil*, Jaehong Yoon, Yue Zhang, Mohit Bansal',
+  'Fengli Wu, Vaidehi Patil, Jaehong Yoon, Yue Zhang, Mohit Bansal',
+  '2512.09867',
+  'None', // project
+  'https://github.com/fengli-wu/MedForget', // code
+  'None',
+  'None',
+  './materials/concept_figures/medforget.png'
+);
+
+addArxivCard(
+  'sivakumaran2025dart',
+  2025,
+  'DART: Leveraging Multi-Agent Disagreement for Tool Recruitment in Multimodal Reasoning',
+  'Nithin Sivakumaran, Justin Chih-Yao Chen, David Wan, Yue Zhang, Jaehong Yoon, Elias Stengel-Eskin, Mohit Bansal',
+  'Nithin Sivakumaran, Justin Chih-Yao Chen, David Wan, Yue Zhang, Jaehong Yoon, Elias Stengel-Eskin, Mohit Bansal',
+  '2512.07132',
+  'None',
+  'None',
+  'https://github.com/nsivaku/dart',
+  'None',
+  './materials/concept_figures/dart.png'
+);
+
+addArxivCard(
+  'yeo2025worldmm',
+  2025,
+  'WorldMM: Dynamic Multimodal Memory Agent for Long Video Reasoning',
+  'Woongyeong Yeo*, Kangsan Kim*, Jaehong Yoon†, Sung Ju Hwang†',
+  'Woongyeong Yeo, Kangsan Kim, Jaehong Yoon, Sung Ju Hwang',
+  '2512.02425',
+  'https://worldmm.github.io/',
+  'None',
+  'https://github.com/wgcyeo/WorldMM',
+  'None',
+  './materials/concept_figures/worldmm.png'
+);
+
+addArxivCard(
+  'huang2025planning',
+  2025,
+  'Planning with Sketch-Guided Verification for Physics-Aware Video Generation',
+  'Yidong Huang, Zun Wang, Han Lin, Dong-Ki Kim, Shayegan Omidshafiei, Jaehong Yoon, Yue Zhang, Mohit Bansal',
+  'Yidong Huang, Zun Wang, Han Lin, Dong-Ki Kim, Shayegan Omidshafiei, Jaehong Yoon, Yue Zhang, Mohit Bansal',
+  '2511.17450',
+  'https://sketchverify.github.io/',
+  'None',
+  'https://github.com/h6kplus/SketchVerify',
+  'None',
+  './materials/concept_figures/sketchverify2.png'
+);
+
+addArxivCard(
+  'yin2025refusal',
+  2025,
+  'Refusal Falls off a Cliff: How Safety Alignment Fails in Reasoning?',
+  'Qingyu Yin, Chak Tou Leong, Linyi Yang, Wenxuan Huang, Wenjie Li, Xiting Wang, Jaehong Yoon, YunXing, XingYu, Jinjin Gu',
+  'Qingyu Yin, Chak Tou Leong, Linyi Yang, Wenxuan Huang, Wenjie Li, Xiting Wang, Jaehong Yoon, YunXing, XingYu, Jinjin Gu',
+  '2510.06036',
+  'None',
+  'None',
+  'https://github.com/MikaStars39/RefusalCliff',
+  'None',
+  './materials/concept_figures/refusal.png'
+);
+
+addArxivCard(
+  'jang2025frame',
+  2025,
+  'Frame Guidance: Training-Free Guidance for Frame-Level Control in Video Diffusion Models',
+  'Sangwon Jang*, Taekyung Ki*, Jaehyeong Jo, Jaehong Yoon, Soo Ye Kim, Zhe Lin, and Sung Ju Hwang',
+  'Jang, Sangwon and Ki, Taekyung and Jo, Jaehyeong and Yoon, Jaehong and Kim, Soo Ye and Lin, Zhe and Hwang, Sung Ju',
+  '2506.07177',
+  'https://frame-guidance-video.github.io/',
+  'None',
+  'https://github.com/agwmon/frame-guidance',
+  'None',
+  './materials/concept_figures/frame-guidance.png'
+);
+
+// long author list (et al expand)
+addArxivCard(
+  'zaranis2025movie',
+  2025,
+  'Movie Facts and Fibs (MF2): A Benchmark for Long Movie Understanding',
+  '', // author (unused when toggle is on)
+  'Emmanouil Zaranis and António Farinhas and Saul Santos and Beatriz Canaverde and Miguel Moura Ramos and Aditya K Surikuchi and André Viveiros and Baohao Liao and Elena Bueno-Benito and Nithin Sivakumaran and Pavlo Vasylenko and Shoubin Yu and Sonal Sannigrahi and Wafaa Mohammed and Ben Peters and Danae Sánchez Villegas and Elias Stengel-Eskin and Giuseppe Attanasio and Jaehong Yoon and Stella Frank and Alessandro Suglia and Chrysoula Zerva and Desmond Elliott and Mariella Dimiccoli and Mohit Bansal and Oswald Lanz and Raffaella Bernardi and Raquel Fernández and Sandro Pezzelle and Vlad Niculae and André F. T. Martins',
+  '2506.06275',
+  'None', // project
+  'None',
+  'https://github.com/deep-spin/MF2', // code
+  'https://huggingface.co/datasets/sardinelab/MF2', // code
+  './materials/concept_figures/mf2.png',
+  'zaranis2025movie',
+  'Emmanouil Zaranis, António Farinhas, Saul Santos, Beatriz Canaverde, ',
+  `Miguel Moura Ramos, Aditya K Surikuchi, André Viveiros, Baohao Liao, Elena Bueno-Benito, Nithin Sivakumaran, 
+Pavlo Vasylenko, Shoubin Yu, Sonal Sannigrahi, Wafaa Mohammed, Ben Peters, Danae Sánchez Villegas, Elias Stengel-Eskin, 
+Giuseppe Attanasio, Jaehong Yoon, Stella Frank, Alessandro Suglia, Chrysoula Zerva, Desmond Elliott, Mariella Dimiccoli, 
+Mohit Bansal, Oswald Lanz, Raffaella Bernardi, Raquel Fernández, Sandro Pezzelle, Vlad Niculae, André F. T. Martins`
+);
+
+addArxivCard(
+  'wang2025epic',
+  2025,
+  'EPiC: Efficient Video Camera Control Learning with Precise Anchor-Video Guidance',
+  'Zun Wang, Jaemin Cho, Jialu Li, Han Lin, Jaehong Yoon, Yue Zhang, and Mohit Bansal',
+  'Wang, Zun and Cho, Jaemin and Li, Jialu and Lin, Han and Yoon, Jaehong and Zhang, Yue and Bansal, Mohit',
+  '2505.21876',
+  'https://zunwang1.github.io/Epic',
+  'None',
+  'https://github.com/wz0919/EPiC',
+  'None',
+  './materials/concept_figures/epic.png'
+);
+
+addArxivCard(
+  'li2025training',
+  2025,
+  'Training-free Guidance in Text-to-Video Generation via Multimodal Planning and Structured Noise Initialization',
+  'Jialu Li*, Shoubin Yu*, Han Lin*, Jaemin Cho, Jaehong Yoon, and Mohit Bansal',
+  'Li, Jialu and Yu, Shoubin and Lin, Han and Cho, Jaemin and Yoon, Jaehong and Bansal, Mohit',
+  '2504.08641',
+  'https://video-msg.github.io/',
+  'None',
+  'https://github.com/jialuli-luka/Video-MSG',
+  'None',
+  './materials/concept_figures/video-msg.png'
+);
+
+addArxivCard(
+  'sung2025rsq',
+  2025,
+  'RSQ: Learning from Important Tokens Leads to Better Quantized LLMs',
+  'Yi-Lin Sung, Prateek Yadav, Jialu Li, Jaehong Yoon, and Mohit Bansal',
+  'Sung, Yi-Lin and Yadav, Prateek and Li, Jialu and Yoon, Jaehong and Bansal, Mohit',
+  '2503.01820',
+  'None',
+  'None',
+  'https://github.com/ylsung/rsq',
+  'None',
+  './materials/concept_figures/rsq.png'
+);
+
+// long author list (et al expand)
+addArxivCard(
+  'huang2025on',
+  2025,
+  'On the Trustworthiness of Generative Foundation Models: Guideline, Assessment, and Perspective',
+  '',
+  'Huang, Yue and Gao, Chujie and Wu, Siyuan and Wang, Haoran and Wang, Xiangqi and Zhou, Yujun and Wang, Yanbo and Ye, Jiayi and Shi, Jiawen and Zhang, Qihui and Li, Yuan and Bao, Han and Liu, Zhaoyi and Guan, Tianrui and Chen, Dongping and Chen, Ruoxi and Guo, Kehan and Zou, Andy and Hooi Kuen-Yew, Bryan and Xiong, Caiming and Stengel-Eskin, Elias and Zhang, Hongyang and Yin, Hongzhi and Zhang, Huan and Yao, Huaxiu and Yoon, Jaehong and Zhang, Jieyu and Shu, Kai and Zhu, Kaijie and Krishna, Ranjay and Swayamdipta, Swabha and Shi, Taiwei and Shi, Weijia and Li, Xiang and Li, Yiwei and Hao, Yuexing and Jia, Zhihao and Li, Zhize and Chen, Xiuying and Tu, Zhengzhong and Hu, Xiyang and Zhou, Tianyi and Zhao, Jieyu and Sun, Lichao and Huang, Furong and Sasson, Or Cohen and Sattigeri, Prasanna and Reuel, Anka and Lamparth, Max and Zhao, Yue and Dziri, Nouha and Su, Yu and Sun, Huan and Ji, Heng and Xiao, Chaowei and Bansal, Mohit and Chawla, Nitesh V. and Pei, Jian and Gao, Jianfeng and Backes, Michael and Yu, Philip S. and Gong, Neil Zhenqiang and Chen, Pin-Yu and Li, Bo and Song, Dawn and Zhang, Xiangliang',
+  '2502.14296',
+  'https://trustgen.github.io/',
+  'None',
+  'None',
+  'None',
+  './materials/concept_figures/trustworthiness2.png',
+  'huang2025on',
+  'Yue Huang, Chujie Gao, Siyuan Wu, Haoran Wang, ',
+  `Xiangqi Wang, Yujun Zhou, Yanbo Wang, Jiayi Ye, Jiawen Shi, Qihui Zhang, Yuan Li, Han Bao, Zhaoyi Liu, Tianrui Guan, 
+Dongping Chen, Ruoxi Chen, Kehan Guo, Andy Zou, Bryan Hooi Kuen-Yew, Caiming Xiong, Elias Stengel-Eskin, Hongyang Zhang, Hongzhi Yin, 
+Huan Zhang, Huaxiu Yao, <u><b>Jaehong Yoon</b></u>, Jieyu Zhang, Kai Shu, Kaijie Zhu, Ranjay Krishna, Swabha Swayamdipta, Taiwei Shi, 
+Weijia Shi, Xiang Li, Yiwei Li, Yuexing Hao, Zhihao Jia, Zhize Li, Xiuying Chen, Zhengzhong Tu, Xiyang Hu, Tianyi Zhou, 
+Jieyu Zhao, Lichao Sun, Furong Huang, Or Cohen Sasson, Prasanna Sattigeri, Anka Reuel, Max Lamparth, Yue Zhao, Nouha Dziri, Yu Su, 
+Huan Sun, Heng Ji, Chaowei Xiao, Mohit Bansal, Nitesh V. Chawla, Jian Pei, Jianfeng Gao, Michael Backes, Philip S. Yu, 
+Neil Zhenqiang Gong, Pin-Yu Chen, Bo Li, Dawn Song, and Xiangliang Zhang`
+);
+
+addArxivCard(
+  'lee2024videorepair',
+  2024,
+  'VideoRepair: Improving Text-to-Video Generation via Misalignment Evaluation and Localized Refinement',
+  'Daeun Lee, Jaehong Yoon, Jaemin Cho, and Mohit Bansal',
+  'Lee, Daeun and Yoon, Jaehong and Cho, Jaemin and Bansal, Mohit',
+  '2411.15115',
+  'https://video-repair.github.io/',
+  'None',
+  'https://github.com/daeunni/VideoRepair',
+  'None',
+  './materials/concept_figures/videorepair2.png'
+);
+</script>
+

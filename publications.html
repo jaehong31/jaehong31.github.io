@@ -7,6 +7,8 @@
     <meta http-equiv='expires' content='0'> 
     <meta http-equiv='pragma' content='no-cache'>
     <meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;650&display=swap" rel="stylesheet">
+    
     <title>Jaehong Yoon</title>
     <script>
         // Check if the browser supports scrollRestoration
@@ -50,7 +52,12 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/pages/publications.css">
     <script src="js/navbar.js" defer></script>
+    <script src="js/publications.js" defer></script>
+    <script src="js/footer.js" defer></script>
+    <script src="get_func.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -59,377 +66,29 @@
 <a name="top_publ"></a>
 <body>
     <div id="navbar"></div>
-    <script src="get_func.js"></script>
-    <div class="container resume"    style="padding-top:100px">
-        <section id="Publication"></section>
+    <div class="container resume"    style="padding-top:20px">
+        <section id="Publication"></section>            
             <div class="row pt-2">
                 <div class="col-md-1 col-12"></div>
                 <div class="col-md-11 col-12">
-                    <h3 class="secfont text-md-left"> Recent Preprints</h3>
-                    <p class="ssmall authors">(*: equal contribution, †: equal advising)</p>
-                    <br>
-                    <div id="content-container"></div>
-                    <script>
-                        function toggleAuthors(id, expand) {
-                            const etAl = document.querySelector(`.et-al-${id}`);
-                            const fullAuthors = document.querySelector(`.full-authors-${id}`);
-                            if (expand) {
-                                etAl.style.display = 'none';
-                                fullAuthors.style.display = 'inline';
-                            } else {
-                                etAl.style.display = 'inline';
-                                fullAuthors.style.display = 'none';
-                            }
-                        }
-                        
-                        let callCounter = 12;
-                        const jy_ = 'https://jaehong31.github.io/';
-                        const contentContainer = document.getElementById("content-container");
-                        
-                        function addArxivContent({year, name, arxiv, img, title, author, bib_author, project = jy_, dataset = jy_, code = jy_, toggleID = null, etalPreview = '', fullAuthorHTML = ''}) {
-                            const projectPageBadge = project !== jy_ ? `<a href="${project}" target="_blank"><b class="badge badge-white">Project Page</b></a>` : '';
-                            const datasetBadge = dataset !== jy_ ? `<a href="${dataset}" target="_blank"><b class="badge badge-white">Dataset</b></a>` : '';
-                            const codeBadge = code !== jy_ ? `<a href="${code}" target="_blank"><b class="badge badge-white">Code</b></a>` : '';
-                            const authorsHTML = toggleID
-                                ? `<p class="ssmall authors">${etalPreview}<span class="et-al-${toggleID}" onclick="toggleAuthors('${toggleID}', true)" style="cursor:pointer;text-decoration:underline;">et al.</span>
-                                    <span class="full-authors-${toggleID}" style="display:none;">${fullAuthorHTML}
-                                    <span class="compress" onclick="toggleAuthors('${toggleID}', false)" style="cursor:pointer;text-decoration:underline; margin-left:10px;">(▲ Hide list)</span></span></p>`
-                                : `<h6 class="ssmall authors">${author.replace('Jaehong Yoon', '<u><b>Jaehong Yoon</b></u>')}</h6>`;
-                        
-                            const htmlContent = `
-                            <div class="row mt-2">
-                                <div class="col-md-1 pb-3 text-md-right text-left"></div>
-                                <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-                                    <img class="img-fluid rounded paper-img" src="./materials/concept_figures/${img}" alt="concept" >
-                                </div>
-                                <div class="col-md-7 col-sm-12 text-md-left text-center">
-                                    <div class="col text-left text-md-left">
-                                    <h6 class="darkgray"><b>[P${callCounter}] ${title}</b></h6>
-                                    ${authorsHTML}
-                                    <h6>
-                                        <a class="pprint">arXiv ${year}</a><br>
-                                        ${projectPageBadge}
-                                        <a href="https://arxiv.org/abs/${arxiv}" target="_blank"><span class="badge badge-white">Paper</span></a>
-                                        ${datasetBadge}
-                                        ${codeBadge}
-                                        <a type="button" class="badge badge-white" href="javascript:void(0)" onclick="show('bib${title.replace(/\s+/g, '')}')">BibTeX</a>
-                                        <div id="bib${title.replace(/\s+/g, '')}" class="popup">
-                                        @article{${name},<br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;title={${title}},<br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;author={${bib_author}},<br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:${arxiv}},<br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;year={${year}},<br>
-                                        }
-                                        </div>
-                                    </h6>
-                                    </div>
-                                </div>
-                                </div>`;
-                            callCounter--;
-                            contentContainer.innerHTML += htmlContent;
-                        }
-                        // addArxivContent({
-                        //     year: 2025, 
-                        //     name: 'wang2025video', 
-                        //     arxiv: '2507.06485', 
-                        //     img: 'video-rts.png', 
-                        //     title: 'Video-RTS: Rethinking Reinforcement Learning and Test-Time Scaling for Efficient and Enhanced Video Reasoning', 
-                        //     author: 'Ziyang Wang*, Jaehong Yoon*, Shoubin Yu, Md Mohaiminul Islam, Gedas Bertasius, and Mohit Bansal',
-                        //     bib_author: 'Wang, Ziyang and Yoon, Jaehong and Yu, Shoubin and Islam, Mohaiminul and Bertasius, Gedas and Bansal, Mohit',
-                        //     project: 'https://sites.google.com/cs.unc.edu/videorts2025/',
-                        //     code: 'https://github.com/Ziyang412/Video-RTS',
-                        // });
-                        // addArxivContent({
-                        //     year: 2025, 
-                        //     name: 'ki2025avatar', 
-                        //     arxiv: 'xxxx.xxxxx', 
-                        //     img: 'avatar.png', 
-                        //     title: 'Avatar Forcing: Real-Time Interactive Head Avatar Generation for Natural Conversation', 
-                        //     author: 'Taekyung Ki, Sangwon Jang, Jaehyeong Jo, Jaehong Yoon, Sung Ju Hwang',
-                        //     bib_author: 'Taekyung Ki, Sangwon Jang, Jaehyeong Jo, Jaehong Yoon, Sung Ju Hwang',
-                        // });
-                        addArxivContent({
-                            year: 2025, 
-                            name: 'wu2025medforget', 
-                            arxiv: '2512.09867', 
-                            img: 'medforget.png', 
-                            title: 'MedForget: Hierarchy-Aware Multimodal Unlearning Testbed for Medical AI', 
-                            author: 'Fengli Wu*, Vaidehi Patil*, Jaehong Yoon, Yue Zhang, Mohit Bansal',
-                            bib_author: 'Fengli Wu, Vaidehi Patil, Jaehong Yoon, Yue Zhang, Mohit Bansal',
-                            dataset: 'https://github.com/fengli-wu/MedForget',
-                        });
-                        addArxivContent({
-                            year: 2025, 
-                            name: 'sivakumaran2025dart', 
-                            arxiv: '2512.07132', 
-                            img: 'dart.png', 
-                            title: 'DART: Leveraging Multi-Agent Disagreement for Tool Recruitment in Multimodal Reasoning', 
-                            author: 'Nithin Sivakumaran, Justin Chih-Yao Chen, David Wan, Yue Zhang, Jaehong Yoon, Elias Stengel-Eskin, Mohit Bansal',
-                            bib_author: 'Nithin Sivakumaran, Justin Chih-Yao Chen, David Wan, Yue Zhang, Jaehong Yoon, Elias Stengel-Eskin, Mohit Bansal',
-                            code: 'https://github.com/nsivaku/dart',
-                        });
-                        addArxivContent({
-                            year: 2025, 
-                            name: 'yeo2025worldmm', 
-                            arxiv: '2512.02425', 
-                            img: 'worldmm.png', 
-                            title: 'WorldMM: Dynamic Multimodal Memory Agent for Long Video Reasoning', 
-                            author: 'Woongyeong Yeo*, Kangsan Kim*, Jaehong Yoon†, Sung Ju Hwang†',
-                            bib_author: 'Woongyeong Yeo, Kangsan Kim, Jaehong Yoon, Sung Ju Hwang',
-                            project: "https://worldmm.github.io/",
-                            code: 'https://github.com/wgcyeo/WorldMM',
-                        });
-                        addArxivContent({
-                            year: 2025, 
-                            name: 'huang2025planning', 
-                            arxiv: '2511.17450', 
-                            img: 'sketchverify2.png', 
-                            title: 'Planning with Sketch-Guided Verification for Physics-Aware Video Generation', 
-                            author: 'Yidong Huang, Zun Wang, Han Lin, Dong-Ki Kim, Shayegan Omidshafiei, Jaehong Yoon, Yue Zhang, Mohit Bansal',
-                            bib_author: 'Yidong Huang, Zun Wang, Han Lin, Dong-Ki Kim, Shayegan Omidshafiei, Jaehong Yoon, Yue Zhang, Mohit Bansal',
-                            project: "https://sketchverify.github.io/",
-                            code: 'https://github.com/h6kplus/SketchVerify',
-                        });
-                        addArxivContent({
-                            year: 2025, 
-                            name: 'yin2025refusal', 
-                            arxiv: '2510.06036', 
-                            img: 'refusal.png', 
-                            title: 'Refusal Falls off a Cliff: How Safety Alignment Fails in Reasoning?', 
-                            author: 'Qingyu Yin, Chak Tou Leong, Linyi Yang, Wenxuan Huang, Wenjie Li, Xiting Wang, Jaehong Yoon, YunXing, XingYu, Jinjin Gu',
-                            bib_author: 'Qingyu Yin, Chak Tou Leong, Linyi Yang, Wenxuan Huang, Wenjie Li, Xiting Wang, Jaehong Yoon, YunXing, XingYu, Jinjin Gu',
-                            code: 'https://github.com/MikaStars39/RefusalCliff',
-                        });
-                        addArxivContent({
-                            year: 2025, 
-                            name: 'jang2025frame', 
-                            arxiv: '2506.07177', 
-                            img: 'frame-guidance.png', 
-                            title: 'Frame Guidance: Training-Free Guidance for Frame-Level Control in Video Diffusion Models', 
-                            author: 'Sangwon Jang*, Taekyung Ki*, Jaehyeong Jo, Jaehong Yoon, Soo Ye Kim, Zhe Lin, and Sung Ju Hwang',
-                            bib_author: 'Jang, Sangwon and Ki, Taekyung and Jo, Jaehyeong and Yoon, Jaehong and Kim, Soo Ye and Lin, Zhe and Hwang, Sung Ju',
-                            project: 'https://frame-guidance-video.github.io/',
-                            code: 'https://github.com/agwmon/frame-guidance',                   
-                        });
-                        // [P9] with long authors
-                        addArxivContent({
-                            year: 2025,
-                            name: 'zaranis2025movie',
-                            arxiv: '2506.06275',
-                            img: 'mf2.png',
-                            title: 'Movie Facts and Fibs (MF2): A Benchmark for Long Movie Understanding',
-                            author: '',
-                            bib_author: 'Emmanouil Zaranis and António Farinhas and Saul Santos and Beatriz Canaverde and Miguel Moura Ramos and Aditya K Surikuchi and André Viveiros and Baohao Liao and Elena Bueno-Benito and Nithin Sivakumaran and Pavlo Vasylenko and Shoubin Yu and Sonal Sannigrahi and Wafaa Mohammed and Ben Peters and Danae Sánchez Villegas and Elias Stengel-Eskin and Giuseppe Attanasio and Jaehong Yoon and Stella Frank and Alessandro Suglia and Chrysoula Zerva and Desmond Elliott and Mariella Dimiccoli and Mohit Bansal and Oswald Lanz and Raffaella Bernardi and Raquel Fernández and Sandro Pezzelle and Vlad Niculae and André F. T. Martins',
-                            dataset: 'https://huggingface.co/datasets/sardinelab/MF2',
-                            code: 'https://github.com/deep-spin/MF2',
-                            toggleID: 'zaranis2025movie',
-                            etalPreview: 'Emmanouil Zaranis, António Farinhas, Saul Santos, Beatriz Canaverde, ',
-                            fullAuthorHTML: `Miguel Moura Ramos, Aditya K Surikuchi, André Viveiros, Baohao Liao, Elena Bueno-Benito, Nithin Sivakumaran, 
-                            Pavlo Vasylenko, Shoubin Yu, Sonal Sannigrahi, Wafaa Mohammed, Ben Peters, Danae Sánchez Villegas, Elias Stengel-Eskin, 
-                            Giuseppe Attanasio, <u><b>Jaehong Yoon</b></u>, Stella Frank, Alessandro Suglia, Chrysoula Zerva, Desmond Elliott, Mariella Dimiccoli, 
-                            Mohit Bansal, Oswald Lanz, Raffaella Bernardi, Raquel Fernández, Sandro Pezzelle, Vlad Niculae, André F. T. Martins`
-                        });
-                        // addArxivContent({
-                        //     year: 2025, 
-                        //     name: 'lee2025video', 
-                        //     arxiv: '2506.03525', 
-                        //     img: 'video-skill-cot.png', 
-                        //     title: 'Video-Skill-CoT: Skill-based Chain-of-Thoughts for Domain-Adaptive Video Reasoning', 
-                        //     author: 'Daeun Lee*, Jaehong Yoon*, Jaemin Cho, and Mohit Bansal',
-                        //     bib_author: 'Lee, Daeun and Yoon, Jaehong and Cho, Jaemin and Bansal, Mohit',
-                        //     project: 'https://video-skill-cot.github.io/',
-                        //     code: 'https://github.com/daeunni/Video-Skill-CoT',                   
-                        // });
-                        addArxivContent({
-                            year: 2025, 
-                            name: 'wang2025epic', 
-                            arxiv: '2505.21876', 
-                            img: 'epic.png', 
-                            title: 'EPiC: Efficient Video Camera Control Learning with Precise Anchor-Video Guidance', 
-                            author: 'Zun Wang, Jaemin Cho, Jialu Li, Han Lin, Jaehong Yoon, Yue Zhang, and Mohit Bansal',
-                            bib_author: 'Wang, Zun and Cho, Jaemin and Li, Jialu and Lin, Han and Yoon, Jaehong and Zhang, Yue and Bansal, Mohit',
-                            project: 'https://zunwang1.github.io/Epic',
-                            code: 'https://github.com/wz0919/EPiC',                   
-                        });
-                        addArxivContent({
-                            year: 2025, 
-                            name: 'li2025training', 
-                            arxiv: '2504.08641', 
-                            img: 'video-msg.png', 
-                            title: 'Training-free Guidance in Text-to-Video Generation via Multimodal Planning and Structured Noise Initialization', 
-                            author: 'Jialu Li*, Shoubin Yu*, Han Lin*, Jaemin Cho, Jaehong Yoon, and Mohit Bansal',
-                            bib_author: 'Li, Jialu and Yu, Shoubin and Lin, Han and Cho, Jaemin and Yoon, Jaehong and Bansal, Mohit',
-                            project: 'https://video-msg.github.io/',
-                            code: 'https://github.com/jialuli-luka/Video-MSG',                   
-                        });
-                        addArxivContent({
-                            year: 2025, 
-                            name: 'sung2025rsq', 
-                            arxiv: '2503.01820', 
-                            img: 'rsq.png', 
-                            title: 'RSQ: Learning from Important Tokens Leads to Better Quantized LLMs', 
-                            author: 'Yi-Lin Sung, Prateek Yadav, Jialu Li, Jaehong Yoon, and Mohit Bansal',
-                            bib_author: 'Sung, Yi-Lin and Yadav, Prateek and Li, Jialu and Yoon, Jaehong and Bansal, Mohit',
-                            code: 'https://github.com/ylsung/rsq',                   
-                        });
-                        addArxivContent({
-                            year: 2025,
-                            name: 'huang2025on',
-                            arxiv: '2502.14296',
-                            img: 'trustworthiness2.png',
-                            title: 'On the Trustworthiness of Generative Foundation Models: Guideline, Assessment, and Perspective',
-                            author: '',
-                            bib_author: 'Huang, Yue and Gao, Chujie and Wu, Siyuan and Wang, Haoran and Wang, Xiangqi and Zhou, Yujun and Wang, Yanbo and Ye, Jiayi and Shi, Jiawen and Zhang, Qihui and Li, Yuan and Bao, Han and Liu, Zhaoyi and Guan, Tianrui and Chen, Dongping and Chen, Ruoxi and Guo, Kehan and Zou, Andy and Hooi Kuen-Yew, Bryan and Xiong, Caiming and Stengel-Eskin, Elias and Zhang, Hongyang and Yin, Hongzhi and Zhang, Huan and Yao, Huaxiu and Yoon, Jaehong and Zhang, Jieyu and Shu, Kai and Zhu, Kaijie and Krishna, Ranjay and Swayamdipta, Swabha and Shi, Taiwei and Shi, Weijia and Li, Xiang and Li, Yiwei and Hao, Yuexing and Jia, Zhihao and Li, Zhize and Yuan, Zhengqing and Chen, Xiuying and Tu, Zhengzhong and Hu, Xiyang and Zhou, Tianyi and Zhao, Jieyu and Sun, Lichao and Huang, Furong and Sasson, Or Cohen and Sattigeri, Prasanna and Reuel, Anka and Lamparth, Max and Zhao, Yue and Dziri, Nouha and Su, Yu and Sun, Huan and Ji, Heng and Xiao, Chaowei and Bansal, Mohit and Chawla, Nitesh V. and Pei, Jian and Gao, Jianfeng and Backes, Michael and Yu, Philip S. and Gong, Neil Zhenqiang and Chen, Pin-Yu and Li, Bo and Zhang, Xiangliang',
-                            project: 'https://trustgen.github.io/',
-                            toggleID: 'huang2025on',
-                            etalPreview: 'Yue Huang, Chujie Gao, Siyuan Wu, Haoran Wang, ',
-                            fullAuthorHTML: `Xiangqi Wang, Yujun Zhou, Yanbo Wang, Jiayi Ye, Jiawen Shi, Qihui Zhang, Yuan Li, Han Bao, Zhaoyi Liu, Tianrui Guan, 
-                            Dongping Chen, Ruoxi Chen, Kehan Guo, Andy Zou, Bryan Hooi Kuen-Yew, Caiming Xiong, Elias Stengel-Eskin, Hongyang Zhang, Hongzhi Yin, 
-                            Huan Zhang, Huaxiu Yao, <u><b>Jaehong Yoon</b></u>, Jieyu Zhang, Kai Shu, Kaijie Zhu, Ranjay Krishna, Swabha Swayamdipta, Taiwei Shi, 
-                            Weijia Shi, Xiang Li, Yiwei Li, Yuexing Hao, Zhihao Jia, Zhize Li, Zhengqing Yuan, Xiuying Chen, Zhengzhong Tu, Xiyang Hu, Tianyi Zhou, 
-                            Jieyu Zhao, Lichao Sun, Furong Huang, Or Cohen Sasson, Prasanna Sattigeri, Anka Reuel, Max Lamparth, Yue Zhao, Nouha Dziri, Yu Su, 
-                            Huan Sun, Heng Ji, Chaowei Xiao, Mohit Bansal, Nitesh V. Chawla, Jian Pei, Jianfeng Gao, Michael Backes, Philip S. Yu, 
-                            Neil Zhenqiang Gong, Pin-Yu Chen, Bo Li, and Xiangliang Zhang`
-                        });
-                        addArxivContent({
-                            year: 2024, 
-                            name: 'lee2024videorepair', 
-                            arxiv: '2411.15115', 
-                            img: 'videorepair2.png', 
-                            title:    'VideoRepair: Improving Text-to-Video Generation via Misalignment Evaluation and Localized Refinement', 
-                            author:    'Daeun Lee, Jaehong Yoon, Jaemin Cho, and Mohit Bansal',
-                            bib_author:    'Lee, Daeun and Yoon, Jaehong and Cho, Jaemin and Bansal, Mohit',
-                            project: 'https://video-repair.github.io/',
-                            code: 'https://github.com/daeunni/VideoRepair'
-                        });                   
-                        // addArxivContent({
-                        //     year: 2024, 
-                        //     name: 'li2024glider', 
-                        //     arxiv: '2410.07172', 
-                        //     img: 'glider.png', 
-                        //     title:    'Glider: Global and Local Instruction-Driven Expert Router', 
-                        //     author:   'Pingzhi Li*, Prateek Yadav*, Jaehong Yoon, Jie Peng, Yi-Lin Sung, Mohit Bansal, and Tianlong Chen',
-                        //     bib_author:    'Li, Pingzhi and Yadav, Prateek and Yoon, Jaehong and Peng, Jie and Sung, Yi-lin and Bansal, Mohit and Chen, Tianlong',
-                        //     project: jy_,
-                        //     code: 'https://github.com/unites-lab/glider'
-                        // });  
-                    </script>
-                    <hr>
-                </div>
-            </div> 
             
-            <section id="recent_publication"></section>
-            <!-- <div class="row pt-2">
-                <div class="col-md-1 col-12"></div>
-                <div class="col-md-11 col-12">
-                    <h3 class="secfont text-md-left">Publications</h3>
-                    <p class="ssmall authors">(*: equal contribution)            
-                    </p><br>
-                    <h6 class="secfont text-md-left" style="font-weight: 900"><am>2025</am></h6>
-                    
-                    <div id="content-container25"></div>
-                    <script>
-                        const jy_25 = 'https://jaehong31.github.io/';
-                        function toggleAuthors(id, expand) {
-                            const etAl = document.querySelector(`.et-al-${id}`);
-                            const fullAuthors = document.querySelector(`.full-authors-${id}`);
-                            if (expand) {
-                                etAl.style.display = 'none';
-                                fullAuthors.style.display = 'inline';
-                            } else {
-                                etAl.style.display = 'inline';
-                                fullAuthors.style.display = 'none';
-                            }
-                        }
-                        
-                        let callCounter25 = 12;
-                        const contentContainer25 = document.getElementById("content-container25");
-                        
-                        function addConfContent({conf, year, name, arxiv, img, title, author, bib_author, project = jy_25, dataset = jy_25, code = jy_25, toggleID = null, etalPreview = '', fullAuthorHTML = ''}) {
-                            const projectPageBadge = project !== jy_25 ? `<a href="${project}" target="_blank"><b class="badge badge-white">Project Page</b></a>` : '';
-                            const datasetBadge = dataset !== jy_25 ? `<a href="${dataset}" target="_blank"><b class="badge badge-white">Dataset</b></a>` : '';
-                            const authorsHTML = toggleID
-                                ? `<p class="ssmall authors">${etalPreview}<span class="et-al-${toggleID}" onclick="toggleAuthors('${toggleID}', true)" style="cursor:pointer;text-decoration:underline;">et al.</span>
-                                    <span class="full-authors-${toggleID}" style="display:none;">${fullAuthorHTML}
-                                    <span class="compress" onclick="toggleAuthors('${toggleID}', false)" style="cursor:pointer;text-decoration:underline; margin-left:10px;">(▲ Hide list)</span></span></p>`
-                                : `<h6 class="ssmall authors">${author.replace('Jaehong Yoon', '<u><b>Jaehong Yoon</b></u>')}</h6>`;
-                        
-                            const htmlContent = `
-                            <div class="row mt-2">
-                                <div class="col-md-1 pb-3 text-md-right text-left"></div>
-                                <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
-                                    <img class="img-fluid rounded paper-img" src="./materials/concept_figures/${img}" alt="concept" >
-                                </div>
-                                <div class="col-md-7 col-sm-12 text-md-left text-center">
-                                    <div class="col text-left text-md-left">
-                                    <h6 class="darkgray"><b>[P${callCounter25}] ${title}</b></h6>
-                                    ${authorsHTML}
-                                    <h6>
-                                        <span class="conf">${conf} ${year}</span><br>
-                                        ${projectPageBadge}
-                                        ${datasetBadge}
-                                        <a href="https://arxiv.org/abs/${arxiv}" target="_blank"><span class="badge badge-white">Paper</span></a>
-                                        <a href="${code}" target="_blank"><span class="badge badge-white">Code</span></a>
-                                        <a type="button" class="badge badge-white" href="javascript:void(0)" onclick="show('bibc${title.replace(/\s+/g, '')}')">BibTeX</a>
-                                        <div id="bibc${title.replace(/\s+/g, '')}" class="popup">
-                                        @article{${name},<br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;title={${title}},<br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;author={${bib_author}},<br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:${arxiv}},<br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;year={${year}},<br>
-                                        }
-                                        </div>
-                                    </h6>
-                                    </div>
-                                </div>
-                                </div>`;
-                            callCounter25--;
-                            contentContainer25.innerHTML += htmlContent;
-                        }
-                        addConfContent({
-                            conf: EMNLP,
-                            year: 2025, 
-                            name: 'wang2025video', 
-                            arxiv: '2507.06485', 
-                            img: 'video-rts.png', 
-                            title: 'Video-RTS: Rethinking Reinforcement Learning and Test-Time Scaling for Efficient and Enhanced Video Reasoning', 
-                            author: 'Ziyang Wang*, Jaehong Yoon*, Shoubin Yu, Md Mohaiminul Islam, Gedas Bertasius, and Mohit Bansal',
-                            bib_author: 'Wang, Ziyang and Yoon, Jaehong and Yu, Shoubin and Islam, Mohaiminul and Bertasius, Gedas and Bansal, Mohit',
-                            project: 'https://sites.google.com/cs.unc.edu/videorts2025/',
-                            code: 'https://github.com/Ziyang412/Video-RTS',
-                        });
-                    </script>
-                </div>
-            </div> -->
-            <!-- Publication Start -->
-            <div class="row pt-2">
-                <div class="col-md-1 col-12"></div>
-                <div class="col-md-11 col-12">
-                <section id="recent_publication"></section>
-                <head> 
-                    <script> 
-                    $(function(){
-                    $("#includedContent").load("publication.html"); 
+                <div id="includedPreprints"></div>
+                <br>
+                <hr class="intro-hr">           
+                <br>
+                <div id="includedAccepted"></div>
+            
+                <script>
+                    $(function () {
+                    $("#includedPreprints").load("research-preprints.html");
+                    $("#includedAccepted").load("research-accepted.html");
                     });
-                    </script> 
-                </head> 
-                <body> 
-                    <div id="includedContent"></div>
-                </body>                     
+                </script>
+            
                 </div>
             </div>
-            <hr>
             <!-- Footer Start -->
-            <div class="row">
-                <div class="col footer-cover">
-                <div class="footer text-center small">
-                    <div>Last modified:&nbsp Dec. 12. 2025.</div>              
-                    <a href="#top_publ"><blu>Back to top of page</blu></a>
-                    <br>
-                    <br>
-                </div>
-                </div>
-            </div>
+            <div id="footer-placeholder"></div>
             <!-- Footer End -->
         </div>
     </body>
