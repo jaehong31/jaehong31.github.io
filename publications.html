@@ -63,33 +63,61 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <!-- <link rel="icon" href="https://jaehong31.github.io/materials/unc_icon.png" type="image/png">                 -->
 </head>
-<a name="top_publ"></a>
+<!-- <a name="top_publ"></a> -->
 <body>
     <div id="navbar"></div>
     <div class="container resume"    style="padding-top:20px">
         <section id="Publication"></section>            
-            <div class="row pt-2">
-                <div class="col-md-1 col-12"></div>
-                <div class="col-md-11 col-12">
-            
+        <div class="row pt-2">
+            <div class="col-md-1 col-12"></div>
+            <div class="col-md-11 col-12">
+        
                 <div id="includedPreprints"></div>
+                <div id="acptd"></div>
                 <br>
                 <hr class="intro-hr">           
-                <br>
+                <br>                
                 <div id="includedAccepted"></div>
             
                 <script>
+                    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+                  
                     $(function () {
-                    $("#includedPreprints").load("research-preprints.html");
-                    $("#includedAccepted").load("research-accepted.html");
+                      let done = 0;
+                  
+                      // If there is no hash, skip the scrolling
+                      const hasHash = !!window.location.hash;
+                  
+                      function afterBothLoaded() {
+                        done += 1;
+                        if (done < 2) return;
+                        if (!hasHash) return;
+                  
+                        requestAnimationFrame(() => {
+                          requestAnimationFrame(() => {
+                            const target = window.location.hash.slice(1); // "acptd"
+                            const el = document.getElementById(target);
+                            if (!el) return;
+                  
+                            const offset = 0; // fixed navbar 
+                            const y = el.getBoundingClientRect().top + window.pageYOffset - offset;
+                            window.scrollTo(0, Math.max(0, y));
+                          });
+                        });
+                      }
+                  
+                      $("#includedPreprints").load("research-preprints.html", afterBothLoaded);
+                      $("#includedAccepted").load("research-accepted.html", afterBothLoaded);
                     });
-                </script>
-            
-                </div>
+                  </script>
             </div>
-            <!-- Footer Start -->
-            <div id="footer-placeholder"></div>
-            <!-- Footer End -->
-        </div>
-    </body>
+        </div>        
+        <!-- Footer Start -->
+        <div id="footer-placeholder"></div>
+        <!-- Footer End -->
+    </div>
+</body>
 </html>
+
+
+
