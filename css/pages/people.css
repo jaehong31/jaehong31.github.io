@@ -453,6 +453,7 @@ code {
      ========================= */
   
   .iconBtn,
+  .iconBtnEmpty,
   .iconBtn:link,
   .iconBtn:visited {
     width: 44px;
@@ -474,6 +475,10 @@ code {
                 transform 0.12s ease;
   }
   
+  .iconBtnEmpty{
+    background: transparent;
+  }
+
   .iconBtn:hover,
   .iconBtn:active,
   .iconBtn:focus-visible {
@@ -487,7 +492,8 @@ code {
     outline-offset: 2px;
   }
   
-  .iconBtn svg {
+  .iconBtn svg,
+  .iconBtnEmpty svg {
     width: 18px;
     height: 18px;
     display: block;

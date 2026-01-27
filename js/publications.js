@@ -1,5 +1,5 @@
-let arxivCounter = 12;
-let paperCounter = 35;
+let arxivCounter = 8;
+let paperCounter = 37;
 let journalCounter = 2;
 
 function escHtml(s) {
@@ -41,12 +41,9 @@ function toggleAuthors(id, expand) {
     }
   }
 
-function highlightMeHtml(s) {
+  function highlightMeHtml(s) {
     return String(s ?? "").replaceAll("Jaehong Yoon", `<span class="me">Jaehong Yoon</span>`);
-  }
-function highlightMeText(s) {
-    return escHtml(s).replaceAll("Jaehong Yoon", `<span class="me">Jaehong Yoon</span>`);
-  }
+  }  
 
 function buildBibtex({ type, key, title, authorBib, venueFull, year, arxivId }) {
     if (type === "arxiv") {
@@ -120,10 +117,12 @@ function _addCard({
         </div>
       `;
     } else {
-      const authorHtml = escHtml(author_).replaceAll(
-        "Jaehong Yoon",
-        `<span class="me">Jaehong Yoon</span>`
-      );
+      // const authorHtml = escHtml(author_).replaceAll(
+      //   "Jaehong Yoon",
+      //   `<span class="me">Jaehong Yoon</span>`
+      // );
+      // authorsHTML = `<div class="paper-authors">${authorHtml}</div>`;
+      const authorHtml = highlightMeHtml(author_); 
       authorsHTML = `<div class="paper-authors">${authorHtml}</div>`;
     }
   
