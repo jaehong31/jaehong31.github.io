@@ -193,7 +193,7 @@ body.dark-mode {
   justify-content: flex-start;
 }
 
-.student-card {
+/* .student-card {
   width: 230px;
   text-align: center;
   line-height: 1.5;
@@ -227,8 +227,9 @@ body.dark-mode {
 .photo-name {
   font-size: 1.1rem;
   font-weight: 600;
-}
-.profile-info {
+} */
+
+/* .profile-info {
   flex: 1;
   margin-top: -12px;
   margin-right: 150px;
@@ -242,9 +243,9 @@ body.dark-mode {
   margin-top: 8px;
   font-size: 1.1rem;
   text-align: justify;
-}
+} */
 
-
+/* 
 code {
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 0.95em;
@@ -258,7 +259,7 @@ code {
   color: #d6ebff;   
   background-color: #1f2a44;
   border: 1px solid #5fa8ff;
-}
+} */
 
 /* =========================
    People page layout
@@ -342,8 +343,8 @@ code {
   
   
   .personCard .iconBtn{
-    width: 46px;
-    height: 46px;
+    /* width: 46px;
+    height: 46px; */
     border-radius: 999px;
     display: inline-flex;
     align-items: center;
@@ -362,12 +363,12 @@ code {
     border-color: color-mix(in srgb, var(--card-border) 40%, var(--accent) 60%);
     color: var(--accent);
   }
-  
+/*   
   .personCard .iconBtn svg{
     width: 20px;
-    height: 20px;
+    height: 120px;
     fill: currentColor;
-  }
+  } */
   
 
   .avatar {
@@ -381,16 +382,16 @@ code {
     border: 0px solid var(--avatar-border);
     background: rgba(0, 0, 0, 0.04);
   }
-
+/* 
   .note-std-nm{
     margin: 2px 0 6px;
     font-weight: 650;
     font-size: 1.25rem;
     line-height: 1.2;
     color: var(--text-fg);
-  }
+  } */
   
-  .note-std-bg{
+  /* .note-std-bg{
     margin: 0;
     color: var(--muted-fg);
     font-size: .98rem;
@@ -404,7 +405,7 @@ code {
   .note-std-bg .focus{
     margin-top: 8px;
     color: var(--muted-fg);
-  }
+  } */
 
   /* .personBody {
     display: flex;
@@ -418,22 +419,34 @@ code {
   }
   .personBody .note-std-nm {
     margin: 0;
-    /* font-size: 28px; */
     font-weight: 650;
-    line-height: 1.15;
-    color: var(--fg);
+    margin: 2px 0 6px;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    color: var(--text-fg);
   }
   
-  .note-std-bg {
+  .personBody .note-std-bg {
     margin: 14px 0 0;
-    /* font-size: 22px; */
     line-height: 1.35;
     color: rgba(0,0,0,0.45);
+    margin: 0;
+    font-size: .98rem;    
+  }
+  .personBody .note-std-bg span{
+    display: block;
+    margin-bottom: 4px;
   }
   
+  .personBody .note-std-bg .focus{
+    margin-top: 8px;
+    color: var(--muted-fg);
+  }
+
   .dark-mode .note-std-bg {
     color: rgba(255,255,255,0.60);
   }
+  
   
   /* =========================
      Links row (icons) - aligned
@@ -476,7 +489,7 @@ code {
   }
   
   .iconBtnEmpty{
-    background: transparent;
+    background: transparent;    
   }
 
   .iconBtn:hover,
@@ -499,7 +512,9 @@ code {
     display: block;
     fill: currentColor;
   }
-  
+  .iconBtnEmpty svg {
+    fill: gray;
+  }
   .iconBtn[aria-label="Google Scholar"] svg {
     width: 16px;
     height: 16px;
@@ -528,10 +543,10 @@ code {
       font-size: 18px;
     }
   
-    .iconBtn {
+    /* .iconBtn {
       width: 40px;
       height: 40px;
-    }
+    } */
   }
   
   /* @media (max-width: 576px){
