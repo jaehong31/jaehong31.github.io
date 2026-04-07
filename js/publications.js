@@ -1,5 +1,5 @@
 let arxivCounter = 9;
-let paperCounter = 39;
+let paperCounter = 40;
 let journalCounter = 2;
 
 function escHtml(s) {
