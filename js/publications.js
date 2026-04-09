@@ -77,14 +77,14 @@ function _addCard({
   
     project_, paper_, code_, dataset_,
     thumb_,
-  
+    venueNote = null,
     // et al toggle option
     toggleID = null,
     etalPreview = "",
     fullAuthorHTML = "",
-  
+    
     // for arxiv
-    arxiv_ = null,
+    arxiv_ = null,    
   }) {
     const container = document.getElementById(paperContainerId);
     if (!container) return;
@@ -130,7 +130,7 @@ function _addCard({
     const metaHtml =
       type === "arxiv"
         ? `<span class="arxiv">arXiv ${escHtml(year_)}</span>`
-        : `<span class="venue">${escHtml(venue_)} ${escHtml(year_)}</span>`;
+        : `<span class="venue">${escHtml(venue_)} ${escHtml(year_)} ${escHtml(venueNote)}</span>`;
   
     // bibtex
     const bib = buildBibtex({
@@ -197,9 +197,10 @@ function _addCard({
     code_ = "None",
     dataset_ = "None",
     thumb_ = "None",
+    venueNote = "",
     toggleID = null,
     etalPreview = "",
-    fullAuthorHTML = ""
+    fullAuthorHTML = "",    
   ) {
     _addCard({
       type: "conf",
@@ -209,8 +210,8 @@ function _addCard({
       name_, year_, title_, author_, bib_author_,
       venue_, venue_full_name_,
       project_, paper_, code_, dataset_,
-      thumb_,
-      toggleID, etalPreview, fullAuthorHTML,
+      thumb_, venueNote,
+      toggleID, etalPreview, fullAuthorHTML,       
     });
   }
   
@@ -224,7 +225,7 @@ function _addCard({
     thumb_ = "None",
     toggleID = null,
     etalPreview = "",
-    fullAuthorHTML = ""
+    fullAuthorHTML = "",    
   ) {
     _addCard({
       type: "journal",
@@ -235,7 +236,7 @@ function _addCard({
       venue_, venue_full_name_,
       project_, paper_, code_, dataset_,
       thumb_,
-      toggleID, etalPreview, fullAuthorHTML,
+      toggleID, etalPreview, fullAuthorHTML
     });
   }
   
