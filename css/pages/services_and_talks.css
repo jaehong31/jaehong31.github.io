@@ -137,7 +137,13 @@
     color: color-mix(in srgb, var(--svc-accent) 65%, var(--svc-muted) 35%);
     font-weight: 600;
   }
-  
+
+  .svc-venue:hover{
+    color: color-mix(in srgb, var(--svc-accent) 65%, var(--svc-muted) 35%);
+    font-weight: 600;
+    text-decoration: underline;
+  }
+    
   /* Talks */
   .talk-block{
     padding: 10px 0 4px;
@@ -183,3 +189,6 @@
     .svc-list li{ grid-template-columns: 60px 1fr; }
     .talk-list li{ grid-template-columns: 78px 1fr; }
   }
+
+
+  

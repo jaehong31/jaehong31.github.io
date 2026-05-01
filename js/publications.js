@@ -1,6 +1,6 @@
-let arxivCounter = 9;
-let paperCounter = 40;
-let journalCounter = 2;
+let arxivCounter = 7;
+let paperCounter = 42;
+let journalCounter = 3;
 
 function escHtml(s) {
   return String(s ?? "")
