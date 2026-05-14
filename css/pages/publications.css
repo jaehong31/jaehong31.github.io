@@ -52,7 +52,13 @@
     flex-shrink: 0;
   }
   
-  .paper-thumb img {
+  .paper-thumb-arxiv {
+    width: 160px;
+    flex-shrink: 0;
+  }
+
+  .paper-thumb img,
+  .paper-thumb-arxiv img {
     width: 100%;
     height: 100%;
     aspect-ratio: 4 / 3;
@@ -61,6 +67,8 @@
     background: #eef3ff;
     border: 1px solid var(--gray-200);
   }
+
+  
   
   .paper-content {
     flex: 1;

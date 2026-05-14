@@ -154,10 +154,9 @@ function _addCard({
   
     const html = `
       <div class="paper-item" data-type=${type}>
-        <div class="paper-thumb">
+        <div class="${type === 'arxiv' ? 'paper-thumb-arxiv' : 'paper-thumb'}">
           <img src="${thumbSrc}" alt="thumbnail">
         </div>
-  
         <div class="paper-content">
           <div class="paper-title">
             <span class="paper-tag" data-type=${type}>${prefix}${counter}</span>
