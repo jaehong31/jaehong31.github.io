@@ -223,7 +223,46 @@ html {
 
 
 
+.profile-main {
+  position: relative;
+}
 
+.ntu-logo-link {
+  position: absolute;
+  top: 0.3rem;
+  right: 0;
+  display: block;
+  z-index: 2;
+}
+
+.ntu-logo {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.95;
+}
+
+.profile-name {
+  padding-right: 170px;
+}
+
+/* 모바일에서는 오른쪽 위 배치 말고 가운데로 */
+@media (max-width: 767.98px) {
+  .ntu-logo-link {
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.8rem;
+  }
+
+  .ntu-logo {
+    height: 45px;
+  }
+
+  .profile-name {
+    padding-right: 0;
+  }
+}
 
 
 .intro-text{
@@ -257,13 +296,19 @@ html {
 
 .intro-callout{
   display: flex;
-  align-items: center;
+  align-items: left;
   gap: 10px;
   padding: 14px 16px;
   border-radius: 12px;
   background: rgba(0,0,0,0.03);
   border: 1px solid rgba(0,0,0,0.06);
   line-height: 1.35;
+}
+
+.intro-callout {
+  /* display: flex; */
+  flex-direction: column;
+  /* gap: 0.35rem; */
 }
 
 .dark-mode .intro-callout{
