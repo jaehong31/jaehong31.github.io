@@ -1,4 +1,4 @@
-let arxivCounter = 6;
+let arxivCounter = 8;
 let paperCounter = 50;
 let journalCounter = 4;
 
@@ -53,6 +53,14 @@ function buildBibtex({ type, key, title, authorBib, venueFull, year, arxivId }) 
     journal={arXiv preprint arXiv:${arxivId}},
     year={${year}}
     }`;
+    }
+    if (type === "journal") {
+      return `@article{${key},
+      title={${title}},
+      author={${authorBib}},
+      journal={${venueFull}},
+      year={${year}}
+      }`;
     }
     return `@inproceedings{${key},
     title={${title}},
@@ -129,7 +137,8 @@ function _addCard({
     // meta line
     const metaHtml =
       type === "arxiv"
-        ? `<span class="arxiv">arXiv ${escHtml(year_)}</span>`
+        // ? `<span class="arxiv">arXiv ${escHtml(year_)}</span>`
+        ? `<span class="arxiv">arXiv ${arxiv_}</span>`
         : `<span class="venue">${escHtml(venue_)} ${escHtml(year_)} ${escHtml(venueNote)}</span>`;
   
     // bibtex
@@ -222,6 +231,7 @@ function _addCard({
     code_ = "None",
     dataset_ = "None",
     thumb_ = "None",
+    venueNote = "",
     toggleID = null,
     etalPreview = "",
     fullAuthorHTML = "",    
@@ -234,7 +244,7 @@ function _addCard({
       name_, year_, title_, author_, bib_author_,
       venue_, venue_full_name_,
       project_, paper_, code_, dataset_,
-      thumb_,
+      thumb_, venueNote,
       toggleID, etalPreview, fullAuthorHTML
     });
   }

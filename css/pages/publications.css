@@ -113,7 +113,7 @@
   }
   
   .paper-authors .me {
-    color: var(--purple-main);
+    /* color: var(--purple-main); */
     text-decoration: underline;
     font-weight: 600;
   }
@@ -129,23 +129,27 @@
   }
   
   .paper-meta .venue {
-    font-weight: 600;
+    font-weight: 500;
     color: var(--gray-500);
     letter-spacing: 0.01em;
   }
   
 /* Conference */
 .paper-item[data-type="conf"] .paper-meta .venue {
-    color: #4f5bd5; /* muted indigo */
+    color: #4f5bd5;
   }
   
   /* Journal */
   .paper-item[data-type="journal"] .paper-meta .venue {
-    color: #7a5fc7; /* soft lavender-violet */
+    color: #7a5fc7;
   }
   .arxiv {
-    color: #8b8fa3;
-    font-weight: 500;
+    /* color: #8b8fa3;
+    font-weight: 500; */
+    font-size: 0.95em;
+    /* font-weight: 600; */
+    color: var(--gray-900);
+    /* line-height: 1.4; */
   }
   
   .paper-links {
@@ -272,9 +276,9 @@
   .dark-mode .paper-authors {
     color: #c7cbe3;  
   }
-  .dark-mode .me {
+  /* .dark-mode .me {
     color: #b7bdf8;
-  }
+  } */
   .dark-mode .arxiv {
     color: #9aa0c3;
   }
