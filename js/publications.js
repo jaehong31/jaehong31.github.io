@@ -1,4 +1,4 @@
-let arxivCounter = 8;
+let arxivCounter = 10;
 let paperCounter = 50;
 let journalCounter = 4;
 
